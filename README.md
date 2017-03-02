@@ -4,6 +4,16 @@
 
 Dekko is an app that allows user to chat with live streaming videos without any history.
 
+## User Stories
+
+- [] User can record LIVE video
+- [] User can select tags for thier LIVE video (e.g. #location #sports #fashion)
+- [] User can select LIVE video from categories
+- [] User can LIKE/DISLIKE/FAVOURITE LIVE video
+- [] User can form LIVE chat room
+- [] Broadcaster can kick user out of chat room
+
+
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
