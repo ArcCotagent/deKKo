@@ -1,5 +1,8 @@
 # deKKo
 
+## Description
+
+Dekko is an app that allows user to chat with live streaming videos without any history.
 
 ## Video Walkthrough 
 
