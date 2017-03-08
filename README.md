@@ -15,7 +15,7 @@ Dekko is an app that allows user to chat with live streaming videos without any 
 
 ## Wireframe
 
-#<img src='http://imgur.com/a/AlVvs'>
+<img width="723" alt="screen shot 2017-03-07 at 7 16 33 pm" src="https://cloud.githubusercontent.com/assets/22183255/23684109/9b45913c-036a-11e7-8812-4d27d0f2e17f.png">
 
 
 
