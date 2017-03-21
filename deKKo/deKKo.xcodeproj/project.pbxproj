@@ -11,13 +11,12 @@
 		99261E826AA0CCFBFE2E9300 /* Pods_deKKoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E545AFD84920D157D6CAE0D /* Pods_deKKoTests.framework */; };
 		A6F6C1DC05D1AFAFDE733C36 /* Pods_deKKo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660E31CF1B134C33E98982EC /* Pods_deKKo.framework */; };
 		EB6487521E81E08300BD4252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6487511E81E08300BD4252 /* AppDelegate.swift */; };
+		EB6487541E81E08300BD4252 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6487531E81E08300BD4252 /* ViewController.swift */; };
 		EB6487571E81E08300BD4252 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB6487551E81E08300BD4252 /* Main.storyboard */; };
 		EB6487591E81E08300BD4252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB6487581E81E08300BD4252 /* Assets.xcassets */; };
 		EB64875C1E81E08300BD4252 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB64875A1E81E08300BD4252 /* LaunchScreen.storyboard */; };
 		EB6487671E81E08300BD4252 /* deKKoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6487661E81E08300BD4252 /* deKKoTests.swift */; };
 		EB6487721E81E08300BD4252 /* deKKoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6487711E81E08300BD4252 /* deKKoUITests.swift */; };
-		EB6487801E81EC5F00BD4252 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB64877F1E81EC5F00BD4252 /* LoginViewController.swift */; };
-		EB6487851E81ECD300BD4252 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6487841E81ECD300BD4252 /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +48,7 @@
 		E2B61EA3A5F638ACB5C556EE /* Pods-deKKoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deKKoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-deKKoTests/Pods-deKKoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB64874E1E81E08300BD4252 /* deKKo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deKKo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6487511E81E08300BD4252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB6487531E81E08300BD4252 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB6487561E81E08300BD4252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB6487581E81E08300BD4252 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB64875B1E81E08300BD4252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,8 +59,6 @@
 		EB64876D1E81E08300BD4252 /* deKKoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = deKKoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6487711E81E08300BD4252 /* deKKoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deKKoUITests.swift; sourceTree = "<group>"; };
 		EB6487731E81E08300BD4252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB64877F1E81EC5F00BD4252 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		EB6487841E81ECD300BD4252 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,8 +137,8 @@
 		EB6487501E81E08300BD4252 /* deKKo */ = {
 			isa = PBXGroup;
 			children = (
-				EB6487811E81EC6800BD4252 /* ViewControllers */,
 				EB6487511E81E08300BD4252 /* AppDelegate.swift */,
+				EB6487531E81E08300BD4252 /* ViewController.swift */,
 				EB6487551E81E08300BD4252 /* Main.storyboard */,
 				EB6487581E81E08300BD4252 /* Assets.xcassets */,
 				EB64875A1E81E08300BD4252 /* LaunchScreen.storyboard */,
@@ -165,15 +163,6 @@
 				EB6487731E81E08300BD4252 /* Info.plist */,
 			);
 			path = deKKoUITests;
-			sourceTree = "<group>";
-		};
-		EB6487811E81EC6800BD4252 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				EB64877F1E81EC5F00BD4252 /* LoginViewController.swift */,
-				EB6487841E81ECD300BD4252 /* PageViewController.swift */,
-			);
-			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,8 +446,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB6487851E81ECD300BD4252 /* PageViewController.swift in Sources */,
-				EB6487801E81EC5F00BD4252 /* LoginViewController.swift in Sources */,
+				EB6487541E81E08300BD4252 /* ViewController.swift in Sources */,
 				EB6487521E81E08300BD4252 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -708,7 +696,6 @@
 				EB6487781E81E08300BD4252 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		EB6487791E81E08300BD4252 /* Build configuration list for PBXNativeTarget "deKKoTests" */ = {
 			isa = XCConfigurationList;
@@ -717,7 +704,6 @@
 				EB64877B1E81E08300BD4252 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		EB64877C1E81E08300BD4252 /* Build configuration list for PBXNativeTarget "deKKoUITests" */ = {
 			isa = XCConfigurationList;
@@ -726,7 +712,6 @@
 				EB64877E1E81E08300BD4252 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
