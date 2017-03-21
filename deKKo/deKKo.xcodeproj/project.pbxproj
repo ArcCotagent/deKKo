@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F4B1CA6CC55E76E2B531281 /* Pods_deKKoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E38CAC1470FAA7AF471F9F /* Pods_deKKoUITests.framework */; };
+		99261E826AA0CCFBFE2E9300 /* Pods_deKKoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E545AFD84920D157D6CAE0D /* Pods_deKKoTests.framework */; };
+		A6F6C1DC05D1AFAFDE733C36 /* Pods_deKKo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660E31CF1B134C33E98982EC /* Pods_deKKo.framework */; };
 		EB6487521E81E08300BD4252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6487511E81E08300BD4252 /* AppDelegate.swift */; };
 		EB6487541E81E08300BD4252 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6487531E81E08300BD4252 /* ViewController.swift */; };
 		EB6487571E81E08300BD4252 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB6487551E81E08300BD4252 /* Main.storyboard */; };
@@ -34,6 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0212C20352D0FAE7D2C3E566 /* Pods-deKKo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deKKo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-deKKo/Pods-deKKo.debug.xcconfig"; sourceTree = "<group>"; };
+		083911E54CF8E5D19EC45EFF /* Pods-deKKoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deKKoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-deKKoTests/Pods-deKKoTests.release.xcconfig"; sourceTree = "<group>"; };
+		3215F165393B88ED2BA90A79 /* Pods-deKKoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deKKoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-deKKoUITests/Pods-deKKoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3AF277B52F94C47D9B413366 /* Pods-deKKoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deKKoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-deKKoUITests/Pods-deKKoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4E545AFD84920D157D6CAE0D /* Pods_deKKoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_deKKoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		660E31CF1B134C33E98982EC /* Pods_deKKo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_deKKo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99E38CAC1470FAA7AF471F9F /* Pods_deKKoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_deKKoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23F5BD342AA411C51EC846A /* Pods-deKKo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deKKo.release.xcconfig"; path = "Pods/Target Support Files/Pods-deKKo/Pods-deKKo.release.xcconfig"; sourceTree = "<group>"; };
+		E2B61EA3A5F638ACB5C556EE /* Pods-deKKoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deKKoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-deKKoTests/Pods-deKKoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB64874E1E81E08300BD4252 /* deKKo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deKKo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6487511E81E08300BD4252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB6487531E81E08300BD4252 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6F6C1DC05D1AFAFDE733C36 /* Pods_deKKo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99261E826AA0CCFBFE2E9300 /* Pods_deKKoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F4B1CA6CC55E76E2B531281 /* Pods_deKKoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		205C87F67BAF1B6CC64EE74E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				660E31CF1B134C33E98982EC /* Pods_deKKo.framework */,
+				4E545AFD84920D157D6CAE0D /* Pods_deKKoTests.framework */,
+				99E38CAC1470FAA7AF471F9F /* Pods_deKKoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB31A239C8D5F0264EDCAD0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0212C20352D0FAE7D2C3E566 /* Pods-deKKo.debug.xcconfig */,
+				C23F5BD342AA411C51EC846A /* Pods-deKKo.release.xcconfig */,
+				E2B61EA3A5F638ACB5C556EE /* Pods-deKKoTests.debug.xcconfig */,
+				083911E54CF8E5D19EC45EFF /* Pods-deKKoTests.release.xcconfig */,
+				3215F165393B88ED2BA90A79 /* Pods-deKKoUITests.debug.xcconfig */,
+				3AF277B52F94C47D9B413366 /* Pods-deKKoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EB6487451E81E08300BD4252 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +119,8 @@
 				EB6487651E81E08300BD4252 /* deKKoTests */,
 				EB6487701E81E08300BD4252 /* deKKoUITests */,
 				EB64874F1E81E08300BD4252 /* Products */,
+				EB31A239C8D5F0264EDCAD0A /* Pods */,
+				205C87F67BAF1B6CC64EE74E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB6487761E81E08300BD4252 /* Build configuration list for PBXNativeTarget "deKKo" */;
 			buildPhases = (
+				B1BBF07698C1AC5C147D86D6 /* [CP] Check Pods Manifest.lock */,
 				EB64874A1E81E08300BD4252 /* Sources */,
 				EB64874B1E81E08300BD4252 /* Frameworks */,
 				EB64874C1E81E08300BD4252 /* Resources */,
+				BB38395725D7AAEE3BFF23C3 /* [CP] Embed Pods Frameworks */,
+				81AE54EB011F70D2B3233036 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB6487791E81E08300BD4252 /* Build configuration list for PBXNativeTarget "deKKoTests" */;
 			buildPhases = (
+				8312461BC6259275AEAD71ED /* [CP] Check Pods Manifest.lock */,
 				EB64875E1E81E08300BD4252 /* Sources */,
 				EB64875F1E81E08300BD4252 /* Frameworks */,
 				EB6487601E81E08300BD4252 /* Resources */,
+				DB7D7EB60FA6C02F169C2F6B /* [CP] Embed Pods Frameworks */,
+				3B10765C1C4767DC7D3DA09F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB64877C1E81E08300BD4252 /* Build configuration list for PBXNativeTarget "deKKoUITests" */;
 			buildPhases = (
+				E4544F604857234F014D7EA0 /* [CP] Check Pods Manifest.lock */,
 				EB6487691E81E08300BD4252 /* Sources */,
 				EB64876A1E81E08300BD4252 /* Frameworks */,
 				EB64876B1E81E08300BD4252 /* Resources */,
+				1AE6587037CC2E12F44C485B /* [CP] Embed Pods Frameworks */,
+				4BF65CBEC5048C1B16180156 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AE6587037CC2E12F44C485B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-deKKoUITests/Pods-deKKoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B10765C1C4767DC7D3DA09F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-deKKoTests/Pods-deKKoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BF65CBEC5048C1B16180156 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-deKKoUITests/Pods-deKKoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81AE54EB011F70D2B3233036 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-deKKo/Pods-deKKo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8312461BC6259275AEAD71ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B1BBF07698C1AC5C147D86D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BB38395725D7AAEE3BFF23C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-deKKo/Pods-deKKo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB7D7EB60FA6C02F169C2F6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-deKKoTests/Pods-deKKoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4544F604857234F014D7EA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EB64874A1E81E08300BD4252 /* Sources */ = {
@@ -408,6 +595,7 @@
 		};
 		EB6487771E81E08300BD4252 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0212C20352D0FAE7D2C3E566 /* Pods-deKKo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = deKKo/Info.plist;
@@ -420,6 +608,7 @@
 		};
 		EB6487781E81E08300BD4252 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C23F5BD342AA411C51EC846A /* Pods-deKKo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = deKKo/Info.plist;
@@ -432,6 +621,7 @@
 		};
 		EB64877A1E81E08300BD4252 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2B61EA3A5F638ACB5C556EE /* Pods-deKKoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -446,6 +636,7 @@
 		};
 		EB64877B1E81E08300BD4252 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 083911E54CF8E5D19EC45EFF /* Pods-deKKoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -460,6 +651,7 @@
 		};
 		EB64877D1E81E08300BD4252 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3215F165393B88ED2BA90A79 /* Pods-deKKoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = deKKoUITests/Info.plist;
@@ -473,6 +665,7 @@
 		};
 		EB64877E1E81E08300BD4252 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AF277B52F94C47D9B413366 /* Pods-deKKoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = deKKoUITests/Info.plist;

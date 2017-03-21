@@ -1,0 +1,6 @@
+framework module Pods_deKKo {
+  umbrella header "Pods-deKKo-umbrella.h"
+
+  export *
+  module * { export * }
+}

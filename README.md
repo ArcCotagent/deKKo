@@ -12,6 +12,11 @@ Dekko is an app that allows user to chat with live streaming videos without any 
 - [ ] User can LIKE/DISLIKE/FAVOURITE LIVE video
 - [ ] User can form LIVE chat room
 - [ ] Broadcaster can kick user out of chat room
+#Note merge from master
+git checkout master
+git pull
+git checkout ownbranch
+git merge master ownbranch
 
 ## Wireframe
 
