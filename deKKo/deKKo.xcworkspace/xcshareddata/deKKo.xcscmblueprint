@@ -12,7 +12,11 @@
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "A0FCAD41CFA0D33A637F00C3D2FD186F8B1D34D5+++CADE6DB" : "",
     "A0FCAD41CFA0D33A637F00C3D2FD186F8B1D34D5+++5001D3B" : "",
+<<<<<<< HEAD
     "A0FCAD41CFA0D33A637F00C3D2FD186F8B1D34D5+++7EE662C" : "deKKo\/"
+=======
+    "A0FCAD41CFA0D33A637F00C3D2FD186F8B1D34D5+++7EE662C" : ""
+>>>>>>> master
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "deKKo",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
