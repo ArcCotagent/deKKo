@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1F4B1CA6CC55E76E2B531281 /* Pods_deKKoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E38CAC1470FAA7AF471F9F /* Pods_deKKoUITests.framework */; };
+		8E03AB5B1E82E03800711F46 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E03AB5A1E82E03800711F46 /* GoogleService-Info.plist */; };
+		8E03AB5C1E82E03800711F46 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E03AB5A1E82E03800711F46 /* GoogleService-Info.plist */; };
+		8E03AB5D1E82E03800711F46 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E03AB5A1E82E03800711F46 /* GoogleService-Info.plist */; };
 		99261E826AA0CCFBFE2E9300 /* Pods_deKKoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E545AFD84920D157D6CAE0D /* Pods_deKKoTests.framework */; };
 		A6F6C1DC05D1AFAFDE733C36 /* Pods_deKKo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660E31CF1B134C33E98982EC /* Pods_deKKo.framework */; };
 		EB6487521E81E08300BD4252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6487511E81E08300BD4252 /* AppDelegate.swift */; };
@@ -45,6 +48,7 @@
 		3AF277B52F94C47D9B413366 /* Pods-deKKoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deKKoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-deKKoUITests/Pods-deKKoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4E545AFD84920D157D6CAE0D /* Pods_deKKoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_deKKoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		660E31CF1B134C33E98982EC /* Pods_deKKo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_deKKo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E03AB5A1E82E03800711F46 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		99E38CAC1470FAA7AF471F9F /* Pods_deKKoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_deKKoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23F5BD342AA411C51EC846A /* Pods-deKKo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deKKo.release.xcconfig"; path = "Pods/Target Support Files/Pods-deKKo/Pods-deKKo.release.xcconfig"; sourceTree = "<group>"; };
 		E2B61EA3A5F638ACB5C556EE /* Pods-deKKoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deKKoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-deKKoTests/Pods-deKKoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 		EB6487451E81E08300BD4252 = {
 			isa = PBXGroup;
 			children = (
+				8E03AB5A1E82E03800711F46 /* GoogleService-Info.plist */,
 				EB6487501E81E08300BD4252 /* deKKo */,
 				EB6487651E81E08300BD4252 /* deKKoTests */,
 				EB6487701E81E08300BD4252 /* deKKoUITests */,
@@ -298,6 +303,7 @@
 				EB64875C1E81E08300BD4252 /* LaunchScreen.storyboard in Resources */,
 				EB6487591E81E08300BD4252 /* Assets.xcassets in Resources */,
 				EB6487571E81E08300BD4252 /* Main.storyboard in Resources */,
+				8E03AB5B1E82E03800711F46 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E03AB5C1E82E03800711F46 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +319,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E03AB5D1E82E03800711F46 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

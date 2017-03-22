@@ -7,11 +7,19 @@
 //
 
 import UIKit
+import GoogleSignIn
+import Google
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegate
+{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        var configureError: NSError?
+        
+        GIDSignIn.sharedInstance().uiDelegate = self
+        GIDSignIn.sharedInstance().delegate = self
+        GIDSignIn.sharedInstance().clientID = "963253939831-hod6842oqnllcnvhrmn7s56q7nn2baan.apps.googleusercontent.com"
 
         // Do any additional setup after loading the view.
     }
@@ -20,7 +28,38 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!)
+    {
+        if error != nil
+        {
+            print(error)
+            return
+        }
+        else
+        {
+            print(user.userID)
+            print(user.profile.email)
+            print(user.profile.imageURL(withDimension: 400))
+        }
+        
+    }
     
+    
+    func signIn(signIn: GIDSignIn!, didDisconnectWithUser user:GIDGoogleUser!,
+                withError error: NSError!) {
+        // Perform any operations when the user disconnects from app here.
+        // ...
+    }
+    func signIn(signIn: GIDSignIn!,
+                dismissViewController viewController: UIViewController!) {
+        self.dismiss(animated: true, completion: nil)
+    }
+
+    @IBAction func logInWithGoogle(_ sender: Any)
+    {
+        GIDSignIn.sharedInstance().signIn()
+    }
+ 
 
     /*
     // MARK: - Navigation
