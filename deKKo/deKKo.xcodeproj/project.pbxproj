@@ -17,6 +17,8 @@
 		EB64875C1E81E08300BD4252 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB64875A1E81E08300BD4252 /* LaunchScreen.storyboard */; };
 		EB6487671E81E08300BD4252 /* deKKoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6487661E81E08300BD4252 /* deKKoTests.swift */; };
 		EB6487721E81E08300BD4252 /* deKKoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6487711E81E08300BD4252 /* deKKoUITests.swift */; };
+		EBF52A2F1E81F748002438A2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF52A2D1E81F748002438A2 /* LoginViewController.swift */; };
+		EBF52A301E81F748002438A2 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF52A2E1E81F748002438A2 /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		EB64876D1E81E08300BD4252 /* deKKoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = deKKoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6487711E81E08300BD4252 /* deKKoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deKKoUITests.swift; sourceTree = "<group>"; };
 		EB6487731E81E08300BD4252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBF52A2D1E81F748002438A2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EBF52A2E1E81F748002438A2 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +141,8 @@
 		EB6487501E81E08300BD4252 /* deKKo */ = {
 			isa = PBXGroup;
 			children = (
+				EBF52A2C1E81F736002438A2 /* ViewControllers */,
 				EB6487511E81E08300BD4252 /* AppDelegate.swift */,
-				EB6487531E81E08300BD4252 /* ViewController.swift */,
 				EB6487551E81E08300BD4252 /* Main.storyboard */,
 				EB6487581E81E08300BD4252 /* Assets.xcassets */,
 				EB64875A1E81E08300BD4252 /* LaunchScreen.storyboard */,
@@ -163,6 +167,16 @@
 				EB6487731E81E08300BD4252 /* Info.plist */,
 			);
 			path = deKKoUITests;
+			sourceTree = "<group>";
+		};
+		EBF52A2C1E81F736002438A2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB6487531E81E08300BD4252 /* ViewController.swift */,
+				EBF52A2D1E81F748002438A2 /* LoginViewController.swift */,
+				EBF52A2E1E81F748002438A2 /* PageViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -446,8 +460,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBF52A2F1E81F748002438A2 /* LoginViewController.swift in Sources */,
 				EB6487541E81E08300BD4252 /* ViewController.swift in Sources */,
 				EB6487521E81E08300BD4252 /* AppDelegate.swift in Sources */,
+				EBF52A301E81F748002438A2 /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,6 +712,7 @@
 				EB6487781E81E08300BD4252 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB6487791E81E08300BD4252 /* Build configuration list for PBXNativeTarget "deKKoTests" */ = {
 			isa = XCConfigurationList;
@@ -704,6 +721,7 @@
 				EB64877B1E81E08300BD4252 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB64877C1E81E08300BD4252 /* Build configuration list for PBXNativeTarget "deKKoUITests" */ = {
 			isa = XCConfigurationList;
@@ -712,6 +730,7 @@
 				EB64877E1E81E08300BD4252 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
