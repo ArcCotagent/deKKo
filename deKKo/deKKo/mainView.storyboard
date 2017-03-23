@@ -46,7 +46,7 @@
                     <view key="view" contentMode="scaleToFill" id="7b3-iA-Rh5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.29393798112869263" green="0.088276170194149017" blue="0.97222179174423218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.73807023869999999" green="0.9542786593" blue="0.90638844770000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BQe-mi-VbY" userLabel="First Responder" sceneMemberID="firstResponder"/>
