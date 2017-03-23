@@ -20,6 +20,7 @@
 		EB64875C1E81E08300BD4252 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB64875A1E81E08300BD4252 /* LaunchScreen.storyboard */; };
 		EB6487671E81E08300BD4252 /* deKKoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6487661E81E08300BD4252 /* deKKoTests.swift */; };
 		EB6487721E81E08300BD4252 /* deKKoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6487711E81E08300BD4252 /* deKKoUITests.swift */; };
+		EB73DCF71E82E2370092E287 /* mainView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB73DCF61E82E2370092E287 /* mainView.storyboard */; };
 		EBF52A2F1E81F748002438A2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF52A2D1E81F748002438A2 /* LoginViewController.swift */; };
 		EBF52A301E81F748002438A2 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF52A2E1E81F748002438A2 /* PageViewController.swift */; };
 /* End PBXBuildFile section */
@@ -65,6 +66,7 @@
 		EB64876D1E81E08300BD4252 /* deKKoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = deKKoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6487711E81E08300BD4252 /* deKKoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deKKoUITests.swift; sourceTree = "<group>"; };
 		EB6487731E81E08300BD4252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB73DCF61E82E2370092E287 /* mainView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = mainView.storyboard; sourceTree = "<group>"; };
 		EBF52A2D1E81F748002438A2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EBF52A2E1E81F748002438A2 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,6 +151,7 @@
 				EBF52A2C1E81F736002438A2 /* ViewControllers */,
 				EB6487511E81E08300BD4252 /* AppDelegate.swift */,
 				EB6487551E81E08300BD4252 /* Main.storyboard */,
+				EB73DCF61E82E2370092E287 /* mainView.storyboard */,
 				EB6487581E81E08300BD4252 /* Assets.xcassets */,
 				EB64875A1E81E08300BD4252 /* LaunchScreen.storyboard */,
 				EB64875D1E81E08300BD4252 /* Info.plist */,
@@ -302,6 +305,7 @@
 			files = (
 				EB64875C1E81E08300BD4252 /* LaunchScreen.storyboard in Resources */,
 				EB6487591E81E08300BD4252 /* Assets.xcassets in Resources */,
+				EB73DCF71E82E2370092E287 /* mainView.storyboard in Resources */,
 				EB6487571E81E08300BD4252 /* Main.storyboard in Resources */,
 				8E03AB5B1E82E03800711F46 /* GoogleService-Info.plist in Resources */,
 			);
