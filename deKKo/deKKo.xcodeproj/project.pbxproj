@@ -8,16 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		1F4B1CA6CC55E76E2B531281 /* Pods_deKKoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E38CAC1470FAA7AF471F9F /* Pods_deKKoUITests.framework */; };
+		8E03AB5B1E82E03800711F46 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E03AB5A1E82E03800711F46 /* GoogleService-Info.plist */; };
+		8E03AB5C1E82E03800711F46 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E03AB5A1E82E03800711F46 /* GoogleService-Info.plist */; };
+		8E03AB5D1E82E03800711F46 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E03AB5A1E82E03800711F46 /* GoogleService-Info.plist */; };
 		99261E826AA0CCFBFE2E9300 /* Pods_deKKoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E545AFD84920D157D6CAE0D /* Pods_deKKoTests.framework */; };
 		A6F6C1DC05D1AFAFDE733C36 /* Pods_deKKo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660E31CF1B134C33E98982EC /* Pods_deKKo.framework */; };
 		EB6487521E81E08300BD4252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6487511E81E08300BD4252 /* AppDelegate.swift */; };
+		EB6487541E81E08300BD4252 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6487531E81E08300BD4252 /* ViewController.swift */; };
 		EB6487571E81E08300BD4252 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB6487551E81E08300BD4252 /* Main.storyboard */; };
 		EB6487591E81E08300BD4252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB6487581E81E08300BD4252 /* Assets.xcassets */; };
 		EB64875C1E81E08300BD4252 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB64875A1E81E08300BD4252 /* LaunchScreen.storyboard */; };
 		EB6487671E81E08300BD4252 /* deKKoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6487661E81E08300BD4252 /* deKKoTests.swift */; };
 		EB6487721E81E08300BD4252 /* deKKoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6487711E81E08300BD4252 /* deKKoUITests.swift */; };
-		EB6487801E81EC5F00BD4252 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB64877F1E81EC5F00BD4252 /* LoginViewController.swift */; };
-		EB6487851E81ECD300BD4252 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6487841E81ECD300BD4252 /* PageViewController.swift */; };
+		EB73DCF71E82E2370092E287 /* mainView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB73DCF61E82E2370092E287 /* mainView.storyboard */; };
+		EBF52A2F1E81F748002438A2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF52A2D1E81F748002438A2 /* LoginViewController.swift */; };
+		EBF52A301E81F748002438A2 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF52A2E1E81F748002438A2 /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +49,13 @@
 		3AF277B52F94C47D9B413366 /* Pods-deKKoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deKKoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-deKKoUITests/Pods-deKKoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4E545AFD84920D157D6CAE0D /* Pods_deKKoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_deKKoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		660E31CF1B134C33E98982EC /* Pods_deKKo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_deKKo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E03AB5A1E82E03800711F46 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		99E38CAC1470FAA7AF471F9F /* Pods_deKKoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_deKKoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23F5BD342AA411C51EC846A /* Pods-deKKo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deKKo.release.xcconfig"; path = "Pods/Target Support Files/Pods-deKKo/Pods-deKKo.release.xcconfig"; sourceTree = "<group>"; };
 		E2B61EA3A5F638ACB5C556EE /* Pods-deKKoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deKKoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-deKKoTests/Pods-deKKoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB64874E1E81E08300BD4252 /* deKKo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deKKo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6487511E81E08300BD4252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB6487531E81E08300BD4252 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB6487561E81E08300BD4252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB6487581E81E08300BD4252 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB64875B1E81E08300BD4252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,8 +66,9 @@
 		EB64876D1E81E08300BD4252 /* deKKoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = deKKoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6487711E81E08300BD4252 /* deKKoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deKKoUITests.swift; sourceTree = "<group>"; };
 		EB6487731E81E08300BD4252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB64877F1E81EC5F00BD4252 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		EB6487841E81ECD300BD4252 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		EB73DCF61E82E2370092E287 /* mainView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = mainView.storyboard; sourceTree = "<group>"; };
+		EBF52A2D1E81F748002438A2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EBF52A2E1E81F748002438A2 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +125,7 @@
 		EB6487451E81E08300BD4252 = {
 			isa = PBXGroup;
 			children = (
+				8E03AB5A1E82E03800711F46 /* GoogleService-Info.plist */,
 				EB6487501E81E08300BD4252 /* deKKo */,
 				EB6487651E81E08300BD4252 /* deKKoTests */,
 				EB6487701E81E08300BD4252 /* deKKoUITests */,
@@ -139,9 +148,10 @@
 		EB6487501E81E08300BD4252 /* deKKo */ = {
 			isa = PBXGroup;
 			children = (
-				EB6487811E81EC6800BD4252 /* ViewControllers */,
+				EBF52A2C1E81F736002438A2 /* ViewControllers */,
 				EB6487511E81E08300BD4252 /* AppDelegate.swift */,
 				EB6487551E81E08300BD4252 /* Main.storyboard */,
+				EB73DCF61E82E2370092E287 /* mainView.storyboard */,
 				EB6487581E81E08300BD4252 /* Assets.xcassets */,
 				EB64875A1E81E08300BD4252 /* LaunchScreen.storyboard */,
 				EB64875D1E81E08300BD4252 /* Info.plist */,
@@ -167,11 +177,12 @@
 			path = deKKoUITests;
 			sourceTree = "<group>";
 		};
-		EB6487811E81EC6800BD4252 /* ViewControllers */ = {
+		EBF52A2C1E81F736002438A2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				EB64877F1E81EC5F00BD4252 /* LoginViewController.swift */,
-				EB6487841E81ECD300BD4252 /* PageViewController.swift */,
+				EB6487531E81E08300BD4252 /* ViewController.swift */,
+				EBF52A2D1E81F748002438A2 /* LoginViewController.swift */,
+				EBF52A2E1E81F748002438A2 /* PageViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -294,7 +305,9 @@
 			files = (
 				EB64875C1E81E08300BD4252 /* LaunchScreen.storyboard in Resources */,
 				EB6487591E81E08300BD4252 /* Assets.xcassets in Resources */,
+				EB73DCF71E82E2370092E287 /* mainView.storyboard in Resources */,
 				EB6487571E81E08300BD4252 /* Main.storyboard in Resources */,
+				8E03AB5B1E82E03800711F46 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E03AB5C1E82E03800711F46 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +323,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E03AB5D1E82E03800711F46 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,9 +472,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB6487851E81ECD300BD4252 /* PageViewController.swift in Sources */,
-				EB6487801E81EC5F00BD4252 /* LoginViewController.swift in Sources */,
+				EBF52A2F1E81F748002438A2 /* LoginViewController.swift in Sources */,
+				EB6487541E81E08300BD4252 /* ViewController.swift in Sources */,
 				EB6487521E81E08300BD4252 /* AppDelegate.swift in Sources */,
+				EBF52A301E81F748002438A2 /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

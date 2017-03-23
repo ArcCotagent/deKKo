@@ -12,11 +12,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-<<<<<<< HEAD
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="deKKo" customModuleProvider="target" sceneMemberID="viewController">
-=======
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="deKKo" customModuleProvider="target" sceneMemberID="viewController">
->>>>>>> master
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -54,6 +50,9 @@
                                 <state key="normal" title="Login with Gmail">
                                     <color key="titleColor" red="0.9959705472" green="0.99614065890000003" blue="0.99595981840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="logInWithGoogle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XgQ-DT-Nxn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBU-LC-nbn">
                                 <rect key="frame" x="0.0" y="565" width="375" height="68"/>
@@ -81,14 +80,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
-        </scene>
-        <!--Page View Controller-->
-        <scene sceneID="ts2-sS-Kyg">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="97Z-rb-TYk" customClass="PageViewController" customModule="deKKo" customModuleProvider="target" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZFD-Gi-iR4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1027" y="5"/>
         </scene>
     </scenes>
 </document>
