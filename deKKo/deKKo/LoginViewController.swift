@@ -22,6 +22,7 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
         GIDSignIn.sharedInstance().clientID = "963253939831-hod6842oqnllcnvhrmn7s56q7nn2baan.apps.googleusercontent.com"
 
         // Do any additional setup after loading the view.
+        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
     }
 
     override func didReceiveMemoryWarning() {
