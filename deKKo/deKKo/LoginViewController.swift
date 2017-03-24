@@ -9,7 +9,7 @@
 import UIKit
 import GoogleSignIn
 import Google
-
+import FBSDKLoginKit
 class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegate
 {
 
@@ -64,6 +64,32 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
         
     }
 
+    @IBAction func loginWithFB(_ sender: Any)
+    {
+        let loginManager = FBSDKLoginManager()
+        
+        
+        loginManager.logIn(withReadPermissions: nil, from: self)
+        {
+            (loginResult: FBSDKLoginManagerLoginResult?, error: Error?) in
+            
+            if(error != nil)
+            {
+                print(error?.localizedDescription)
+            }
+            else
+            {
+                print("FB Login success")
+                let mainView = UIStoryboard(name: "mainView", bundle: nil)
+                let vc = mainView.instantiateViewController(withIdentifier: "mainViewNavigation")
+                self.present(vc, animated: true, completion: {})
+
+            }
+        }
+        
+
+    }
+    
 
     /*
     // MARK: - Navigation
