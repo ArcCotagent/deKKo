@@ -79,6 +79,10 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
             else
             {
                 print("FB Login success")
+                let mainView = UIStoryboard(name: "mainView", bundle: nil)
+                let vc = mainView.instantiateViewController(withIdentifier: "mainViewNavigation")
+                self.present(vc, animated: true, completion: {})
+
             }
         }
         
