@@ -1,0 +1,122 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'AFNetworking' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for AFNetworking
+
+end
+
+target 'Bolts' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for Bolts
+
+end
+
+target 'FacebookCore' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for FacebookCore
+
+end
+
+target 'FacebookLogin' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for FacebookLogin
+
+end
+
+target 'FacebookShare' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for FacebookShare
+
+end
+
+target 'FBSDKCoreKit' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for FBSDKCoreKit
+
+end
+
+target 'FBSDKLoginKit' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for FBSDKLoginKit
+
+end
+
+target 'FBSDKShareKit' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for FBSDKShareKit
+
+end
+
+target 'GoogleToolboxForMac' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for GoogleToolboxForMac
+
+end
+
+target 'GTMOAuth2' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for GTMOAuth2
+
+end
+
+target 'GTMSessionFetcher' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for GTMSessionFetcher
+
+end
+
+target 'MBProgressHUD' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for MBProgressHUD
+
+end
+
+target 'Pods-deKKo' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Pods-deKKo
+
+end
+
+target 'Pods-deKKoTests' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for Pods-deKKoTests
+
+end
+
+target 'Pods-deKKoUITests' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for Pods-deKKoUITests
+
+end
