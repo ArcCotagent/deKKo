@@ -17,10 +17,10 @@
             </objects>
             <point key="canvasLocation" x="-2058" y="247"/>
         </scene>
-        <!--View Controller-->
+        <!--Camera View Controller-->
         <scene sceneID="DFn-wJ-YTM">
             <objects>
-                <viewController storyboardIdentifier="FirstVC" id="tKS-25-xK8" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstVC" id="tKS-25-xK8" customClass="CameraViewController" customModule="deKKo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XIO-KJ-Rr6"/>
                         <viewControllerLayoutGuide type="bottom" id="guQ-wd-k6z"/>
@@ -28,12 +28,39 @@
                     <view key="view" contentMode="scaleToFill" id="kR8-Ln-CVK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.87126198290000001" blue="0.86387533260000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yHh-o9-gfq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Testing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qz-Kr-Aeo">
+                                        <rect key="frame" x="31" y="29" width="64" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5y-kB-1Rd">
+                                        <rect key="frame" x="272" y="24" width="67" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Camera"/>
+                                        <connections>
+                                            <action selector="switchCameraPosition:" destination="tKS-25-xK8" eventType="touchUpInside" id="ZMX-kw-3po"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                     </view>
+                    <connections>
+                        <outlet property="cameraView" destination="yHh-o9-gfq" id="CsS-NF-Cph"/>
+                        <outlet property="stateL" destination="9qz-Kr-Aeo" id="Mj5-Tg-dyk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zPE-8o-QJc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1167" y="247"/>
+            <point key="canvasLocation" x="-1167.2" y="246.9265367316342"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ykx-iy-DKz">
