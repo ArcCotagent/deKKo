@@ -22,6 +22,8 @@
 		EB6487671E81E08300BD4252 /* deKKoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6487661E81E08300BD4252 /* deKKoTests.swift */; };
 		EB6487721E81E08300BD4252 /* deKKoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6487711E81E08300BD4252 /* deKKoUITests.swift */; };
 		EB73DCF71E82E2370092E287 /* mainView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB73DCF61E82E2370092E287 /* mainView.storyboard */; };
+		EBB1B5B41E8851F000893764 /* VBlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB1B5B31E8851F000893764 /* VBlogViewController.swift */; };
+		EBB1B5B61E88574600893764 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB1B5B51E88574600893764 /* VideoCell.swift */; };
 		EBF52A2F1E81F748002438A2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF52A2D1E81F748002438A2 /* LoginViewController.swift */; };
 		EBF52A301E81F748002438A2 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF52A2E1E81F748002438A2 /* PageViewController.swift */; };
 /* End PBXBuildFile section */
@@ -69,6 +71,8 @@
 		EB6487711E81E08300BD4252 /* deKKoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deKKoUITests.swift; sourceTree = "<group>"; };
 		EB6487731E81E08300BD4252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB73DCF61E82E2370092E287 /* mainView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = mainView.storyboard; sourceTree = "<group>"; };
+		EBB1B5B31E8851F000893764 /* VBlogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VBlogViewController.swift; sourceTree = "<group>"; };
+		EBB1B5B51E88574600893764 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		EBF52A2D1E81F748002438A2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EBF52A2E1E81F748002438A2 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,6 +133,8 @@
 			children = (
 				EBF52A2E1E81F748002438A2 /* PageViewController.swift */,
 				EB498EB91E839EEB005E0836 /* CameraViewController.swift */,
+				EBB1B5B31E8851F000893764 /* VBlogViewController.swift */,
+				EBB1B5B51E88574600893764 /* VideoCell.swift */,
 			);
 			name = Pages;
 			sourceTree = "<group>";
@@ -485,8 +491,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBF52A2F1E81F748002438A2 /* LoginViewController.swift in Sources */,
+				EBB1B5B61E88574600893764 /* VideoCell.swift in Sources */,
 				EB498EBA1E839EEB005E0836 /* CameraViewController.swift in Sources */,
 				EB6487541E81E08300BD4252 /* ViewController.swift in Sources */,
+				EBB1B5B41E8851F000893764 /* VBlogViewController.swift in Sources */,
 				EB6487521E81E08300BD4252 /* AppDelegate.swift in Sources */,
 				EBF52A301E81F748002438A2 /* PageViewController.swift in Sources */,
 			);

@@ -62,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="-1167.2" y="246.9265367316342"/>
         </scene>
-        <!--View Controller-->
+        <!--Blog View Controller-->
         <scene sceneID="Ykx-iy-DKz">
             <objects>
-                <viewController storyboardIdentifier="SecondVC" id="Lpl-gi-rSs" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondVC" id="Lpl-gi-rSs" customClass="VBlogViewController" customModule="deKKo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MtM-Od-Ol5"/>
                         <viewControllerLayoutGuide type="bottom" id="fWS-98-NeT"/>
@@ -73,12 +73,37 @@
                     <view key="view" contentMode="scaleToFill" id="7b3-iA-Rh5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.29393798112869263" green="0.088276170194149017" blue="0.97222179174423218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kbU-3A-Kur">
+                                <rect key="frame" x="0.0" y="163" width="375" height="504"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UKE-er-nSl">
+                                    <size key="itemSize" width="180" height="180"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VideoCell" id="Liu-cK-ueu" customClass="VideoCell" customModule="deKKo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                     </view>
+                    <connections>
+                        <outlet property="CollectionviewView" destination="kbU-3A-Kur" id="hT1-a2-DTy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BQe-mi-VbY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-420" y="239"/>
+            <point key="canvasLocation" x="-420" y="238.83058470764618"/>
         </scene>
     </scenes>
 </document>
