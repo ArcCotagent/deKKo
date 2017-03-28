@@ -82,6 +82,7 @@ PODS:
   - GTMSessionFetcher/Core (1.1.8)
   - GTMSessionFetcher/Full (1.1.8):
     - GTMSessionFetcher/Core (= 1.1.8)
+  - LFLiveKit (2.6)
   - MBProgressHUD (1.0.0)
 
 DEPENDENCIES:
@@ -90,6 +91,7 @@ DEPENDENCIES:
   - FacebookLogin
   - FacebookShare
   - Google/SignIn
+  - LFLiveKit
   - MBProgressHUD
 
 SPEC CHECKSUMS:
@@ -112,8 +114,10 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMOAuth2: 7fc9c10f5c745f4d9850419ea88889fe3baa6b7d
   GTMSessionFetcher: 6f8d8b28b7e345549ac471071608170b31cb4977
+  LFLiveKit: 2219563721f8aa0f188effc3395a06e2d53b23f2
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
 
-PODFILE CHECKSUM: d061f3ab14392fe3478b80f911e9973c9ab4e739
+
+
 
 COCOAPODS: 1.2.0
