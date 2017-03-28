@@ -56,6 +56,10 @@
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>deKKo will require usage of Camera</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>deKKO will require usage of your microphone</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

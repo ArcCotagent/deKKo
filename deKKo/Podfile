@@ -9,9 +9,13 @@ target 'deKKo' do
   pod 'AFNetworking'
   pod 'Google/SignIn'
   pod 'MBProgressHUD'
+
+  pod 'LFLiveKit'
+
   pod 'FacebookCore'
   pod 'FacebookLogin'
   pod 'FacebookShare'
+
 
   target 'deKKoTests' do
     inherit! :search_paths
