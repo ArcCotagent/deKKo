@@ -9,7 +9,7 @@
 import UIKit
 import GoogleSignIn
 import Google
-
+import FBSDKLoginKit
 class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegate
 {
 
@@ -22,26 +22,12 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
         GIDSignIn.sharedInstance().clientID = "963253939831-hod6842oqnllcnvhrmn7s56q7nn2baan.apps.googleusercontent.com"
 
         // Do any additional setup after loading the view.
+        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!)
-    {
-        if error != nil
-        {
-            print(error)
-            return
-        }
-        else
-        {
-            print(user.userID)
-            print(user.profile.email)
-            print(user.profile.imageURL(withDimension: 400))
-        }
-        
     }
     
     
@@ -59,7 +45,51 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
     {
         GIDSignIn.sharedInstance().signIn()
     }
- 
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!)
+    {
+        if error != nil
+        {
+            print(error)
+            return
+        }
+        else
+        {
+            print("userID: \(user.userID)")
+            print("email: \(user.profile.email)")
+            
+            let mainView = UIStoryboard(name: "mainView", bundle: nil)
+            let vc = mainView.instantiateViewController(withIdentifier: "mainViewNavigation")
+            present(vc, animated: true, completion: {})
+        }
+        
+    }
+
+    @IBAction func loginWithFB(_ sender: Any)
+    {
+        let loginManager = FBSDKLoginManager()
+        
+        
+        loginManager.logIn(withReadPermissions: nil, from: self)
+        {
+            (loginResult: FBSDKLoginManagerLoginResult?, error: Error?) in
+            
+            if(error != nil)
+            {
+                print(error?.localizedDescription)
+            }
+            else
+            {
+                print("FB Login success")
+                let mainView = UIStoryboard(name: "mainView", bundle: nil)
+                let vc = mainView.instantiateViewController(withIdentifier: "mainViewNavigation")
+                self.present(vc, animated: true, completion: {})
+
+            }
+        }
+        
+
+    }
+    
 
     /*
     // MARK: - Navigation

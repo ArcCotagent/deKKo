@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+
 		00C05031BBA5BA48A00FE41348F41BDA /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 662A3419152C1F83B8A25276F2227E3C /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		01ADD92ECB53EF89B6D197E9259DB3E0 /* GPUImageTiltShiftFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 98115915A9362295155E53E8035B9D2E /* GPUImageTiltShiftFilter.m */; };
 		02B95A0C402DEBBB37BABFBDC3DC0EBC /* GPUImageOpeningFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DEC4D79CB85CE0D3F28F81BD948BE7 /* GPUImageOpeningFilter.m */; };
@@ -524,9 +525,24 @@
 		FE740641E10EBEB966B91EBA63EB7CBF /* LFLiveVideoConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA1CC072507011D361BFFEC215A4EC2 /* LFLiveVideoConfiguration.m */; };
 		FEF6EACE962EAE70E2EAC5F3C83EF7C8 /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 14ED9277D17C1B4E0DE88856DB4EF9B2 /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FFE510B077F9A8F29566B8F189E730CA /* GPUImageRGBDilationFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 399BC5367C68E336BE738AD2B6085916 /* GPUImageRGBDilationFilter.m */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		031598FABEFD1C23839100DC3801400A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7335E9C9689F3B8A16F063A884748533;
+			remoteInfo = FacebookLogin;
+		};
+		1707295455DE4AF37E9B157E5859EB8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B5AC3C06B783F8674FDB4C0F900B56A;
+			remoteInfo = FBSDKLoginKit;
+		};
 		170F5BE3B9815D61BA81BCBD97BCE075 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -534,13 +550,16 @@
 			remoteGlobalIDString = 681BE6E3D02A43F9BA63777AC435C8FD;
 			remoteInfo = GTMSessionFetcher;
 		};
+
 		1BDBBE37BADE3A9E1A55E4A866D523D5 /* PBXContainerItemProxy */ = {
+
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CF671F7E57B92905F1CC91D036D6B4A7;
 			remoteInfo = AFNetworking;
 		};
+
 		535FD8A145F7FCD52379AF9AEE55959D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -549,36 +568,58 @@
 			remoteInfo = LFLiveKit;
 		};
 		7AEE27F0BD7B75C141DDD3298D6DD9E1 /* PBXContainerItemProxy */ = {
+
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 681BE6E3D02A43F9BA63777AC435C8FD;
 			remoteInfo = GTMSessionFetcher;
 		};
+
 		ACADA09F346703A11B824875C3A058A8 /* PBXContainerItemProxy */ = {
+
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 41FA54D12162DAD51D02FC58A2CD5034;
 			remoteInfo = MBProgressHUD;
 		};
+
 		B070500F0719A5F4BB214A5DE09FB85F /* PBXContainerItemProxy */ = {
+
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B1C4AAFAF49036C7007633DAA3C806AD;
 			remoteInfo = GTMOAuth2;
 		};
+
 		C7D09B388D35EE373210B682E9E526F4 /* PBXContainerItemProxy */ = {
+
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 107A9565F9DF88517DFD3E28C05B2B96;
 			remoteInfo = GoogleToolboxForMac;
 		};
+		D53E3885669EAC4D646F64CE4367BFFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44CAD6CE523055ED339E87154473A254;
+			remoteInfo = Bolts;
+		};
+		FA292E856D14F23EA8F2CFEE5343A139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 593E9479C06FB200807D11AB29EB50BD;
+			remoteInfo = FBSDKCoreKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+
 		003DA93368A2251A6C70CA5597B1C244 /* GTMSessionFetcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GTMSessionFetcher.modulemap; sourceTree = "<group>"; };
 		0065CFEFDC7AF7A5EECD21E8F41D9E43 /* GTMSessionFetcherLogging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherLogging.m; path = Source/GTMSessionFetcherLogging.m; sourceTree = "<group>"; };
 		00E112ED5A2E7D2B92A35EBA48AA0206 /* GPUImageCGAColorspaceFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPUImageCGAColorspaceFilter.h; path = LFLiveKit/Vendor/GPUImage/GPUImageCGAColorspaceFilter.h; sourceTree = "<group>"; };
@@ -1166,6 +1207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80EC06E6FD6D0145D2F744AB36F86D5A /* Foundation.framework in Frameworks */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1174,6 +1216,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				43A7660EE29CB10973AECDBB422329CF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA83C1B0738AA34D3E145122B7E0749 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E193C2FC63008D374DA0B7A8130F4D0C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1186,6 +1236,14 @@
 				72BE65E696A388D4CC0D75BE461FEF1B /* MobileCoreServices.framework in Frameworks */,
 				23EFB184AD12FB1014FFC765CE0D710A /* Security.framework in Frameworks */,
 				CE2EB8CE3176F8A1FAA78CC8786292CC /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CBF451DCA26730C976CC026ED37822C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553C77C3BA656D7F8083C3B56984F521 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1217,6 +1275,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+
 		B26516281C28D6ABF953B1E9940F4495 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1226,6 +1285,7 @@
 				B821B0094BEFA2F3C20FE2691F4E0794 /* Foundation.framework in Frameworks */,
 				5B8CE3B5EA0B46BFEB4EB0B432B54B07 /* UIKit.framework in Frameworks */,
 				9B334E70742FFA82CA306F7F46755188 /* VideoToolbox.framework in Frameworks */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1236,6 +1296,25 @@
 				98DF470CA8F6DD132AFAC1398FCD579C /* CoreGraphics.framework in Frameworks */,
 				1215629D558162CE728B27386DA02D1D /* Foundation.framework in Frameworks */,
 				DA3FBCF3B21EB18151C3BC2645107E0D /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1AF25F8E0C97EBD1D352412A10B3D43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D95EAD0E7564942B4D09ECDB5D6D003B /* Bolts.framework in Frameworks */,
+				39769A9EC4166516233154D16DE69604 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6AA2DA27FA518824659C31885839844 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69F3D835C2BC677CE7CB0AD718791D9B /* Bolts.framework in Frameworks */,
+				C87CF7F54DF37C9958504B656449E795 /* FBSDKCoreKit.framework in Frameworks */,
+				D6EEF0EC96CDD01E3EE79FB9F5BA9440 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1250,6 +1329,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+
 		049C3B811EFFA95608F171C94307D8D5 /* GoogleSymbolUtilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -1309,11 +1389,12 @@
 				FEC389B240A754041BF1A3CBF89FAF4A /* Core */,
 				3F98121D4D061B74700658EFD6E2C60C /* Full */,
 				5814D5DB0DC9583EF82C44C93C353137 /* Support Files */,
+
 			);
-			name = GTMSessionFetcher;
-			path = GTMSessionFetcher;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
+
 		26F15A82F4052414153D11838A2F5986 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1425,11 +1506,13 @@
 				96780A86AFC069857C621593903AD676 /* GoogleToolboxForMac-prefix.pch */,
 				8FB9FABC55CEB624A672F5D27D20FB9D /* GoogleToolboxForMac-umbrella.h */,
 				2A7DA61207EBF1C4AAD3DD97B4D57584 /* Info.plist */,
+
 			);
-			name = "Support Files";
-			path = "../Target Support Files/GoogleToolboxForMac";
+			name = AFNetworking;
+			path = AFNetworking;
 			sourceTree = "<group>";
 		};
+
 		5814D5DB0DC9583EF82C44C93C353137 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1439,11 +1522,12 @@
 				A3306D41AA2DB68BCF3D1C4004EF74FD /* GTMSessionFetcher-prefix.pch */,
 				63399D9B9FD407D77AAFBCE8BCABB2FE /* GTMSessionFetcher-umbrella.h */,
 				F9D989FF718FAC35BB96147EC2528B88 /* Info.plist */,
+
 			);
-			name = "Support Files";
-			path = "../Target Support Files/GTMSessionFetcher";
+			name = "NSString+URLArguments";
 			sourceTree = "<group>";
 		};
+
 		5960774D855C3233AF1DB87315CF4EF2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1898,10 +1982,13 @@
 			children = (
 				545D63CE4662D9D3B82727E45EAEF479 /* GTMSessionFetcher.framework */,
 				21F9AA6A35D8E5E9A3403D5085CC0E0C /* iOS */,
+
 			);
-			name = Frameworks;
+			name = GTMSessionFetcher;
+			path = GTMSessionFetcher;
 			sourceTree = "<group>";
 		};
+
 		60F728B8BFCD9F7E2497B8EEBD51F56F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -2004,26 +2091,19 @@
 				F12804360EE00F647819306AC47802B8 /* Pods-deKKoUITests */,
 			);
 			name = "Targets Support Files";
+
 			sourceTree = "<group>";
 		};
-		8EA206562E0D4330F48EE8B27DD897E3 /* Pods-deKKoTests */ = {
+		71C0CA7FA050EED2BDF8080766A46283 /* GoogleSymbolUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				A00FE82ED22A5A5A08FC3E15DA8022D1 /* Info.plist */,
-				2937D52FE893828EA44523574A89E8A6 /* Pods-deKKoTests.modulemap */,
-				9930574CDB92842FBCAB3221AD7CFDBA /* Pods-deKKoTests-acknowledgements.markdown */,
-				89136146E591584F2250EAB174C19D8D /* Pods-deKKoTests-acknowledgements.plist */,
-				1CEEB6504DD5F7E560098E81E6547219 /* Pods-deKKoTests-dummy.m */,
-				4D4E77A01937881F48CADE761803C1E5 /* Pods-deKKoTests-frameworks.sh */,
-				B91896157337019C07B723EB6B37D656 /* Pods-deKKoTests-resources.sh */,
-				7DE62EE8DB0EE62CF3FCF4247C845787 /* Pods-deKKoTests-umbrella.h */,
-				F0BA6B0B3F13E442CDFFD96A30B08CB2 /* Pods-deKKoTests.debug.xcconfig */,
-				7F6F68CAE8692F41ACE1A258006DD0B2 /* Pods-deKKoTests.release.xcconfig */,
+				1CEDCE773F68758950238B112CD51DD7 /* Frameworks */,
 			);
-			name = "Pods-deKKoTests";
-			path = "Target Support Files/Pods-deKKoTests";
+			name = GoogleSymbolUtilities;
+			path = GoogleSymbolUtilities;
 			sourceTree = "<group>";
 		};
+
 		95AB43DFC8F5B461FF1182E930225112 /* GoogleToolboxForMac */ = {
 			isa = PBXGroup;
 			children = (
@@ -2042,19 +2122,24 @@
 			isa = PBXGroup;
 			children = (
 				73F101E3A515B04A69DD86FE2B8BDC5D /* FirebaseInstanceID.framework */,
+
 			);
-			name = Frameworks;
+			name = Core;
 			sourceTree = "<group>";
 		};
+
 		98E0E78A89C8ABB71D89948F84822A34 /* NSString+URLArguments */ = {
 			isa = PBXGroup;
 			children = (
 				8513C14B1872A90A3A800892B5E9EBE3 /* GTMNSString+URLArguments.h */,
 				C5BE93DFD4D9BD405F34312D4438E5A1 /* GTMNSString+URLArguments.m */,
+
 			);
-			name = "NSString+URLArguments";
+			name = FirebaseAnalytics;
+			path = FirebaseAnalytics;
 			sourceTree = "<group>";
 		};
+
 		98EF2D9B1E60AF1869DCEDA91F04F846 /* Google */ = {
 			isa = PBXGroup;
 			children = (
@@ -2139,10 +2224,12 @@
 				3FFA4C3C82660557081FFF7E842956F1 /* AFURLRequestSerialization.m */,
 				22E050F60FCE27C726DD32DFEFFCAA20 /* AFURLResponseSerialization.h */,
 				F13182A56C07D1F65F7C83D95A1CE813 /* AFURLResponseSerialization.m */,
+
 			);
 			name = Serialization;
 			sourceTree = "<group>";
 		};
+
 		C86B0BF284498CFE6DE7759BA0E40D88 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -2155,19 +2242,58 @@
 			isa = PBXGroup;
 			children = (
 				1CAD29DBB323C5B9F81C5ADF121F256A /* GoogleSymbolUtilities.framework */,
+
 			);
-			name = Frameworks;
+			name = FirebaseCore;
+			path = FirebaseCore;
 			sourceTree = "<group>";
 		};
+		A8F9F4D06E8E06D344FEF54BC164905B /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				62BD119714AD6EAF0B36B9A42E4E8953 /* FIRInstanceID.h */,
+				7F56B07EC5851AF50095474AFF19F900 /* Frameworks */,
+			);
+			name = FirebaseInstanceID;
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		AAD467A2106EFDAC7A903719D7561615 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CE8F8B91AF59C3F982D0831778310286 /* GTMSessionFetcher.h */,
+				06D585331436115D478393C4CFFB38D3 /* GTMSessionFetcher.m */,
+				AD1D9953F155A2517BCFE964055451F9 /* GTMSessionFetcherLogging.h */,
+				7E60908F0C119FFE955AA252532C54F9 /* GTMSessionFetcherLogging.m */,
+				0E5DC965FDA3ADB2CBDE39626F54884B /* GTMSessionFetcherService.h */,
+				CDEF4DE85CDAE29D2AD5C196F5807751 /* GTMSessionFetcherService.m */,
+				0B71F64D11EE7EBF92134D1E70F8EA7D /* GTMSessionUploadFetcher.h */,
+				B08AF0141B543B09955F68226D72487E /* GTMSessionUploadFetcher.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		AD27C99A8DFDAD466AA9E8AD8C6B7866 /* NSDictionary+URLArguments */ = {
+			isa = PBXGroup;
+			children = (
+				F240B158A3CA5FB4D3633AACDC86A3C4 /* GTMNSDictionary+URLArguments.h */,
+				7128411A50832DAA2469F2FF43C796F4 /* GTMNSDictionary+URLArguments.m */,
+			);
+			name = "NSDictionary+URLArguments";
+			sourceTree = "<group>";
+		};
+
 		D202EF23B1E5AEB98644D4ACFD8E2062 /* NSDictionary+URLArguments */ = {
 			isa = PBXGroup;
 			children = (
 				5EDFBF85C6131A3076530A88E3D8A489 /* GTMNSDictionary+URLArguments.h */,
 				DA878B863AC5DBE06EDDF84EA569042F /* GTMNSDictionary+URLArguments.m */,
+
 			);
 			name = "NSDictionary+URLArguments";
 			sourceTree = "<group>";
 		};
+
 		ED0A047E02D6E9242286A5EFAB5485E7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -2176,10 +2302,12 @@
 				EA9305F1011C4B3F1B2C7AD534A986CF /* Core-Module.h */,
 				C796D4C33069001571E4F625640109CD /* SignIn-Module.h */,
 				1C10D363990E6EEB97A439D6D7D97899 /* Frameworks */,
+
 			);
 			name = Core;
 			sourceTree = "<group>";
 		};
+
 		EEEFCD23CFDD9007C584FD69FBE7356A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -2192,6 +2320,7 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/MBProgressHUD";
+
 			sourceTree = "<group>";
 		};
 		F12804360EE00F647819306AC47802B8 /* Pods-deKKoUITests */ = {
@@ -2211,8 +2340,8 @@
 			name = "Pods-deKKoUITests";
 			path = "Target Support Files/Pods-deKKoUITests";
 			sourceTree = "<group>";
-		};
-		F57AD3B818AF6FF7679C5199F2C275A1 /* SignIn */ = {
+		};		
+F57AD3B818AF6FF7679C5199F2C275A1 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
 				6C993268496B2300AF8B3F9EDB4F6FD1 /* SignIn.h */,
@@ -2225,6 +2354,7 @@
 			isa = PBXGroup;
 			children = (
 				CD4F1C3D1C11685D6E806B27CB2200FB /* GGLSignIn.framework */,
+
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2247,6 +2377,7 @@
 			path = "Target Support Files/Pods-deKKo";
 			sourceTree = "<group>";
 		};
+
 		FC02FDECD7C1C297C8F71C715B90E5FE /* Security */ = {
 			isa = PBXGroup;
 			children = (
@@ -2523,6 +2654,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+
 		3866220B08251948E6BC9A0873CED32C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -2559,6 +2691,35 @@
 				F6CA012C4CEB1D996CC12EEADD21CDB1 /* GTMSessionFetcherLogging.h in Headers */,
 				B73A419BA20F2F07A61FE4B0B5192377 /* GTMSessionFetcherService.h in Headers */,
 				741C7EF7CB09028A6C14145A105E82F6 /* GTMSessionUploadFetcher.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E44FB26B76005069D820994F4CC326B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AFE71483C188C376C7B0F37453FDB24 /* BFAppLink.h in Headers */,
+				EA06C3F77DFE7082756541F14946FA59 /* BFAppLink_Internal.h in Headers */,
+				A2474C88093508194AFA348BBEEB3A7A /* BFAppLinkNavigation.h in Headers */,
+				2C7DB0E39CB983C952EEAE7C1DC9AA08 /* BFAppLinkResolving.h in Headers */,
+				2C75633ADA03856BC39A9594FB144F70 /* BFAppLinkReturnToRefererController.h in Headers */,
+				660D3F9F24DBD302A9A6B5A4B0A5F6ED /* BFAppLinkReturnToRefererView.h in Headers */,
+				EDEF0E4FC0C9F00D3265ED2C10D98419 /* BFAppLinkReturnToRefererView_Internal.h in Headers */,
+				0EC86AD4A19CEE78DA15BB13FD64D7B2 /* BFAppLinkTarget.h in Headers */,
+				0CC0EB95B6885B065161D63962F698B1 /* BFCancellationToken.h in Headers */,
+				042CD3EF017770BB04B03CC181E14CF8 /* BFCancellationTokenRegistration.h in Headers */,
+				962AE2FFA8C0A057E3586754E7A751B3 /* BFCancellationTokenSource.h in Headers */,
+				A75E40CA89805C928130C4B8EDBC867D /* BFExecutor.h in Headers */,
+				20EF6C21A196BC087854FD24CF7E2A3C /* BFMeasurementEvent.h in Headers */,
+				2ECBA559A0A5CF2C7208CA1B2652EA56 /* BFMeasurementEvent_Internal.h in Headers */,
+				91E2A116F2CAC6500A8460B30F7A9458 /* BFTask+Exceptions.h in Headers */,
+				67F350233BDECA29E91220A6E62A17FA /* BFTask.h in Headers */,
+				7509627C97BE328428F0D1EA18C9C639 /* BFTaskCompletionSource.h in Headers */,
+				FA76475EE5F044D6AAB7FE7B925268DF /* BFURL.h in Headers */,
+				879EAFCF990451D8559574C34FC8E567 /* BFURL_Internal.h in Headers */,
+				9DBBBC1A74672EAF296FB93424FD883C /* BFWebViewAppLinkResolver.h in Headers */,
+				C1F412EB57F0921E1E887CE615AB6F5C /* Bolts-umbrella.h in Headers */,
+				3CD519CC6BB85C1A0EE7D219FA2BFA69 /* Bolts.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2603,6 +2764,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E29EE0CF7CC2EAE5F945111622F112ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEBD3F220541A0259A520B129753C14B /* _FBSDKLoginRecoveryAttempter.h in Headers */,
+				23DC7B0771BFCBF4F390A1512A4389BB /* FBSDKLoginButton.h in Headers */,
+				F1DFF2EB4A465E062A9DC02F898055F4 /* FBSDKLoginCompletion+Internal.h in Headers */,
+				6AC41B1E09810EEA67B5B4D0DC755AEA /* FBSDKLoginCompletion.h in Headers */,
+				C708D1FB8EA26A9BF0F22504D7AD75FB /* FBSDKLoginConstants.h in Headers */,
+				6A0F628C660E54820B62EBFDF7A09FA6 /* FBSDKLoginError.h in Headers */,
+				65C5C986C908AF785B101F3670B767BF /* FBSDKLoginKit+Internal.h in Headers */,
+				1D4014106E551F78D6C58171B5F2D01E /* FBSDKLoginKit-umbrella.h in Headers */,
+				53E67D7E1813EF3738876A6B1A8CC9EE /* FBSDKLoginKit.h in Headers */,
+				2C707AF3B473D6B1A0EF747C3DBBDFD0 /* FBSDKLoginManager+Internal.h in Headers */,
+				2B5E5A6D3513EF546CD1D6A692AC2B8B /* FBSDKLoginManager.h in Headers */,
+				1B4DEC3F5E9F3592EC88B1FD97644468 /* FBSDKLoginManagerLogger.h in Headers */,
+				D1879F2E48F69322FB5F8D6DFEFC2D34 /* FBSDKLoginManagerLoginResult+Internal.h in Headers */,
+				3167BDF6AC24E25433329F002F19A2E4 /* FBSDKLoginManagerLoginResult.h in Headers */,
+				8D3044AA39B33DD7044881C4EDA0C25A /* FBSDKLoginTooltipView.h in Headers */,
+				2C490CCDAD0A0A43CCE124EBBD84317D /* FBSDKLoginUtility.h in Headers */,
+				A7C4728EFE0A085F3309C6C86761F747 /* FBSDKTooltipView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB79EE0C5C96708852465816A53300E2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED5FAC4013F564F6B63CFB8D98BE3F01 /* FacebookShare-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -2620,6 +2813,7 @@
 			);
 			name = GoogleToolboxForMac;
 			productName = GoogleToolboxForMac;
+
 			productReference = 436718B06A094981B858555D250FF3BA /* GoogleToolboxForMac.framework */;
 			productType = "com.apple.product-type.framework";
 		};
@@ -2637,8 +2831,9 @@
 			);
 			name = "Pods-deKKoUITests";
 			productName = "Pods-deKKoUITests";
+
 			productReference = 23CC2A6BDF40B55123B43725084343E8 /* Pods_deKKoUITests.framework */;
-			productType = "com.apple.product-type.framework";
+		productType = "com.apple.product-type.framework";
 		};
 		41FA54D12162DAD51D02FC58A2CD5034 /* MBProgressHUD */ = {
 			isa = PBXNativeTarget;
@@ -2654,7 +2849,9 @@
 			);
 			name = MBProgressHUD;
 			productName = MBProgressHUD;
+
 			productReference = F229E99E1BA56292EB45CC4BF54BB48E /* MBProgressHUD.framework */;
+
 			productType = "com.apple.product-type.framework";
 		};
 		681BE6E3D02A43F9BA63777AC435C8FD /* GTMSessionFetcher */ = {
@@ -2671,6 +2868,7 @@
 			);
 			name = GTMSessionFetcher;
 			productName = GTMSessionFetcher;
+
 			productReference = 4FA0C2D0D2486B72CCB21C2C408AB246 /* GTMSessionFetcher.framework */;
 			productType = "com.apple.product-type.framework";
 		};
@@ -2690,6 +2888,7 @@
 			);
 			name = GTMOAuth2;
 			productName = GTMOAuth2;
+
 			productReference = 8F3B4E739768955E48CDBF4FCEF0B6AD /* GTMOAuth2.framework */;
 			productType = "com.apple.product-type.framework";
 		};
@@ -2724,6 +2923,7 @@
 			);
 			name = AFNetworking;
 			productName = AFNetworking;
+
 			productReference = B5EA3DEAC1BFE2212E88598B33BD868F /* AFNetworking.framework */;
 			productType = "com.apple.product-type.framework";
 		};
@@ -2738,6 +2938,7 @@
 			buildRules = (
 			);
 			dependencies = (
+
 				EF55FC87108FCBF70E7D39A113EDFDE3 /* PBXTargetDependency */,
 				DEE4066F96D23428BB230025BC3EF8D1 /* PBXTargetDependency */,
 				F176D590BDE9A165B3F77084EBAC9581 /* PBXTargetDependency */,
@@ -2748,6 +2949,36 @@
 			name = "Pods-deKKo";
 			productName = "Pods-deKKo";
 			productReference = D1D8D66DDCDA3539B221D9EC270D8EAE /* Pods_deKKo.framework */;
+
+			productType = "com.apple.product-type.framework";
+		};
+		E6647313284321BF13378825FE25B304 /* Pods-deKKo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D869CDDC288DF829752C9A2E5A96A78 /* Build configuration list for PBXNativeTarget "Pods-deKKo" */;
+			buildPhases = (
+				21920B6F2910D763485FD4DB7A7358CE /* Sources */,
+				4FA83C1B0738AA34D3E145122B7E0749 /* Frameworks */,
+				598BD9D7A4C4408E89328CB7FDEC0932 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F1C9C23F50268DD101B60B1D3AFEED7 /* PBXTargetDependency */,
+				CE358D449EC219E41546C577FA388AB7 /* PBXTargetDependency */,
+				E94E4CCE0B3CF99604CD6C67E3AC13E3 /* PBXTargetDependency */,
+				7B8E7A5B864FFBE7B3C4A55DFD716E6C /* PBXTargetDependency */,
+				B232BACCF0324C93D14E030785C6120B /* PBXTargetDependency */,
+				E35B3A7693115FB944D662A77CD02B26 /* PBXTargetDependency */,
+				4A4CC1BB5D7FEB4C744EAD1685B385CD /* PBXTargetDependency */,
+				5027CA0FD16CC3D1ADA90A063E10D173 /* PBXTargetDependency */,
+				EE1C882EA19B0116649C990C64F18862 /* PBXTargetDependency */,
+				ED2998A29E98BD71F4920D35AB1163F7 /* PBXTargetDependency */,
+				FD99694B3A150AAE192A78258C23BE99 /* PBXTargetDependency */,
+				C8464D612D1E1F7FF3CAF2CDCDD40C04 /* PBXTargetDependency */,
+			);
+			name = "Pods-deKKo";
+			productName = "Pods-deKKo";
+			productReference = F32370033845611BBA746778B9D912C0 /* Pods_deKKo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FCE256514846CA86582BF4A29057833F /* Pods-deKKoTests */ = {
@@ -2764,7 +2995,9 @@
 			);
 			name = "Pods-deKKoTests";
 			productName = "Pods-deKKoTests";
+
 			productReference = 19F83A4BD512C4E505BFBA26ED258CF9 /* Pods_deKKoTests.framework */;
+
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -2784,17 +3017,29 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+
 			productRefGroup = 4C22A8D288250B502694A4B0A2910C4F /* Products */;
+
+	
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				CF671F7E57B92905F1CC91D036D6B4A7 /* AFNetworking */,
+				44CAD6CE523055ED339E87154473A254 /* Bolts */,
+				DDBCFDE490CDFDABF6F16A26F346932D /* FacebookCore */,
+				7335E9C9689F3B8A16F063A884748533 /* FacebookLogin */,
+				A7FEAA14E89971698ACA148F7F7202F2 /* FacebookShare */,
+				593E9479C06FB200807D11AB29EB50BD /* FBSDKCoreKit */,
+				5B5AC3C06B783F8674FDB4C0F900B56A /* FBSDKLoginKit */,
+				332F91393FB1DE033D370B4CEDDD5FCF /* FBSDKShareKit */,
 				107A9565F9DF88517DFD3E28C05B2B96 /* GoogleToolboxForMac */,
 				B1C4AAFAF49036C7007633DAA3C806AD /* GTMOAuth2 */,
 				681BE6E3D02A43F9BA63777AC435C8FD /* GTMSessionFetcher */,
 				C7506D193EE0DE7D8698F98A27429AB7 /* LFLiveKit */,
 				41FA54D12162DAD51D02FC58A2CD5034 /* MBProgressHUD */,
+
 				DD7B590B4777D7D689A23F9C862B9165 /* Pods-deKKo */,
+
 				FCE256514846CA86582BF4A29057833F /* Pods-deKKoTests */,
 				233DE3C3414E6DC4933C2A7E6657B3BD /* Pods-deKKoUITests */,
 			);
@@ -2802,6 +3047,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BA661EC2532E94EC16C3024B8A822B6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AE5D7DC2777A0E2D846B9233BC544CC /* FacebookSDKStrings.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E22DB137D55176346F8380E16536A19E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2824,6 +3077,93 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		21920B6F2910D763485FD4DB7A7358CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05A06615E467F8C5634130670AE0951B /* Pods-deKKo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21FF0FB8310427F78D52ED1F7D1ABB90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9BB229C7DE7F2E615DE757CDD869235 /* _FBSDKTemporaryErrorRecoveryAttempter.m in Sources */,
+				859A04F6667E10AB44AF142CF021B05F /* FBSDKAccessToken.m in Sources */,
+				400C1E7CCD31CE1B41318303117D5C60 /* FBSDKAccessTokenCache.m in Sources */,
+				26D37E30880FF969A58899F7DF06D937 /* FBSDKAccessTokenCacheV3.m in Sources */,
+				186BC31FFDB6783C3A0DED0A2D7E99F1 /* FBSDKAccessTokenCacheV3_17.m in Sources */,
+				5907D3FCEE6018B232CD4C05801C9944 /* FBSDKAccessTokenCacheV3_21.m in Sources */,
+				5FFD2E9637BEC39BDD4E6905E4063FBA /* FBSDKAccessTokenCacheV4.m in Sources */,
+				CC7CC264F9B235B1661D2EFEDDB1B1B4 /* FBSDKAppEvents.m in Sources */,
+				5EDB8154DF949B40922EABE2AFB6043E /* FBSDKAppEventsDeviceInfo.m in Sources */,
+				CAB81E9CBC2954CC584CD6163D147F0B /* FBSDKAppEventsState.m in Sources */,
+				1E8A8E8F10C727991C9BFB09F80515DE /* FBSDKAppEventsStateManager.m in Sources */,
+				3CA19115CBC1EFB890D52722C6062749 /* FBSDKAppEventsUtility.m in Sources */,
+				0717FDD115D693322D1239F5E861B530 /* FBSDKApplicationDelegate.m in Sources */,
+				485BD0189666612BE5B4B21B0A38C8C5 /* FBSDKAppLinkResolver.m in Sources */,
+				2F72A75C5E1A50D0717A9E333ADBFFC0 /* FBSDKAppLinkUtility.m in Sources */,
+				87A544DBE1F5052744CB3BD578C13FE1 /* FBSDKAudioResourceLoader.m in Sources */,
+				BCF3AA6FAF0420F320F5F30AA164B7C5 /* FBSDKBase64.m in Sources */,
+				6B5B1AC0DDB42B88F19CE5E71463AAE0 /* FBSDKBoltsMeasurementEventListener.m in Sources */,
+				7E15DAD81FC2F58F9D4696235B143668 /* FBSDKBridgeAPICrypto.m in Sources */,
+				3ACDE4B04FACCE997852E0D33AC852DC /* FBSDKBridgeAPIProtocolNativeV1.m in Sources */,
+				1DC125745A63E785FC2AFE265AAEA661 /* FBSDKBridgeAPIProtocolWebV1.m in Sources */,
+				71D7622FF2B08332B2CFBC897336893A /* FBSDKBridgeAPIProtocolWebV2.m in Sources */,
+				FB9CF2E378714596DF08FD5AB29BB6F1 /* FBSDKBridgeAPIRequest.m in Sources */,
+				F942446E56639759453949A935011E81 /* FBSDKBridgeAPIResponse.m in Sources */,
+				0EED37ABFA6DEA08C1B6AB69314D9219 /* FBSDKButton.m in Sources */,
+				F52F69646F96C09F59E7765F44899CE1 /* FBSDKCloseIcon.m in Sources */,
+				25895F16C324C50FDD112D424B2ED034 /* FBSDKColor.m in Sources */,
+				57877F167E1966EF5B3DE9A4F442F6AB /* FBSDKConstants.m in Sources */,
+				39D3824BF7590B590BA2A0B45DE587C7 /* FBSDKContainerViewController.m in Sources */,
+				EE63ADA3CB06122667AC25B0C7B50B74 /* FBSDKCoreKit-dummy.m in Sources */,
+				FBD3A184AC3BE0F7734044A9B6D49559 /* FBSDKCrypto.m in Sources */,
+				19CFDBE86A5E044119B22B71F4346838 /* FBSDKDeviceRequestsHelper.m in Sources */,
+				D46D3B1C86CA2D70A126EE0696FD24A2 /* FBSDKDialogConfiguration.m in Sources */,
+				2DF65B1F59CF6C93E5C5AD08F4DEBBCE /* FBSDKDynamicFrameworkLoader.m in Sources */,
+				E883348B615F8CF5EFF4C7F8369F6A34 /* FBSDKError.m in Sources */,
+				DA0ECDD1E289066EDCFA26016175A4FC /* FBSDKErrorConfiguration.m in Sources */,
+				A4EC6300B1D3E1BC5E2AC6D246E30C6D /* FBSDKErrorRecoveryAttempter.m in Sources */,
+				AE6AF2A0E423F60ACA9F19718ACF0C5C /* FBSDKErrorRecoveryConfiguration.m in Sources */,
+				326DD3261D2D11425D07BFD25DC7146D /* FBSDKGraphErrorRecoveryProcessor.m in Sources */,
+				86E8ABFEBA034118BC6CF96A335F477A /* FBSDKGraphRequest.m in Sources */,
+				39CA34DF25E8230BFFF1846F94260FB8 /* FBSDKGraphRequestBody.m in Sources */,
+				810F8C750E0BDC2B9118A8705C7CFC80 /* FBSDKGraphRequestConnection.m in Sources */,
+				5A669A6EBA631409E1D38CA075C26C17 /* FBSDKGraphRequestDataAttachment.m in Sources */,
+				394E61475B55A9A80EC0703F19B8BB5C /* FBSDKGraphRequestMetadata.m in Sources */,
+				6F3CC55D37A263B493BADFC54E1351CE /* FBSDKGraphRequestPiggybackManager.m in Sources */,
+				043DF79F717E6CBABA1A13E077695D6F /* FBSDKIcon.m in Sources */,
+				397750B1D11EE03FF07C561C7AB06B26 /* FBSDKImageDownloader.m in Sources */,
+				717A02828F1F24E148C67CFCAF3105D9 /* FBSDKInternalUtility.m in Sources */,
+				2DF26545F949E14CEEF82BE1826354B7 /* FBSDKKeychainStore.m in Sources */,
+				9557DDA64DF8D749EEAD1BACD3CFE501 /* FBSDKKeychainStoreViaBundleID.m in Sources */,
+				6B07681D9F630CEC5F528FF7FBC70804 /* FBSDKLogger.m in Sources */,
+				97E9CD9D5EE1D6CF00A3FE991C9CDE1E /* FBSDKLogo.m in Sources */,
+				98A68A92AB284DAB5A4573A562D06D3F /* FBSDKMaleSilhouetteIcon.m in Sources */,
+				9E59D52FA565E1C14E4264B23BD2C2F6 /* FBSDKMath.m in Sources */,
+				7B614AABA69B4868515ACD4F72A62483 /* FBSDKMonotonicTime.m in Sources */,
+				DB77365F96BE2B046B48DED0D3B8A9C3 /* FBSDKPaymentObserver.m in Sources */,
+				C7B97492BB0EBB8C4E322EA556E03191 /* FBSDKProfile.m in Sources */,
+				2B38D29D49E76F5DAB0A2F09701B8C04 /* FBSDKProfilePictureView.m in Sources */,
+				A72E820B078DD741530A166C74FECF87 /* FBSDKServerConfiguration.m in Sources */,
+				3A642488D09D4E11019C5280DDB76F88 /* FBSDKServerConfigurationManager.m in Sources */,
+				521115688F7E9F9ED72C39BA9D05E182 /* FBSDKSettings.m in Sources */,
+				65A56168D45B665F42825D3C5972D4E4 /* FBSDKSystemAccountStoreAdapter.m in Sources */,
+				7E75E0BB6C095D73EF15245983FB9D48 /* FBSDKTestUsersManager.m in Sources */,
+				AB449D19A90A709FFD589C97F00F1B8A /* FBSDKTimeSpentData.m in Sources */,
+				1A3124E7D2263BCC0498EA18DA842773 /* FBSDKTriStateBOOL.m in Sources */,
+				84D674F25147A415DBF3B86256B90B04 /* FBSDKTypeUtility.m in Sources */,
+				E905A483416455C0E8BF45E9218E47B5 /* FBSDKURLConnection.m in Sources */,
+				C0C009B881DF8BC98A91AB145988AB71 /* FBSDKURLSessionTask.m in Sources */,
+				BB667010D17479F228ECC2087404E656 /* FBSDKUtility.m in Sources */,
+				3A8F508533ADB6D1CF80CD4A1ACB2C40 /* FBSDKViewImpressionTracker.m in Sources */,
+				81BB869D81785738050FC6DB20CDE9A5 /* FBSDKWebDialog.m in Sources */,
+				468A777F552BD0567796A5A05F2B6748 /* FBSDKWebDialogView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		222F0DC2D2D238CAB82346DE258E5472 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2835,6 +3175,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+
 		3B55EE17515F48A5091F063101FD9B43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2857,8 +3198,8 @@
 				BA7F6EAA26CF9D5C1BCA6FCC5F22BD7E /* GTMSessionUploadFetcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4382D6B7D36A7FC5F2226E8A5AB9E456 /* Sources */ = {
+		};		
+4382D6B7D36A7FC5F2226E8A5AB9E456 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3063,6 +3404,7 @@
 				A9A72CDC7B62B0638C4BA4EE13CC7222 /* NSMutableArray+LFAdd.m in Sources */,
 				CDD9BB2B76C087A83AD0AA77D55C99E9 /* parseurl.c in Sources */,
 				15191B3E011A76504811050F34650B74 /* rtmp.c in Sources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3071,6 +3413,58 @@
 			buildActionMask = 2147483647;
 			files = (
 				99082842D8B17CE51192CF2C66268539 /* Pods-deKKoUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		680F6C411F89A72F72D7C854DDE1536B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				803FCFEDC3D53670BDF69214466CD7F2 /* AppInvite.DeliveryMethod.swift in Sources */,
+				01C4DFFD2F91841DE430581E098B469C /* AppInvite.Dialog.swift in Sources */,
+				FFE32860C532F614CF9F093F420BAB3D /* AppInvite.PromoCode.swift in Sources */,
+				B2542F8FC11CF298CD235045A23BC082 /* AppInvite.Result.swift in Sources */,
+				2B79E7EF2B1D6F0C020E922B6B29270A /* AppInvite.SDKDelegate.swift in Sources */,
+				98FA6DF51AAD3780D95E81FF4054742E /* AppInvite.swift in Sources */,
+				99E50182501AEFCA2D66EC2639043762 /* Constants.Internal.swift in Sources */,
+				960E94AE5E7D4F32521ABDD07F708F92 /* ContentBridger.swift in Sources */,
+				122EF003141101531EF6A08CDC66214E /* ContentProtocol.swift in Sources */,
+				B7154DE151B6EBF1B11C8D48010381D3 /* ContentSharingDialogProtocol.swift in Sources */,
+				21069CF6C96E71CF6B58E890B2FE4EBB /* ContentSharingProtocol.swift in Sources */,
+				B82ABC7756CC9FAE20FE26863BEDF7C0 /* ContentSharingResultProtocol.swift in Sources */,
+				B7D114F07C4063C5FB141BB583B5224B /* FacebookShare-dummy.m in Sources */,
+				F585C4B9C68D1F3D4974D597DACFADD6 /* GameRequest.ActionType.swift in Sources */,
+				4E1B7E70E1FF28FFFF234FCC9828D462 /* GameRequest.Dialog.swift in Sources */,
+				5BE99F6AD309E4C4C497D161EB1BCC8D /* GameRequest.Recipient.swift in Sources */,
+				C26CEA87666D771FF53A518DA749EFA3 /* GameRequest.RecipientsFilter.swift in Sources */,
+				75048FED08B4B29A18FBF299F0C3CF88 /* GameRequest.Result.swift in Sources */,
+				AEE4C90256465744BB8C74E1DE89FDC7 /* GameRequest.SDKDelegate.swift in Sources */,
+				15D40CB037446ACFE7C6BEA6073F5047 /* GameRequest.swift in Sources */,
+				040F639E405564FCC5D6D058FD114BDD /* GraphSharer.swift in Sources */,
+				9AF9FDAD14E4329657031EE841001F71 /* Hashtag.swift in Sources */,
+				267F57BA4BF6D6CD8D8095208787CF91 /* LikableObject.swift in Sources */,
+				67A673C2ADAE83041B59486B1E082DE5 /* LikeButton.swift in Sources */,
+				610FBFE9733605B3458799E66A675B6D /* LikeControl.AuxilaryStyle.swift in Sources */,
+				B1FAF0E36B6C4F88D7CC13671A2E2FA8 /* LikeControl.swift in Sources */,
+				485EE78F5DB4937CAF55B977B16AD7D5 /* LinkShareContent.swift in Sources */,
+				7F1AE6FF4F37FE711560E61EDDE09938 /* MessageDialog.swift in Sources */,
+				FD6CA1072FB6396649B2A2003FAF04F3 /* OpenGraphAction.swift in Sources */,
+				155FEB53B730BF75369CE3AC26C96EAE /* OpenGraphObject.swift in Sources */,
+				94649C638A8911FF3F72653D8B59A538 /* OpenGraphPropertyContaining.swift in Sources */,
+				B0B3626263A6210CB7AAACCBF6C99AF2 /* OpenGraphPropertyName.swift in Sources */,
+				0FB06FF934202DD4C34B022E7815791A /* OpenGraphPropertyValue.swift in Sources */,
+				85134559525D42CA97C74A587CF251B7 /* OpenGraphShareContent.swift in Sources */,
+				ADE02F80E56CC26CE635AB0AF92CD4BE /* Photo.swift in Sources */,
+				1759CFA30E534916EDEC3197F0B6250B /* PhotoShareContent.swift in Sources */,
+				3283CE18CD86CC4D05D58077AD31ABD7 /* PostSharingResult.swift in Sources */,
+				815BC0CE75BCE8FF480F6CAE4A17C056 /* SDKSharingDelegateBridge.swift in Sources */,
+				08AC79A307E6034E65CB8867A0C9E69D /* SendButton.swift in Sources */,
+				B2C0405B28D8B8AB54D3705C38D4DA45 /* ShareButton.swift in Sources */,
+				5195362BAFAFA1A7E5C7AC0AFBABCB3F /* ShareDialog.swift in Sources */,
+				541544A439EB59BE74C1E4F1E2347821 /* ShareDialogMode.swift in Sources */,
+				D39C85CE600408A5F402DD273DEF9939 /* ShareError.swift in Sources */,
+				8D3634A573789FA7B73784A485E02160 /* Video.swift in Sources */,
+				82FA4190013C0E2FA32B8A5C82F2C54C /* VideoShareContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3097,11 +3491,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+
 		9DE0421E02AE412C2F257249B5BDBC6E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0E21D39C97D9E30B14E6C6D3D4A57304 /* Pods-deKKo-dummy.m in Sources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3117,6 +3513,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+
 		0CF34051D475C8B0061B82ADBC81274E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MBProgressHUD;
@@ -3158,13 +3555,16 @@
 			name = GTMSessionFetcher;
 			target = 681BE6E3D02A43F9BA63777AC435C8FD /* GTMSessionFetcher */;
 			targetProxy = 7AEE27F0BD7B75C141DDD3298D6DD9E1 /* PBXContainerItemProxy */;
+
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		05E04CFBA4D993878803362CB34062EC /* Release */ = {
 			isa = XCBuildConfiguration;
+
 			baseConfigurationReference = 99226E7D290C3C23A26B77F584A35700 /* AFNetworking.xcconfig */;
+
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3263,7 +3663,9 @@
 		};
 		183460AFCF2036D187FA59E5ED8ADADA /* Release */ = {
 			isa = XCBuildConfiguration;
+
 			baseConfigurationReference = 844045EF81FE8B88577D0CFE67789302 /* GTMOAuth2.xcconfig */;
+
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3328,9 +3730,108 @@
 			};
 			name = Debug;
 		};
+		25260AFB39630A4DF6A0D2DC32E34251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D991A4D0F0EB1BC25015FF9093D2FA6A /* Bolts.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Bolts/Bolts-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Bolts/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Bolts/Bolts.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Bolts;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		29A44FE4A4B9C194A0E3AC280C7D2C68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 922F5B6B2AAD00C5A2D0876BA10A7519 /* FacebookLogin.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FacebookLogin/FacebookLogin-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FacebookLogin/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FacebookLogin/FacebookLogin.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FacebookLogin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2A05B33125C8652AA7BD163FC8150F75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8011148EA200D9A5573CC1C1644EA04F /* FacebookCore.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FacebookCore/FacebookCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FacebookCore/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FacebookCore/FacebookCore.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FacebookCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		2B11218DB6B2B166591BA5D750E790E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+
 			baseConfigurationReference = 9C81A163B1625DDB9817B5C99117ADB7 /* GTMSessionFetcher.xcconfig */;
+
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3359,6 +3860,38 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		336D6DE3F2A4144E625A9EC43BD0AB7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EC27B13E30D624576FC9A2A4D3FD349 /* FBSDKCoreKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FBSDKCoreKit/FBSDKCoreKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSDKCoreKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSDKCoreKit/FBSDKCoreKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FBSDKCoreKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		35465A6D7021442FC70955B030C3B100 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -3397,7 +3930,7 @@
 		};
 		3AF861AEADA89A377F12178D493BED95 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 070AF9DBF471BD6004C89E130A490ECE /* GoogleToolboxForMac.xcconfig */;
+			baseConfigurationReference = FD8B3CE879DA9658E251BF014D66E2E1 /* GoogleToolboxForMac.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3427,9 +3960,73 @@
 			};
 			name = Debug;
 		};
+		498D3E4A1C1E786EC4E83A2D732817B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D665517FA224AB4AEEDADD3044D7DE74 /* FacebookShare.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FacebookShare/FacebookShare-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FacebookShare/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FacebookShare/FacebookShare.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FacebookShare;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5A4DDDDE0167AD71CE7B643E32024562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 922F5B6B2AAD00C5A2D0876BA10A7519 /* FacebookLogin.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FacebookLogin/FacebookLogin-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FacebookLogin/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FacebookLogin/FacebookLogin.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FacebookLogin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		5A7D61BFAF476FFEAAC1C3C5B50DD91C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4113AF0408B6E2023B5364E804CB400 /* MBProgressHUD.xcconfig */;
+			baseConfigurationReference = 626DB700D99FE5B23D83E4E64B5D044E /* MBProgressHUD.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3461,7 +4058,7 @@
 		};
 		5C986ABFE01FE3F7FFB2DEE072A0FB90 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C81A163B1625DDB9817B5C99117ADB7 /* GTMSessionFetcher.xcconfig */;
+			baseConfigurationReference = 635042903E0D68B0C85CA02666D6356E /* GTMSessionFetcher.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3490,6 +4087,38 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		647ED77E8592726419569809E9747709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69DAFD9EA0A131C9FB44A871F95EA3CC /* FBSDKShareKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FBSDKShareKit/FBSDKShareKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSDKShareKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSDKShareKit/FBSDKShareKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FBSDKShareKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		673254EEAF0B5BF4596080C749645884 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -3531,9 +4160,46 @@
 			};
 			name = Release;
 		};
-		73E10C4B801E46BC555268B1BEDC4184 /* Debug */ = {
+		6EE8C98A8ECBF9F6CA2CEEE7B6A46E1E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 844045EF81FE8B88577D0CFE67789302 /* GTMOAuth2.xcconfig */;
+
+			baseConfigurationReference = 070AF9DBF471BD6004C89E130A490ECE /* GoogleToolboxForMac.xcconfig */;
+
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FacebookShare/FacebookShare-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FacebookShare/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FacebookShare/FacebookShare.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FacebookShare;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+
+		5A7D61BFAF476FFEAAC1C3C5B50DD91C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4113AF0408B6E2023B5364E804CB400 /* MBProgressHUD.xcconfig */;
+
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3562,6 +4228,77 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		7E3795656CE05962C4D7EE8FACF46FD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+
+			baseConfigurationReference = 9C81A163B1625DDB9817B5C99117ADB7 /* GTMSessionFetcher.xcconfig */;
+
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FBSDKLoginKit/FBSDKLoginKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSDKLoginKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSDKLoginKit/FBSDKLoginKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FBSDKLoginKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8705D8503BA588BD7AC491A537B0DCA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+
+			baseConfigurationReference = 844045EF81FE8B88577D0CFE67789302 /* GTMOAuth2.xcconfig */;
+
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-deKKo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-deKKo/Pods-deKKo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_deKKo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		7937B05E93518E49475D363B92650A9F /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -3597,7 +4334,9 @@
 		};
 		881B19BB9961D509DACE94450066151E /* Release */ = {
 			isa = XCBuildConfiguration;
+
 			baseConfigurationReference = 070AF9DBF471BD6004C89E130A490ECE /* GoogleToolboxForMac.xcconfig */;
+
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3626,10 +4365,43 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		961A8500BAE6CF4A59EF4AD36BB58C36 /* Release */ = {
+		};		
+961A8500BAE6CF4A59EF4AD36BB58C36 /* Release */ = {
+
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC8DF50438CDB09159D57D2A51BFC1B8 /* Pods-deKKo.release.xcconfig */;
+			baseConfigurationReference = 4EC27B13E30D624576FC9A2A4D3FD349 /* FBSDKCoreKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FBSDKCoreKit/FBSDKCoreKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSDKCoreKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSDKCoreKit/FBSDKCoreKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FBSDKCoreKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AFC08387F44E7AD0F5A11E0365C20ACC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69DAFD9EA0A131C9FB44A871F95EA3CC /* FBSDKShareKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3642,20 +4414,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-deKKo/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FBSDKShareKit/FBSDKShareKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSDKShareKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-deKKo/Pods-deKKo.modulemap";
+				MODULEMAP_FILE = "Target Support Files/FBSDKShareKit/FBSDKShareKit.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_deKKo;
+				PRODUCT_NAME = FBSDKShareKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -3699,7 +4468,9 @@
 		};
 		D75065D84EBB32D4AF0CA10C29B62DBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+
 			baseConfigurationReference = E4113AF0408B6E2023B5364E804CB400 /* MBProgressHUD.xcconfig */;
+
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3764,9 +4535,43 @@
 			};
 			name = Release;
 		};
+		DBD6299CA8912E2683E5EF56675D1BC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A764D0209E1A2E6E03B45366E6E5BBF6 /* FBSDKLoginKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FBSDKLoginKit/FBSDKLoginKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSDKLoginKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSDKLoginKit/FBSDKLoginKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FBSDKLoginKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		E0695E55897F09C6C94B443561B22DA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+
 			baseConfigurationReference = 99226E7D290C3C23A26B77F584A35700 /* AFNetworking.xcconfig */;
+
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -3840,9 +4645,83 @@
 			};
 			name = Debug;
 		};
+		EBAE90F9E30802DCCF5D569ED0531ABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8011148EA200D9A5573CC1C1644EA04F /* FacebookCore.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FacebookCore/FacebookCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FacebookCore/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FacebookCore/FacebookCore.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FacebookCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F6507D54050B922927215A1C8738F80E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D991A4D0F0EB1BC25015FF9093D2FA6A /* Bolts.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Bolts/Bolts-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Bolts/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Bolts/Bolts.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Bolts;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0F78B4868885D9E36AFE233BBB23EAD5 /* Build configuration list for PBXNativeTarget "FBSDKShareKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				647ED77E8592726419569809E9747709 /* Debug */,
+				AFC08387F44E7AD0F5A11E0365C20ACC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		23502393E3B364131FBBD0377EA7658B /* Build configuration list for PBXNativeTarget "Pods-deKKoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -3888,11 +4767,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+
 		C13696FF5F2729201327DFEEA2F60562 /* Build configuration list for PBXNativeTarget "LFLiveKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7937B05E93518E49475D363B92650A9F /* Debug */,
 				0CEC1C45D622BDF671B7824AD56A9B7C /* Release */,
+
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3906,11 +4787,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+
 		D5FA8693431CABE6B993172034FB266F /* Build configuration list for PBXNativeTarget "Pods-deKKo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B70FC88F7D656123C53DE0A6D663410D /* Debug */,
 				961A8500BAE6CF4A59EF4AD36BB58C36 /* Release */,
+
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

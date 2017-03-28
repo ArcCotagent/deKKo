@@ -1,0 +1,2050 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		009D316A019F56EF53DA65EE20E3ED0D /* Pods-GTMSessionFetcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CD68DBD10279EA299640CABEAEA2E3 /* Pods-GTMSessionFetcher-dummy.m */; };
+		07E9339EDDC209EE073000A465A6482E /* Pods-AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1DA497F18BD036823088FE7C0BC0AD /* Pods-AFNetworking-dummy.m */; };
+		08A677DC88D17160C834DD1EA6FC700E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		0AAFAD1950FEE7ECB69CA375543ADF0E /* Pods-Pods-deKKoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AD799DA06E48DB003692EF92B5B2B6 /* Pods-Pods-deKKoTests-dummy.m */; };
+		0BB2547C353BAA9BE371CE62B090535E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		0C939668F4449949782B2D21DFCF2593 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		1BBC71E64C7E1CDA127DF4225F9595DD /* Pods-FacebookCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C2AE71B032D1C165B1F652AB4BC5FA /* Pods-FacebookCore-dummy.m */; };
+		34F3C2E0D74357882F5A8572F363E3A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		430C34253F1D0482BBCC6C44425E0B8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		4BBC28A045CBF41CD6F6B310FC93DFF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		54B64DED9AEF34EBC99E3EA58C02A341 /* Pods-Pods-deKKoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F84B2B02D152DFA82C39DF1019E44CA5 /* Pods-Pods-deKKoUITests-dummy.m */; };
+		579D9448CF490DD20A9498AF763C7C96 /* Pods-FBSDKCoreKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC833448629097544768F4E2C360129 /* Pods-FBSDKCoreKit-dummy.m */; };
+		58ECB92F5E9149C59427FBE04A29802E /* Pods-FacebookShare-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE5C94A35A70395CA3EA748B0401BBB /* Pods-FacebookShare-dummy.m */; };
+		5B90D0EE557C58C2665BE2B5456D1EE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		652A2588BF20C7006DDDAD7F73ABF50B /* Pods-GTMOAuth2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BED246E466424FF26088D74EF7D0848 /* Pods-GTMOAuth2-dummy.m */; };
+		66CDF1D8A6DE0565795F5076E942F9B1 /* Pods-GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C872C910CC39AD170707235062467BBF /* Pods-GoogleToolboxForMac-dummy.m */; };
+		7368F15FBFB64C32E8EECE9D30E489B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		84F67C1CA639CD449BB5F515B498CD85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		8FD0EE1D83E82EB27971458D150E987E /* Pods-Pods-deKKo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DFCF256E1DCC8258A83300E13237BC85 /* Pods-Pods-deKKo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C2F2DD755387CCE3A94492252F494B8 /* Pods-FacebookLogin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3E91E1654B827073862D77A86497A /* Pods-FacebookLogin-dummy.m */; };
+		9D7B86F173AD336CE44572D8139A0B73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		A1E3DC3CAF017E037D84A995BCA48518 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		AA4C780C748EB492AE04B30CB5D6F8FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		B3D69DFF9D5F58FF4DBF9554F9B0AA61 /* Pods-Bolts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F608B634CF0B97430A1F0F0656C08EC2 /* Pods-Bolts-dummy.m */; };
+		BAF01D49EEA30CFB321B7528DDB4DA91 /* Pods-FacebookShare-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90522ED331AF778D1A11D4DC5DA9363F /* Pods-FacebookShare-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE3ECE7361222E3EEEF28E38A9A7E093 /* Pods-FBSDKShareKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F8CD75FCE3BABE45B6CDB3D854B9D4 /* Pods-FBSDKShareKit-dummy.m */; };
+		C08EF4431C1739DEDCE3C57D70894AC4 /* Pods-MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AED7EE8BB3DCD36B27B884059A0CEEC /* Pods-MBProgressHUD-dummy.m */; };
+		CA780B3379477E299BB762A4D2126D3A /* Pods-FacebookCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B158E28BF2C965A1108C5CD4234A8F61 /* Pods-FacebookCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D73ABACCB7CFAC2CDA16DB2B5304691B /* Pods-Pods-deKKo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 721A63800D02A39BA25C544E4F2BDD03 /* Pods-Pods-deKKo-dummy.m */; };
+		DABA335DB97646FBD05AA401E6E16DFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		EE8CFC0927FEBEEAD1EBA9BB582FAE48 /* Pods-FacebookLogin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BFECDBDEB8A9FCD647CBCCAA9A4F63EA /* Pods-FacebookLogin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F26C79AFAAD695A256BE7662CF6F0676 /* Pods-FBSDKLoginKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD3400AAB308A177FC960EFF2E7257A /* Pods-FBSDKLoginKit-dummy.m */; };
+		F5DC54323F188938524F13E67EB02512 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		FD4CF489375206151D4F7440F31707D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00B6A648729891FEFB3DD76034592616 /* Pods-GTMSessionFetcher-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GTMSessionFetcher-resources.sh"; sourceTree = "<group>"; };
+		00C2AE71B032D1C165B1F652AB4BC5FA /* Pods-FacebookCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FacebookCore-dummy.m"; sourceTree = "<group>"; };
+		028B543A7AAD70412658C8C3547B84C2 /* Pods-FBSDKShareKit-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FBSDKShareKit-resources.sh"; sourceTree = "<group>"; };
+		0360914728210D45B5E9661B7E8B7AEC /* Pods-Pods-deKKo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pods-deKKo-acknowledgements.plist"; sourceTree = "<group>"; };
+		03D997A75B74517F803F23D2F0013343 /* Pods-FBSDKCoreKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FBSDKCoreKit-acknowledgements.markdown"; sourceTree = "<group>"; };
+		056A592D80C02CF124DA57075D56C242 /* Pods-Bolts-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Bolts-acknowledgements.markdown"; sourceTree = "<group>"; };
+		081922BF2438A30645CF922A80D45A97 /* Pods-FBSDKLoginKit-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FBSDKLoginKit-resources.sh"; sourceTree = "<group>"; };
+		0910EE785DC91723FA479B268C857A6F /* Pods-FacebookLogin-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FacebookLogin-acknowledgements.plist"; sourceTree = "<group>"; };
+		0AED7EE8BB3DCD36B27B884059A0CEEC /* Pods-MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		0B7AED23694F54876877AF2872EDF732 /* Pods-FacebookShare-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FacebookShare-acknowledgements.plist"; sourceTree = "<group>"; };
+		0D119FB4363372BBB9309DF8F82007C2 /* Pods-FBSDKLoginKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FBSDKLoginKit-acknowledgements.plist"; sourceTree = "<group>"; };
+		0D35149DED50147993E42C7AE2912749 /* Pods-Bolts-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bolts-acknowledgements.plist"; sourceTree = "<group>"; };
+		0FFC2692C102AC4F74155075550FC753 /* Pods-FacebookCore-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FacebookCore-acknowledgements.plist"; sourceTree = "<group>"; };
+		10C5AA4CDDD450B5FA74BC3B6E9E3B82 /* Pods-Pods-deKKo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pods-deKKo.release.xcconfig"; sourceTree = "<group>"; };
+		12F8CD75FCE3BABE45B6CDB3D854B9D4 /* Pods-FBSDKShareKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FBSDKShareKit-dummy.m"; sourceTree = "<group>"; };
+		15111F1E3BBF3A9483F36DEA5904184C /* Pods-Pods-deKKo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pods-deKKo.debug.xcconfig"; sourceTree = "<group>"; };
+		19102C80BECDB2F30C4DB28E6BCDC2C5 /* Pods-Pods-deKKo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pods-deKKo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1A214EF6B053DDE95199B45E0423C19C /* libPods-Pods-deKKoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Pods-deKKoUITests.a"; path = "libPods-Pods-deKKoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D490C82EE4C33C4749407CC4132974C /* Pods-FBSDKLoginKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FBSDKLoginKit.release.xcconfig"; sourceTree = "<group>"; };
+		20CD68DBD10279EA299640CABEAEA2E3 /* Pods-GTMSessionFetcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GTMSessionFetcher-dummy.m"; sourceTree = "<group>"; };
+		2109FC6882994A29E89E6EF1E68717FF /* libPods-GTMSessionFetcher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-GTMSessionFetcher.a"; path = "libPods-GTMSessionFetcher.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2299DDE12F4C6EAE87AC4BFD1301E634 /* Pods-MBProgressHUD-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MBProgressHUD-acknowledgements.plist"; sourceTree = "<group>"; };
+		253AC06A1B80A67FB56A878A86AE7D75 /* Pods-Pods-deKKoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pods-deKKoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		253ED3B0062F016613899C6C1802236D /* Pods-MBProgressHUD-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MBProgressHUD-resources.sh"; sourceTree = "<group>"; };
+		26EB0D402A45FF410CEF743C9BE89823 /* Pods-GTMSessionFetcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GTMSessionFetcher.debug.xcconfig"; sourceTree = "<group>"; };
+		294A0514F85B9CC5284DC13308B64F9B /* Pods-FBSDKCoreKit-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FBSDKCoreKit-resources.sh"; sourceTree = "<group>"; };
+		2B0F33B2189B9BA1762EA65B11AD976F /* Pods-FBSDKCoreKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FBSDKCoreKit.debug.xcconfig"; sourceTree = "<group>"; };
+		2B3339905669E920421299C39B8DED0B /* Pods-FBSDKShareKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FBSDKShareKit-acknowledgements.plist"; sourceTree = "<group>"; };
+		2BED246E466424FF26088D74EF7D0848 /* Pods-GTMOAuth2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GTMOAuth2-dummy.m"; sourceTree = "<group>"; };
+		2E60D81112024A8D70107C470B1193AF /* Pods-Pods-deKKoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pods-deKKoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2FCEC5C8446245365515E581665B852A /* Pods-FacebookLogin-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FacebookLogin-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3177BE91BC2CB5097054EEADCEC48D14 /* libPods-GTMOAuth2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-GTMOAuth2.a"; path = "libPods-GTMOAuth2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32AD799DA06E48DB003692EF92B5B2B6 /* Pods-Pods-deKKoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pods-deKKoTests-dummy.m"; sourceTree = "<group>"; };
+		35DA068C7F5352339844FC8400702E93 /* Pods-FacebookLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FacebookLogin.release.xcconfig"; sourceTree = "<group>"; };
+		3D7F24C5D34345702499101FF17FD566 /* Pods-AFNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AFNetworking.release.xcconfig"; sourceTree = "<group>"; };
+		40A740DD8E5D3EDCBE54618D0A078550 /* libPods-Bolts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Bolts.a"; path = "libPods-Bolts.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AC3E91E1654B827073862D77A86497A /* Pods-FacebookLogin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FacebookLogin-dummy.m"; sourceTree = "<group>"; };
+		4C6D418D6E026078DA346E091CB6E60F /* libPods-FBSDKCoreKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FBSDKCoreKit.a"; path = "libPods-FBSDKCoreKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		542EF3323F14EC905A765490127AAE67 /* Pods_Pods_deKKo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Pods_deKKo.framework; path = "Pods-Pods-deKKo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55CEEF879381781BACF9B5712AF6A29A /* Pods-GTMOAuth2-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GTMOAuth2-acknowledgements.markdown"; sourceTree = "<group>"; };
+		56A95A69268C8B6F13A5912303AA0DC1 /* Pods-FBSDKLoginKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FBSDKLoginKit.debug.xcconfig"; sourceTree = "<group>"; };
+		5827145F15B9B59B175D1BF8384B8153 /* Pods_FacebookLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FacebookLogin.framework; path = "Pods-FacebookLogin.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DD3400AAB308A177FC960EFF2E7257A /* Pods-FBSDKLoginKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FBSDKLoginKit-dummy.m"; sourceTree = "<group>"; };
+		5E8B3281B0B7CF3DBD894CA640AA75C0 /* Pods-FacebookCore-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FacebookCore-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5EC833448629097544768F4E2C360129 /* Pods-FBSDKCoreKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FBSDKCoreKit-dummy.m"; sourceTree = "<group>"; };
+		61A541E21242CEA63364115C4CF6C5F7 /* Pods-GoogleToolboxForMac-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GoogleToolboxForMac-acknowledgements.markdown"; sourceTree = "<group>"; };
+		67003AFE9D760FAC8C9092B586320116 /* Pods-FacebookShare-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FacebookShare-resources.sh"; sourceTree = "<group>"; };
+		6B0934020FE24850320005EF5F956067 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CB57375E5D3B9E3F0B8E065E8806119 /* Pods-Bolts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bolts.debug.xcconfig"; sourceTree = "<group>"; };
+		6D67BAE6BA633296D33C6AA30BBD8424 /* Pods-FBSDKCoreKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FBSDKCoreKit.release.xcconfig"; sourceTree = "<group>"; };
+		6EC10E7065E3214B8FEAD034EEB98455 /* Pods-FacebookLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FacebookLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		6F40F5A5636CD247EA0832D79D974157 /* libPods-Pods-deKKoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Pods-deKKoTests.a"; path = "libPods-Pods-deKKoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71BDC8F6E2B442B8B36DB3A8C7D9D366 /* Pods-FacebookCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FacebookCore.release.xcconfig"; sourceTree = "<group>"; };
+		721A63800D02A39BA25C544E4F2BDD03 /* Pods-Pods-deKKo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pods-deKKo-dummy.m"; sourceTree = "<group>"; };
+		72337AB83DFFA531220A86589024CE9A /* Pods-GTMOAuth2-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GTMOAuth2-acknowledgements.plist"; sourceTree = "<group>"; };
+		7842A5B9E16ED522AEC4F2B36212ED11 /* Pods-Pods-deKKoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pods-deKKoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A60CFB68E7EA17BB079D9A3784FE9BF /* Pods-GoogleToolboxForMac-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoogleToolboxForMac-acknowledgements.plist"; sourceTree = "<group>"; };
+		7AF5C99CE7FA0997AECEE9E2473CFBF4 /* Pods-FacebookLogin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FacebookLogin.modulemap"; sourceTree = "<group>"; };
+		7DBDC0A8B62DDED17B92C85A7731D4CC /* Pods-MBProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MBProgressHUD.debug.xcconfig"; sourceTree = "<group>"; };
+		7EFA130B7D0BDCDBFA866A3E3DA939D5 /* Pods-FacebookShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FacebookShare.debug.xcconfig"; sourceTree = "<group>"; };
+		819CD598E077DDD8FCF11CBDF272F8BC /* libPods-FBSDKShareKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FBSDKShareKit.a"; path = "libPods-FBSDKShareKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		867765242F8F6F4D0F728F5E1B3FF15A /* Pods-Pods-deKKoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pods-deKKoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		88906063F6897194CAC347A6604564F7 /* Pods-GTMOAuth2-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GTMOAuth2-resources.sh"; sourceTree = "<group>"; };
+		8B83488F7C811E7110E4569A37929583 /* libPods-AFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-AFNetworking.a"; path = "libPods-AFNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1E3E1A1A37E4EF5E46DD9BD6FFCB48 /* Pods-GTMSessionFetcher-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GTMSessionFetcher-acknowledgements.plist"; sourceTree = "<group>"; };
+		90522ED331AF778D1A11D4DC5DA9363F /* Pods-FacebookShare-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FacebookShare-umbrella.h"; sourceTree = "<group>"; };
+		90D260FB41D96CDE4590DE20F9036EDE /* Pods-GTMSessionFetcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GTMSessionFetcher.release.xcconfig"; sourceTree = "<group>"; };
+		923A0CE0D9DB78D29789CDB39E534141 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94609A148F90A9D9E68C4D0A4FECE6A4 /* Pods-MBProgressHUD-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MBProgressHUD-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9697B0A43466303567DFB0921AE4CA26 /* Pods-FBSDKShareKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FBSDKShareKit.debug.xcconfig"; sourceTree = "<group>"; };
+		96F0ABE6CEF389779240218097D8B92A /* Pods-Bolts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bolts.release.xcconfig"; sourceTree = "<group>"; };
+		98DCB1910136D527459E4BBB591FB4F9 /* Pods-AFNetworking-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AFNetworking-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9969E15EDEB035AC11335C2D706F8EDF /* Pods-FacebookCore-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FacebookCore-resources.sh"; sourceTree = "<group>"; };
+		9AC2FFD20B1A090550F5D67C14E12099 /* Pods-Bolts-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Bolts-resources.sh"; sourceTree = "<group>"; };
+		9B1DA497F18BD036823088FE7C0BC0AD /* Pods-AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		9BD82548E2778932D7E40549EECCD8C4 /* Pods-FBSDKLoginKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FBSDKLoginKit-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A02912AB3A30AB52276474A46C4E96DD /* Pods-Pods-deKKoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pods-deKKoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A2C7C5242C6F62B63AB4ED0042BE1D72 /* Pods-GTMOAuth2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GTMOAuth2.release.xcconfig"; sourceTree = "<group>"; };
+		ACFAA76FE8A5EBD105A6BE5BEC6A3F25 /* Pods-Pods-deKKoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pods-deKKoTests-resources.sh"; sourceTree = "<group>"; };
+		AD4A03E8E2596B43D2B986B8B30AF081 /* Pods-FacebookShare-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FacebookShare-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B11C1B5AB76CA5DDFC5C2FC1BBCB07D8 /* Pods-Pods-deKKoUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pods-deKKoUITests-resources.sh"; sourceTree = "<group>"; };
+		B158E28BF2C965A1108C5CD4234A8F61 /* Pods-FacebookCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FacebookCore-umbrella.h"; sourceTree = "<group>"; };
+		B6BB44937D4B69CCC7C27B4335413CFE /* Pods-Pods-deKKo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pods-deKKo-resources.sh"; sourceTree = "<group>"; };
+		BAD43CE5211784FF47EEE03A8E52564B /* libPods-MBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MBProgressHUD.a"; path = "libPods-MBProgressHUD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAFF17CE9773BEE305E86B3076FAFFEF /* Pods-Pods-deKKo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Pods-deKKo.modulemap"; sourceTree = "<group>"; };
+		BB0D614FA83BD136DEEF5633B3102105 /* Pods-AFNetworking-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AFNetworking-resources.sh"; sourceTree = "<group>"; };
+		BE745B781958C1B45BF5BF20A185C344 /* Pods-FacebookShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FacebookShare.release.xcconfig"; sourceTree = "<group>"; };
+		BFECDBDEB8A9FCD647CBCCAA9A4F63EA /* Pods-FacebookLogin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FacebookLogin-umbrella.h"; sourceTree = "<group>"; };
+		C52C8F244666CC59F11A931CB0D1C961 /* Pods-FBSDKShareKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FBSDKShareKit-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C872C910CC39AD170707235062467BBF /* Pods-GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
+		C9AC0931A53A573D4D257B6208BFCC7A /* Pods-Pods-deKKoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pods-deKKoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CB8834743B38F8790EAE1AC7DD7645B9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CE335FCCD0769E3C115B7D88BD7C6EFF /* Pods-GTMSessionFetcher-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GTMSessionFetcher-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CE88A62AE1978F292E9E613D6499184E /* libPods-GoogleToolboxForMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-GoogleToolboxForMac.a"; path = "libPods-GoogleToolboxForMac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9BC1D21222C4C56839DE1283AE0F38 /* Pods-GoogleToolboxForMac-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GoogleToolboxForMac-resources.sh"; sourceTree = "<group>"; };
+		CFFFE7FC0CDE2B62433997A1F1D964C1 /* Pods-FBSDKCoreKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FBSDKCoreKit-acknowledgements.plist"; sourceTree = "<group>"; };
+		D441846D2B147C1AC421AF9F31E8442E /* Pods-FBSDKShareKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FBSDKShareKit.release.xcconfig"; sourceTree = "<group>"; };
+		D4A911632DFF738954CFD4E92419ABDC /* libPods-FBSDKLoginKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FBSDKLoginKit.a"; path = "libPods-FBSDKLoginKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5CF4B254205AD32CDE954280465B80D /* Pods-GoogleToolboxForMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoogleToolboxForMac.release.xcconfig"; sourceTree = "<group>"; };
+		D832653DDC299B902B0F6EC6BF38F55B /* Pods_FacebookShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FacebookShare.framework; path = "Pods-FacebookShare.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9C16C2A230A341F6827BAE215B57EC6 /* Pods-GTMOAuth2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GTMOAuth2.debug.xcconfig"; sourceTree = "<group>"; };
+		DBD978514234A051E0572B21387182CF /* Pods-FacebookCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FacebookCore.debug.xcconfig"; sourceTree = "<group>"; };
+		DFCF256E1DCC8258A83300E13237BC85 /* Pods-Pods-deKKo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pods-deKKo-umbrella.h"; sourceTree = "<group>"; };
+		DFE5C94A35A70395CA3EA748B0401BBB /* Pods-FacebookShare-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FacebookShare-dummy.m"; sourceTree = "<group>"; };
+		EB95DA01B40F76C14081185E3993F3BD /* Pods-FacebookShare.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FacebookShare.modulemap"; sourceTree = "<group>"; };
+		ECFD361A79A57D192D31B43871EE604C /* Pods-AFNetworking-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AFNetworking-acknowledgements.plist"; sourceTree = "<group>"; };
+		ED9283453C84D28FAACF41CA02FFE9A2 /* Pods-GoogleToolboxForMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoogleToolboxForMac.debug.xcconfig"; sourceTree = "<group>"; };
+		EDB8D8EE13AD0459FDDFD56A0A36A0ED /* Pods-Pods-deKKoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pods-deKKoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EEA20835D2882AB5E7DCCC66666FB0F8 /* Pods-FacebookLogin-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FacebookLogin-resources.sh"; sourceTree = "<group>"; };
+		EFCC3ED1B0DBE63FA0097C9F821C9FDE /* Pods-FacebookCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FacebookCore.modulemap"; sourceTree = "<group>"; };
+		F1F950F733831F58B4B9BE179C1A624F /* Pods-Pods-deKKoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pods-deKKoTests.release.xcconfig"; sourceTree = "<group>"; };
+		F538928085428A7A3D9483D751BB67F6 /* Pods_FacebookCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FacebookCore.framework; path = "Pods-FacebookCore.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53F0C308B369CDFD6DE4531B3D83AC6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F608B634CF0B97430A1F0F0656C08EC2 /* Pods-Bolts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Bolts-dummy.m"; sourceTree = "<group>"; };
+		F84B2B02D152DFA82C39DF1019E44CA5 /* Pods-Pods-deKKoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pods-deKKoUITests-dummy.m"; sourceTree = "<group>"; };
+		F9BCA00B19DE37B063E924D193202413 /* Pods-AFNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AFNetworking.debug.xcconfig"; sourceTree = "<group>"; };
+		FCCD5EC8CC05A9E6BBA930231EB32079 /* Pods-MBProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MBProgressHUD.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		112F79D011144CD1567E2D515F0D5972 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B90D0EE557C58C2665BE2B5456D1EE3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17D7B24BC6B85D3CB9592CBD9143A1DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA4C780C748EB492AE04B30CB5D6F8FD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		229D991BC4DB5A99E6251B38F34856B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD4CF489375206151D4F7440F31707D1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2979888FEB67C4508A5F6441AC3F0FE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1E3DC3CAF017E037D84A995BCA48518 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F89A5854DD1E7DC198D7F23624A16FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BBC28A045CBF41CD6F6B310FC93DFF9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		388DE390F754D9FD3F7AB245F744D4CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABA335DB97646FBD05AA401E6E16DFD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43FE238BEA1D11019669CD30375D5044 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7368F15FBFB64C32E8EECE9D30E489B9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71960E6AAC7B41F97B97217C67E69C0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F67C1CA639CD449BB5F515B498CD85 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C3B6527A6228279841EAF3FCAEAAC1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB2547C353BAA9BE371CE62B090535E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F2C10E5470A9E04E25EA81BE594160A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34F3C2E0D74357882F5A8572F363E3A7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCE22D04FF5E2D473C56BF2C56EE6C97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D7B86F173AD336CE44572D8139A0B73 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0162ACE8A7C9729A5CF5ED9FCB74376 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A677DC88D17160C834DD1EA6FC700E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0C4BAB48020FCCA6FD591110782FEDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5DC54323F188938524F13E67EB02512 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAED5EE0D28097083504EAD33AABDDD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C939668F4449949782B2D21DFCF2593 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5A692E0B1D3501345835DD739824F38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				430C34253F1D0482BBCC6C44425E0B8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D2FEEADCDCF5356DB76A94B5623642C /* Pods-Pods-deKKoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				867765242F8F6F4D0F728F5E1B3FF15A /* Pods-Pods-deKKoUITests-acknowledgements.markdown */,
+				2E60D81112024A8D70107C470B1193AF /* Pods-Pods-deKKoUITests-acknowledgements.plist */,
+				F84B2B02D152DFA82C39DF1019E44CA5 /* Pods-Pods-deKKoUITests-dummy.m */,
+				B11C1B5AB76CA5DDFC5C2FC1BBCB07D8 /* Pods-Pods-deKKoUITests-resources.sh */,
+				EDB8D8EE13AD0459FDDFD56A0A36A0ED /* Pods-Pods-deKKoUITests.debug.xcconfig */,
+				C9AC0931A53A573D4D257B6208BFCC7A /* Pods-Pods-deKKoUITests.release.xcconfig */,
+			);
+			name = "Pods-Pods-deKKoUITests";
+			path = "Target Support Files/Pods-Pods-deKKoUITests";
+			sourceTree = "<group>";
+		};
+		25C976D0E022CD9BAE3E1DDFCD47081F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B83488F7C811E7110E4569A37929583 /* libPods-AFNetworking.a */,
+				40A740DD8E5D3EDCBE54618D0A078550 /* libPods-Bolts.a */,
+				4C6D418D6E026078DA346E091CB6E60F /* libPods-FBSDKCoreKit.a */,
+				D4A911632DFF738954CFD4E92419ABDC /* libPods-FBSDKLoginKit.a */,
+				819CD598E077DDD8FCF11CBDF272F8BC /* libPods-FBSDKShareKit.a */,
+				CE88A62AE1978F292E9E613D6499184E /* libPods-GoogleToolboxForMac.a */,
+				3177BE91BC2CB5097054EEADCEC48D14 /* libPods-GTMOAuth2.a */,
+				2109FC6882994A29E89E6EF1E68717FF /* libPods-GTMSessionFetcher.a */,
+				BAD43CE5211784FF47EEE03A8E52564B /* libPods-MBProgressHUD.a */,
+				6F40F5A5636CD247EA0832D79D974157 /* libPods-Pods-deKKoTests.a */,
+				1A214EF6B053DDE95199B45E0423C19C /* libPods-Pods-deKKoUITests.a */,
+				F538928085428A7A3D9483D751BB67F6 /* Pods_FacebookCore.framework */,
+				5827145F15B9B59B175D1BF8384B8153 /* Pods_FacebookLogin.framework */,
+				D832653DDC299B902B0F6EC6BF38F55B /* Pods_FacebookShare.framework */,
+				542EF3323F14EC905A765490127AAE67 /* Pods_Pods_deKKo.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30F4F780EF17E0E1215FF1218709CC67 /* Pods-GTMSessionFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				CE335FCCD0769E3C115B7D88BD7C6EFF /* Pods-GTMSessionFetcher-acknowledgements.markdown */,
+				8D1E3E1A1A37E4EF5E46DD9BD6FFCB48 /* Pods-GTMSessionFetcher-acknowledgements.plist */,
+				20CD68DBD10279EA299640CABEAEA2E3 /* Pods-GTMSessionFetcher-dummy.m */,
+				00B6A648729891FEFB3DD76034592616 /* Pods-GTMSessionFetcher-resources.sh */,
+				26EB0D402A45FF410CEF743C9BE89823 /* Pods-GTMSessionFetcher.debug.xcconfig */,
+				90D260FB41D96CDE4590DE20F9036EDE /* Pods-GTMSessionFetcher.release.xcconfig */,
+			);
+			name = "Pods-GTMSessionFetcher";
+			path = "Target Support Files/Pods-GTMSessionFetcher";
+			sourceTree = "<group>";
+		};
+		3BF453CB93694227637718D79F4E0585 /* Pods-FBSDKShareKit */ = {
+			isa = PBXGroup;
+			children = (
+				C52C8F244666CC59F11A931CB0D1C961 /* Pods-FBSDKShareKit-acknowledgements.markdown */,
+				2B3339905669E920421299C39B8DED0B /* Pods-FBSDKShareKit-acknowledgements.plist */,
+				12F8CD75FCE3BABE45B6CDB3D854B9D4 /* Pods-FBSDKShareKit-dummy.m */,
+				028B543A7AAD70412658C8C3547B84C2 /* Pods-FBSDKShareKit-resources.sh */,
+				9697B0A43466303567DFB0921AE4CA26 /* Pods-FBSDKShareKit.debug.xcconfig */,
+				D441846D2B147C1AC421AF9F31E8442E /* Pods-FBSDKShareKit.release.xcconfig */,
+			);
+			name = "Pods-FBSDKShareKit";
+			path = "Target Support Files/Pods-FBSDKShareKit";
+			sourceTree = "<group>";
+		};
+		43F06162F277DB878CCD79EC8EB0CAC2 /* Pods-GTMOAuth2 */ = {
+			isa = PBXGroup;
+			children = (
+				55CEEF879381781BACF9B5712AF6A29A /* Pods-GTMOAuth2-acknowledgements.markdown */,
+				72337AB83DFFA531220A86589024CE9A /* Pods-GTMOAuth2-acknowledgements.plist */,
+				2BED246E466424FF26088D74EF7D0848 /* Pods-GTMOAuth2-dummy.m */,
+				88906063F6897194CAC347A6604564F7 /* Pods-GTMOAuth2-resources.sh */,
+				D9C16C2A230A341F6827BAE215B57EC6 /* Pods-GTMOAuth2.debug.xcconfig */,
+				A2C7C5242C6F62B63AB4ED0042BE1D72 /* Pods-GTMOAuth2.release.xcconfig */,
+			);
+			name = "Pods-GTMOAuth2";
+			path = "Target Support Files/Pods-GTMOAuth2";
+			sourceTree = "<group>";
+		};
+		4E468EC2E855BAB8FFAD8E013ABE7416 /* Pods-FacebookCore */ = {
+			isa = PBXGroup;
+			children = (
+				CB8834743B38F8790EAE1AC7DD7645B9 /* Info.plist */,
+				EFCC3ED1B0DBE63FA0097C9F821C9FDE /* Pods-FacebookCore.modulemap */,
+				5E8B3281B0B7CF3DBD894CA640AA75C0 /* Pods-FacebookCore-acknowledgements.markdown */,
+				0FFC2692C102AC4F74155075550FC753 /* Pods-FacebookCore-acknowledgements.plist */,
+				00C2AE71B032D1C165B1F652AB4BC5FA /* Pods-FacebookCore-dummy.m */,
+				9969E15EDEB035AC11335C2D706F8EDF /* Pods-FacebookCore-resources.sh */,
+				B158E28BF2C965A1108C5CD4234A8F61 /* Pods-FacebookCore-umbrella.h */,
+				DBD978514234A051E0572B21387182CF /* Pods-FacebookCore.debug.xcconfig */,
+				71BDC8F6E2B442B8B36DB3A8C7D9D366 /* Pods-FacebookCore.release.xcconfig */,
+			);
+			name = "Pods-FacebookCore";
+			path = "Target Support Files/Pods-FacebookCore";
+			sourceTree = "<group>";
+		};
+		4E4DD135A5D229139E6D19FD3298388A /* Pods-MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				94609A148F90A9D9E68C4D0A4FECE6A4 /* Pods-MBProgressHUD-acknowledgements.markdown */,
+				2299DDE12F4C6EAE87AC4BFD1301E634 /* Pods-MBProgressHUD-acknowledgements.plist */,
+				0AED7EE8BB3DCD36B27B884059A0CEEC /* Pods-MBProgressHUD-dummy.m */,
+				253ED3B0062F016613899C6C1802236D /* Pods-MBProgressHUD-resources.sh */,
+				7DBDC0A8B62DDED17B92C85A7731D4CC /* Pods-MBProgressHUD.debug.xcconfig */,
+				FCCD5EC8CC05A9E6BBA930231EB32079 /* Pods-MBProgressHUD.release.xcconfig */,
+			);
+			name = "Pods-MBProgressHUD";
+			path = "Target Support Files/Pods-MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		548F7149F17C0CE766BDDA9142D5F523 /* Pods-FacebookLogin */ = {
+			isa = PBXGroup;
+			children = (
+				F53F0C308B369CDFD6DE4531B3D83AC6 /* Info.plist */,
+				7AF5C99CE7FA0997AECEE9E2473CFBF4 /* Pods-FacebookLogin.modulemap */,
+				2FCEC5C8446245365515E581665B852A /* Pods-FacebookLogin-acknowledgements.markdown */,
+				0910EE785DC91723FA479B268C857A6F /* Pods-FacebookLogin-acknowledgements.plist */,
+				4AC3E91E1654B827073862D77A86497A /* Pods-FacebookLogin-dummy.m */,
+				EEA20835D2882AB5E7DCCC66666FB0F8 /* Pods-FacebookLogin-resources.sh */,
+				BFECDBDEB8A9FCD647CBCCAA9A4F63EA /* Pods-FacebookLogin-umbrella.h */,
+				6EC10E7065E3214B8FEAD034EEB98455 /* Pods-FacebookLogin.debug.xcconfig */,
+				35DA068C7F5352339844FC8400702E93 /* Pods-FacebookLogin.release.xcconfig */,
+			);
+			name = "Pods-FacebookLogin";
+			path = "Target Support Files/Pods-FacebookLogin";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				25C976D0E022CD9BAE3E1DDFCD47081F /* Products */,
+				DAB184C3DC1DA8ED24A012E553F9B0DA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		81C5C36D313553ACC727C255ECF45D0F /* Pods-FBSDKCoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				03D997A75B74517F803F23D2F0013343 /* Pods-FBSDKCoreKit-acknowledgements.markdown */,
+				CFFFE7FC0CDE2B62433997A1F1D964C1 /* Pods-FBSDKCoreKit-acknowledgements.plist */,
+				5EC833448629097544768F4E2C360129 /* Pods-FBSDKCoreKit-dummy.m */,
+				294A0514F85B9CC5284DC13308B64F9B /* Pods-FBSDKCoreKit-resources.sh */,
+				2B0F33B2189B9BA1762EA65B11AD976F /* Pods-FBSDKCoreKit.debug.xcconfig */,
+				6D67BAE6BA633296D33C6AA30BBD8424 /* Pods-FBSDKCoreKit.release.xcconfig */,
+			);
+			name = "Pods-FBSDKCoreKit";
+			path = "Target Support Files/Pods-FBSDKCoreKit";
+			sourceTree = "<group>";
+		};
+		87BA39661C18294189FC0FC976C3AA9C /* Pods-FBSDKLoginKit */ = {
+			isa = PBXGroup;
+			children = (
+				9BD82548E2778932D7E40549EECCD8C4 /* Pods-FBSDKLoginKit-acknowledgements.markdown */,
+				0D119FB4363372BBB9309DF8F82007C2 /* Pods-FBSDKLoginKit-acknowledgements.plist */,
+				5DD3400AAB308A177FC960EFF2E7257A /* Pods-FBSDKLoginKit-dummy.m */,
+				081922BF2438A30645CF922A80D45A97 /* Pods-FBSDKLoginKit-resources.sh */,
+				56A95A69268C8B6F13A5912303AA0DC1 /* Pods-FBSDKLoginKit.debug.xcconfig */,
+				1D490C82EE4C33C4749407CC4132974C /* Pods-FBSDKLoginKit.release.xcconfig */,
+			);
+			name = "Pods-FBSDKLoginKit";
+			path = "Target Support Files/Pods-FBSDKLoginKit";
+			sourceTree = "<group>";
+		};
+		B181972EDB09FE0F67DF3B62548DA42D /* Pods-FacebookShare */ = {
+			isa = PBXGroup;
+			children = (
+				6B0934020FE24850320005EF5F956067 /* Info.plist */,
+				EB95DA01B40F76C14081185E3993F3BD /* Pods-FacebookShare.modulemap */,
+				AD4A03E8E2596B43D2B986B8B30AF081 /* Pods-FacebookShare-acknowledgements.markdown */,
+				0B7AED23694F54876877AF2872EDF732 /* Pods-FacebookShare-acknowledgements.plist */,
+				DFE5C94A35A70395CA3EA748B0401BBB /* Pods-FacebookShare-dummy.m */,
+				67003AFE9D760FAC8C9092B586320116 /* Pods-FacebookShare-resources.sh */,
+				90522ED331AF778D1A11D4DC5DA9363F /* Pods-FacebookShare-umbrella.h */,
+				7EFA130B7D0BDCDBFA866A3E3DA939D5 /* Pods-FacebookShare.debug.xcconfig */,
+				BE745B781958C1B45BF5BF20A185C344 /* Pods-FacebookShare.release.xcconfig */,
+			);
+			name = "Pods-FacebookShare";
+			path = "Target Support Files/Pods-FacebookShare";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD4DDF87089BAB60F55E5874F5BA03C4 /* Pods-AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				98DCB1910136D527459E4BBB591FB4F9 /* Pods-AFNetworking-acknowledgements.markdown */,
+				ECFD361A79A57D192D31B43871EE604C /* Pods-AFNetworking-acknowledgements.plist */,
+				9B1DA497F18BD036823088FE7C0BC0AD /* Pods-AFNetworking-dummy.m */,
+				BB0D614FA83BD136DEEF5633B3102105 /* Pods-AFNetworking-resources.sh */,
+				F9BCA00B19DE37B063E924D193202413 /* Pods-AFNetworking.debug.xcconfig */,
+				3D7F24C5D34345702499101FF17FD566 /* Pods-AFNetworking.release.xcconfig */,
+			);
+			name = "Pods-AFNetworking";
+			path = "Target Support Files/Pods-AFNetworking";
+			sourceTree = "<group>";
+		};
+		D2938C235502086D0A91BB62C25D8F4C /* Pods-GoogleToolboxForMac */ = {
+			isa = PBXGroup;
+			children = (
+				61A541E21242CEA63364115C4CF6C5F7 /* Pods-GoogleToolboxForMac-acknowledgements.markdown */,
+				7A60CFB68E7EA17BB079D9A3784FE9BF /* Pods-GoogleToolboxForMac-acknowledgements.plist */,
+				C872C910CC39AD170707235062467BBF /* Pods-GoogleToolboxForMac-dummy.m */,
+				CE9BC1D21222C4C56839DE1283AE0F38 /* Pods-GoogleToolboxForMac-resources.sh */,
+				ED9283453C84D28FAACF41CA02FFE9A2 /* Pods-GoogleToolboxForMac.debug.xcconfig */,
+				D5CF4B254205AD32CDE954280465B80D /* Pods-GoogleToolboxForMac.release.xcconfig */,
+			);
+			name = "Pods-GoogleToolboxForMac";
+			path = "Target Support Files/Pods-GoogleToolboxForMac";
+			sourceTree = "<group>";
+		};
+		D8640A65AF0239A9011A5D3FD23C193E /* Pods-Pods-deKKoTests */ = {
+			isa = PBXGroup;
+			children = (
+				253AC06A1B80A67FB56A878A86AE7D75 /* Pods-Pods-deKKoTests-acknowledgements.markdown */,
+				A02912AB3A30AB52276474A46C4E96DD /* Pods-Pods-deKKoTests-acknowledgements.plist */,
+				32AD799DA06E48DB003692EF92B5B2B6 /* Pods-Pods-deKKoTests-dummy.m */,
+				ACFAA76FE8A5EBD105A6BE5BEC6A3F25 /* Pods-Pods-deKKoTests-resources.sh */,
+				7842A5B9E16ED522AEC4F2B36212ED11 /* Pods-Pods-deKKoTests.debug.xcconfig */,
+				F1F950F733831F58B4B9BE179C1A624F /* Pods-Pods-deKKoTests.release.xcconfig */,
+			);
+			name = "Pods-Pods-deKKoTests";
+			path = "Target Support Files/Pods-Pods-deKKoTests";
+			sourceTree = "<group>";
+		};
+		DAB184C3DC1DA8ED24A012E553F9B0DA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD4DDF87089BAB60F55E5874F5BA03C4 /* Pods-AFNetworking */,
+				FA405519A36EDEE14E5956C2A00F64F1 /* Pods-Bolts */,
+				4E468EC2E855BAB8FFAD8E013ABE7416 /* Pods-FacebookCore */,
+				548F7149F17C0CE766BDDA9142D5F523 /* Pods-FacebookLogin */,
+				B181972EDB09FE0F67DF3B62548DA42D /* Pods-FacebookShare */,
+				81C5C36D313553ACC727C255ECF45D0F /* Pods-FBSDKCoreKit */,
+				87BA39661C18294189FC0FC976C3AA9C /* Pods-FBSDKLoginKit */,
+				3BF453CB93694227637718D79F4E0585 /* Pods-FBSDKShareKit */,
+				D2938C235502086D0A91BB62C25D8F4C /* Pods-GoogleToolboxForMac */,
+				43F06162F277DB878CCD79EC8EB0CAC2 /* Pods-GTMOAuth2 */,
+				30F4F780EF17E0E1215FF1218709CC67 /* Pods-GTMSessionFetcher */,
+				4E4DD135A5D229139E6D19FD3298388A /* Pods-MBProgressHUD */,
+				DC9A57C24C2A4942673519F91ECA40B8 /* Pods-Pods-deKKo */,
+				D8640A65AF0239A9011A5D3FD23C193E /* Pods-Pods-deKKoTests */,
+				1D2FEEADCDCF5356DB76A94B5623642C /* Pods-Pods-deKKoUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DC9A57C24C2A4942673519F91ECA40B8 /* Pods-Pods-deKKo */ = {
+			isa = PBXGroup;
+			children = (
+				923A0CE0D9DB78D29789CDB39E534141 /* Info.plist */,
+				BAFF17CE9773BEE305E86B3076FAFFEF /* Pods-Pods-deKKo.modulemap */,
+				19102C80BECDB2F30C4DB28E6BCDC2C5 /* Pods-Pods-deKKo-acknowledgements.markdown */,
+				0360914728210D45B5E9661B7E8B7AEC /* Pods-Pods-deKKo-acknowledgements.plist */,
+				721A63800D02A39BA25C544E4F2BDD03 /* Pods-Pods-deKKo-dummy.m */,
+				B6BB44937D4B69CCC7C27B4335413CFE /* Pods-Pods-deKKo-resources.sh */,
+				DFCF256E1DCC8258A83300E13237BC85 /* Pods-Pods-deKKo-umbrella.h */,
+				15111F1E3BBF3A9483F36DEA5904184C /* Pods-Pods-deKKo.debug.xcconfig */,
+				10C5AA4CDDD450B5FA74BC3B6E9E3B82 /* Pods-Pods-deKKo.release.xcconfig */,
+			);
+			name = "Pods-Pods-deKKo";
+			path = "Target Support Files/Pods-Pods-deKKo";
+			sourceTree = "<group>";
+		};
+		FA405519A36EDEE14E5956C2A00F64F1 /* Pods-Bolts */ = {
+			isa = PBXGroup;
+			children = (
+				056A592D80C02CF124DA57075D56C242 /* Pods-Bolts-acknowledgements.markdown */,
+				0D35149DED50147993E42C7AE2912749 /* Pods-Bolts-acknowledgements.plist */,
+				F608B634CF0B97430A1F0F0656C08EC2 /* Pods-Bolts-dummy.m */,
+				9AC2FFD20B1A090550F5D67C14E12099 /* Pods-Bolts-resources.sh */,
+				6CB57375E5D3B9E3F0B8E065E8806119 /* Pods-Bolts.debug.xcconfig */,
+				96F0ABE6CEF389779240218097D8B92A /* Pods-Bolts.release.xcconfig */,
+			);
+			name = "Pods-Bolts";
+			path = "Target Support Files/Pods-Bolts";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		59E2CF17B12F81C6A5465D687BAB2F1E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE8CFC0927FEBEEAD1EBA9BB582FAE48 /* Pods-FacebookLogin-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81BD635677B14D5259C80605A35C2FD5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF01D49EEA30CFB321B7528DDB4DA91 /* Pods-FacebookShare-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2B43B1A3ABE1D9CEFEBC7ADE925A24C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD0EE1D83E82EB27971458D150E987E /* Pods-Pods-deKKo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0137A2425C8894BF56A8130967AD157 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA780B3379477E299BB762A4D2126D3A /* Pods-FacebookCore-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		029477F11507298D4C694A45650B6B4F /* Pods-FBSDKCoreKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25F3A41C459CF6FA1F8F435AF311FDFD /* Build configuration list for PBXNativeTarget "Pods-FBSDKCoreKit" */;
+			buildPhases = (
+				DD34854AB3C9DB4096FFD870901DDCA5 /* Sources */,
+				17D7B24BC6B85D3CB9592CBD9143A1DA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FBSDKCoreKit";
+			productName = "Pods-FBSDKCoreKit";
+			productReference = 4C6D418D6E026078DA346E091CB6E60F /* libPods-FBSDKCoreKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		37BDA727AA948BFABDBFE9DD51D18838 /* Pods-FacebookLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FF3CD663549C143D61ACEA9C3BC17D1 /* Build configuration list for PBXNativeTarget "Pods-FacebookLogin" */;
+			buildPhases = (
+				4467AC4E7CB3EF61D8B4D1CE17601369 /* Sources */,
+				112F79D011144CD1567E2D515F0D5972 /* Frameworks */,
+				59E2CF17B12F81C6A5465D687BAB2F1E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FacebookLogin";
+			productName = "Pods-FacebookLogin";
+			productReference = 5827145F15B9B59B175D1BF8384B8153 /* Pods_FacebookLogin.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3AEC18EC9C2930B5245C2BF910D1651D /* Pods-MBProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 726F85A5E1BDFC6E69AE31197226AE02 /* Build configuration list for PBXNativeTarget "Pods-MBProgressHUD" */;
+			buildPhases = (
+				64134035C92275B16C2BB5F17C930C79 /* Sources */,
+				BCE22D04FF5E2D473C56BF2C56EE6C97 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MBProgressHUD";
+			productName = "Pods-MBProgressHUD";
+			productReference = BAD43CE5211784FF47EEE03A8E52564B /* libPods-MBProgressHUD.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5394DE5649B7BA29260240BF2C8639C8 /* Pods-FBSDKShareKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AC21284E2A1EAB3377CC2864EB4BEB3 /* Build configuration list for PBXNativeTarget "Pods-FBSDKShareKit" */;
+			buildPhases = (
+				542F550157427276B1B1A0D734E51D88 /* Sources */,
+				71960E6AAC7B41F97B97217C67E69C0D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FBSDKShareKit";
+			productName = "Pods-FBSDKShareKit";
+			productReference = 819CD598E077DDD8FCF11CBDF272F8BC /* libPods-FBSDKShareKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5C4181485D50EFD19AEE39D1EB10728A /* Pods-Bolts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51B8080F2F23E87BB3B0EDF1D431092F /* Build configuration list for PBXNativeTarget "Pods-Bolts" */;
+			buildPhases = (
+				D6FF424AB3800B0E7B44C3D995AADE4C /* Sources */,
+				388DE390F754D9FD3F7AB245F744D4CF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Bolts";
+			productName = "Pods-Bolts";
+			productReference = 40A740DD8E5D3EDCBE54618D0A078550 /* libPods-Bolts.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8ACC43D79F89886085654ADDE9478420 /* Pods-Pods-deKKoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB212451B852621B45B127B242E5D92F /* Build configuration list for PBXNativeTarget "Pods-Pods-deKKoTests" */;
+			buildPhases = (
+				23DD7674E277AF50AE874FE554246E15 /* Sources */,
+				F5A692E0B1D3501345835DD739824F38 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Pods-deKKoTests";
+			productName = "Pods-Pods-deKKoTests";
+			productReference = 6F40F5A5636CD247EA0832D79D974157 /* libPods-Pods-deKKoTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		90782397CFADEA5E7827BCE552BB4EED /* Pods-FacebookShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EFB0D6811A47AF9CD92703229196F42 /* Build configuration list for PBXNativeTarget "Pods-FacebookShare" */;
+			buildPhases = (
+				E25F104BF90ED3F47D8B8BA61111710F /* Sources */,
+				E0C4BAB48020FCCA6FD591110782FEDD /* Frameworks */,
+				81BD635677B14D5259C80605A35C2FD5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FacebookShare";
+			productName = "Pods-FacebookShare";
+			productReference = D832653DDC299B902B0F6EC6BF38F55B /* Pods_FacebookShare.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		950E6254B03ABC8C2FA88E8BCC7B88E2 /* Pods-FacebookCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEDAAA1E7121767EA0DD462ECB65A293 /* Build configuration list for PBXNativeTarget "Pods-FacebookCore" */;
+			buildPhases = (
+				053A2118B622C071A63920DC1BA39CBC /* Sources */,
+				8F2C10E5470A9E04E25EA81BE594160A /* Frameworks */,
+				F0137A2425C8894BF56A8130967AD157 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FacebookCore";
+			productName = "Pods-FacebookCore";
+			productReference = F538928085428A7A3D9483D751BB67F6 /* Pods_FacebookCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AB9902266389B22A4C9211F6F007B9B6 /* Pods-Pods-deKKoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12A815BFAE8EED30B1C67E25930DA09D /* Build configuration list for PBXNativeTarget "Pods-Pods-deKKoUITests" */;
+			buildPhases = (
+				26BEE8A383F52D22683ABB36FF822558 /* Sources */,
+				2F89A5854DD1E7DC198D7F23624A16FA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Pods-deKKoUITests";
+			productName = "Pods-Pods-deKKoUITests";
+			productReference = 1A214EF6B053DDE95199B45E0423C19C /* libPods-Pods-deKKoUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AC14F99C59308FEFF183BD382C7739E0 /* Pods-AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 318D9F085C2C40BBC098000E3816F6F4 /* Build configuration list for PBXNativeTarget "Pods-AFNetworking" */;
+			buildPhases = (
+				73400DD4A0AA0410C66AEBF769916160 /* Sources */,
+				2979888FEB67C4508A5F6441AC3F0FE3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AFNetworking";
+			productName = "Pods-AFNetworking";
+			productReference = 8B83488F7C811E7110E4569A37929583 /* libPods-AFNetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CBA33DAB1FF13CF3034C8B55EB0A3A8E /* Pods-GTMSessionFetcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF15CD833954EC93CACE7AB91A8150A9 /* Build configuration list for PBXNativeTarget "Pods-GTMSessionFetcher" */;
+			buildPhases = (
+				61871CDE71E328F47E399CE51D5A32C6 /* Sources */,
+				7C3B6527A6228279841EAF3FCAEAAC1E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GTMSessionFetcher";
+			productName = "Pods-GTMSessionFetcher";
+			productReference = 2109FC6882994A29E89E6EF1E68717FF /* libPods-GTMSessionFetcher.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D94644D762E90F1552E813ED9E01A8F9 /* Pods-FBSDKLoginKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF59B54062BC6086AA38A6FA7501362D /* Build configuration list for PBXNativeTarget "Pods-FBSDKLoginKit" */;
+			buildPhases = (
+				6938BEDF8660D55B39017946610B8B32 /* Sources */,
+				229D991BC4DB5A99E6251B38F34856B9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FBSDKLoginKit";
+			productName = "Pods-FBSDKLoginKit";
+			productReference = D4A911632DFF738954CFD4E92419ABDC /* libPods-FBSDKLoginKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DD4869C234F5519E7DD8D766B640EDAF /* Pods-GoogleToolboxForMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A88AD66BFD55508827B27449706202D2 /* Build configuration list for PBXNativeTarget "Pods-GoogleToolboxForMac" */;
+			buildPhases = (
+				B709B5534AB496BFAD3FFF88C235EEAB /* Sources */,
+				43FE238BEA1D11019669CD30375D5044 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GoogleToolboxForMac";
+			productName = "Pods-GoogleToolboxForMac";
+			productReference = CE88A62AE1978F292E9E613D6499184E /* libPods-GoogleToolboxForMac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E2C7E9E67CE0B755D64274747839A7B3 /* Pods-Pods-deKKo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E47BED41974D07C3754C50D31F65AFDB /* Build configuration list for PBXNativeTarget "Pods-Pods-deKKo" */;
+			buildPhases = (
+				61E67957C18A3F3F8C6B733254C1A81F /* Sources */,
+				D0162ACE8A7C9729A5CF5ED9FCB74376 /* Frameworks */,
+				C2B43B1A3ABE1D9CEFEBC7ADE925A24C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Pods-deKKo";
+			productName = "Pods-Pods-deKKo";
+			productReference = 542EF3323F14EC905A765490127AAE67 /* Pods_Pods_deKKo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FDDD9E20E28003E5C362A5881333CE71 /* Pods-GTMOAuth2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41A1C67C721750999F33947174C1E9B1 /* Build configuration list for PBXNativeTarget "Pods-GTMOAuth2" */;
+			buildPhases = (
+				110F551DFAF5531BF89F454AD202F33B /* Sources */,
+				EAED5EE0D28097083504EAD33AABDDD5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GTMOAuth2";
+			productName = "Pods-GTMOAuth2";
+			productReference = 3177BE91BC2CB5097054EEADCEC48D14 /* libPods-GTMOAuth2.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 25C976D0E022CD9BAE3E1DDFCD47081F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC14F99C59308FEFF183BD382C7739E0 /* Pods-AFNetworking */,
+				5C4181485D50EFD19AEE39D1EB10728A /* Pods-Bolts */,
+				950E6254B03ABC8C2FA88E8BCC7B88E2 /* Pods-FacebookCore */,
+				37BDA727AA948BFABDBFE9DD51D18838 /* Pods-FacebookLogin */,
+				90782397CFADEA5E7827BCE552BB4EED /* Pods-FacebookShare */,
+				029477F11507298D4C694A45650B6B4F /* Pods-FBSDKCoreKit */,
+				D94644D762E90F1552E813ED9E01A8F9 /* Pods-FBSDKLoginKit */,
+				5394DE5649B7BA29260240BF2C8639C8 /* Pods-FBSDKShareKit */,
+				DD4869C234F5519E7DD8D766B640EDAF /* Pods-GoogleToolboxForMac */,
+				FDDD9E20E28003E5C362A5881333CE71 /* Pods-GTMOAuth2 */,
+				CBA33DAB1FF13CF3034C8B55EB0A3A8E /* Pods-GTMSessionFetcher */,
+				3AEC18EC9C2930B5245C2BF910D1651D /* Pods-MBProgressHUD */,
+				E2C7E9E67CE0B755D64274747839A7B3 /* Pods-Pods-deKKo */,
+				8ACC43D79F89886085654ADDE9478420 /* Pods-Pods-deKKoTests */,
+				AB9902266389B22A4C9211F6F007B9B6 /* Pods-Pods-deKKoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		053A2118B622C071A63920DC1BA39CBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BBC71E64C7E1CDA127DF4225F9595DD /* Pods-FacebookCore-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		110F551DFAF5531BF89F454AD202F33B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652A2588BF20C7006DDDAD7F73ABF50B /* Pods-GTMOAuth2-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23DD7674E277AF50AE874FE554246E15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AAFAD1950FEE7ECB69CA375543ADF0E /* Pods-Pods-deKKoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26BEE8A383F52D22683ABB36FF822558 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54B64DED9AEF34EBC99E3EA58C02A341 /* Pods-Pods-deKKoUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4467AC4E7CB3EF61D8B4D1CE17601369 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C2F2DD755387CCE3A94492252F494B8 /* Pods-FacebookLogin-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		542F550157427276B1B1A0D734E51D88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE3ECE7361222E3EEEF28E38A9A7E093 /* Pods-FBSDKShareKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61871CDE71E328F47E399CE51D5A32C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				009D316A019F56EF53DA65EE20E3ED0D /* Pods-GTMSessionFetcher-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61E67957C18A3F3F8C6B733254C1A81F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D73ABACCB7CFAC2CDA16DB2B5304691B /* Pods-Pods-deKKo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64134035C92275B16C2BB5F17C930C79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C08EF4431C1739DEDCE3C57D70894AC4 /* Pods-MBProgressHUD-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6938BEDF8660D55B39017946610B8B32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26C79AFAAD695A256BE7662CF6F0676 /* Pods-FBSDKLoginKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73400DD4A0AA0410C66AEBF769916160 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07E9339EDDC209EE073000A465A6482E /* Pods-AFNetworking-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B709B5534AB496BFAD3FFF88C235EEAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66CDF1D8A6DE0565795F5076E942F9B1 /* Pods-GoogleToolboxForMac-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6FF424AB3800B0E7B44C3D995AADE4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3D69DFF9D5F58FF4DBF9554F9B0AA61 /* Pods-Bolts-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD34854AB3C9DB4096FFD870901DDCA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				579D9448CF490DD20A9498AF763C7C96 /* Pods-FBSDKCoreKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25F104BF90ED3F47D8B8BA61111710F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58ECB92F5E9149C59427FBE04A29802E /* Pods-FacebookShare-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		0FEE842D90A27766672E151CCBD02DD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B0F33B2189B9BA1762EA65B11AD976F /* Pods-FBSDKCoreKit.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		152F1D3A405E2F907B6872C17FDFC737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D7F24C5D34345702499101FF17FD566 /* Pods-AFNetworking.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1C79A57BA350E89EF75A952C665E5FD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5CF4B254205AD32CDE954280465B80D /* Pods-GoogleToolboxForMac.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2C2D9EF6EF9344B30F84D1AD448A7BE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9AC0931A53A573D4D257B6208BFCC7A /* Pods-Pods-deKKoUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		33EEE30FF985DD692B94E81C218A9F79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71BDC8F6E2B442B8B36DB3A8C7D9D366 /* Pods-FacebookCore.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FacebookCore/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FacebookCore/Pods-FacebookCore.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FacebookCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		35B4EDCBF7310DEC7B3DAB46875960A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9C16C2A230A341F6827BAE215B57EC6 /* Pods-GTMOAuth2.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3639128B1A9E121CAD4DE129D71CA630 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EFA130B7D0BDCDBFA866A3E3DA939D5 /* Pods-FacebookShare.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FacebookShare/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FacebookShare/Pods-FacebookShare.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FacebookShare;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		453696E6D7AB11984EABA2AEAAB693C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DBDC0A8B62DDED17B92C85A7731D4CC /* Pods-MBProgressHUD.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		48CDD9A563CA7A3AB35E8EDCF4D8D14D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED9283453C84D28FAACF41CA02FFE9A2 /* Pods-GoogleToolboxForMac.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4E532619EF000F1C9CCE2F8B63BBB90F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26EB0D402A45FF410CEF743C9BE89823 /* Pods-GTMSessionFetcher.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5205C1A51AE712C0698B9CBCB7F121D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9697B0A43466303567DFB0921AE4CA26 /* Pods-FBSDKShareKit.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		542E3F5A6D14A8CED405F4BDC1E10F0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1F950F733831F58B4B9BE179C1A624F /* Pods-Pods-deKKoTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		62C70046F28F9CEA04A0D92E7A57DBA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D490C82EE4C33C4749407CC4132974C /* Pods-FBSDKLoginKit.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		6A86B65DC36DDCD74A24364F76BFC54C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CB57375E5D3B9E3F0B8E065E8806119 /* Pods-Bolts.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6DF60493951E999A7B5A5CD22FC46637 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7842A5B9E16ED522AEC4F2B36212ED11 /* Pods-Pods-deKKoTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7BEF250A884E3E4F0E87780C7CFAF938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15111F1E3BBF3A9483F36DEA5904184C /* Pods-Pods-deKKo.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Pods-deKKo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pods-deKKo/Pods-Pods-deKKo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Pods_deKKo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		85F2F588E7A1785D622D1EA149E77CE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDB8D8EE13AD0459FDDFD56A0A36A0ED /* Pods-Pods-deKKoUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A113C3ABBE1692C161E7ED6AA5904AA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBD978514234A051E0572B21387182CF /* Pods-FacebookCore.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FacebookCore/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FacebookCore/Pods-FacebookCore.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FacebookCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AA3384ADFAADBB43D3460880F9E2B4C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96F0ABE6CEF389779240218097D8B92A /* Pods-Bolts.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B489F02877649B692B3D1EEB515DC940 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35DA068C7F5352339844FC8400702E93 /* Pods-FacebookLogin.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FacebookLogin/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FacebookLogin/Pods-FacebookLogin.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FacebookLogin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BB233A955C68D368DB2022285E3DC1B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90D260FB41D96CDE4590DE20F9036EDE /* Pods-GTMSessionFetcher.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BCB3F75576D5D662B727496AC4F70C3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCCD5EC8CC05A9E6BBA930231EB32079 /* Pods-MBProgressHUD.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C7CABEBBF79B746490B679EBC65B1D0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9BCA00B19DE37B063E924D193202413 /* Pods-AFNetworking.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CD3DE1AF934C00C8C841A80B10B0EF54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE745B781958C1B45BF5BF20A185C344 /* Pods-FacebookShare.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FacebookShare/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FacebookShare/Pods-FacebookShare.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FacebookShare;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CD82E56A2A49123C0DB90992B2314D5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10C5AA4CDDD450B5FA74BC3B6E9E3B82 /* Pods-Pods-deKKo.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Pods-deKKo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pods-deKKo/Pods-Pods-deKKo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Pods_deKKo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DC3FF311EB863FF82CF8FC696C455296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2C7C5242C6F62B63AB4ED0042BE1D72 /* Pods-GTMOAuth2.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DCF2B7443EF4569109F4ADD9EA215B47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D67BAE6BA633296D33C6AA30BBD8424 /* Pods-FBSDKCoreKit.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EDF72385DC907501BED12FE06106E2E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56A95A69268C8B6F13A5912303AA0DC1 /* Pods-FBSDKLoginKit.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F6FADF91EFBCC7ED213D6186C2BB4414 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EC10E7065E3214B8FEAD034EEB98455 /* Pods-FacebookLogin.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FacebookLogin/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FacebookLogin/Pods-FacebookLogin.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FacebookLogin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FD1E6710D3D58757851B28415BDDAE18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D441846D2B147C1AC421AF9F31E8442E /* Pods-FBSDKShareKit.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FF3CD663549C143D61ACEA9C3BC17D1 /* Build configuration list for PBXNativeTarget "Pods-FacebookLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6FADF91EFBCC7ED213D6186C2BB4414 /* Debug */,
+				B489F02877649B692B3D1EEB515DC940 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12A815BFAE8EED30B1C67E25930DA09D /* Build configuration list for PBXNativeTarget "Pods-Pods-deKKoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85F2F588E7A1785D622D1EA149E77CE6 /* Debug */,
+				2C2D9EF6EF9344B30F84D1AD448A7BE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25F3A41C459CF6FA1F8F435AF311FDFD /* Build configuration list for PBXNativeTarget "Pods-FBSDKCoreKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FEE842D90A27766672E151CCBD02DD6 /* Debug */,
+				DCF2B7443EF4569109F4ADD9EA215B47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		318D9F085C2C40BBC098000E3816F6F4 /* Build configuration list for PBXNativeTarget "Pods-AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7CABEBBF79B746490B679EBC65B1D0E /* Debug */,
+				152F1D3A405E2F907B6872C17FDFC737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41A1C67C721750999F33947174C1E9B1 /* Build configuration list for PBXNativeTarget "Pods-GTMOAuth2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35B4EDCBF7310DEC7B3DAB46875960A6 /* Debug */,
+				DC3FF311EB863FF82CF8FC696C455296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EFB0D6811A47AF9CD92703229196F42 /* Build configuration list for PBXNativeTarget "Pods-FacebookShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3639128B1A9E121CAD4DE129D71CA630 /* Debug */,
+				CD3DE1AF934C00C8C841A80B10B0EF54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51B8080F2F23E87BB3B0EDF1D431092F /* Build configuration list for PBXNativeTarget "Pods-Bolts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A86B65DC36DDCD74A24364F76BFC54C /* Debug */,
+				AA3384ADFAADBB43D3460880F9E2B4C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		726F85A5E1BDFC6E69AE31197226AE02 /* Build configuration list for PBXNativeTarget "Pods-MBProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				453696E6D7AB11984EABA2AEAAB693C3 /* Debug */,
+				BCB3F75576D5D662B727496AC4F70C3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AC21284E2A1EAB3377CC2864EB4BEB3 /* Build configuration list for PBXNativeTarget "Pods-FBSDKShareKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5205C1A51AE712C0698B9CBCB7F121D5 /* Debug */,
+				FD1E6710D3D58757851B28415BDDAE18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A88AD66BFD55508827B27449706202D2 /* Build configuration list for PBXNativeTarget "Pods-GoogleToolboxForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48CDD9A563CA7A3AB35E8EDCF4D8D14D /* Debug */,
+				1C79A57BA350E89EF75A952C665E5FD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB212451B852621B45B127B242E5D92F /* Build configuration list for PBXNativeTarget "Pods-Pods-deKKoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DF60493951E999A7B5A5CD22FC46637 /* Debug */,
+				542E3F5A6D14A8CED405F4BDC1E10F0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEDAAA1E7121767EA0DD462ECB65A293 /* Build configuration list for PBXNativeTarget "Pods-FacebookCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A113C3ABBE1692C161E7ED6AA5904AA7 /* Debug */,
+				33EEE30FF985DD692B94E81C218A9F79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF15CD833954EC93CACE7AB91A8150A9 /* Build configuration list for PBXNativeTarget "Pods-GTMSessionFetcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E532619EF000F1C9CCE2F8B63BBB90F /* Debug */,
+				BB233A955C68D368DB2022285E3DC1B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E47BED41974D07C3754C50D31F65AFDB /* Build configuration list for PBXNativeTarget "Pods-Pods-deKKo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BEF250A884E3E4F0E87780C7CFAF938 /* Debug */,
+				CD82E56A2A49123C0DB90992B2314D5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF59B54062BC6086AA38A6FA7501362D /* Build configuration list for PBXNativeTarget "Pods-FBSDKLoginKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF72385DC907501BED12FE06106E2E7 /* Debug */,
+				62C70046F28F9CEA04A0D92E7A57DBA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
