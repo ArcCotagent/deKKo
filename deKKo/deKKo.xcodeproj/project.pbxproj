@@ -281,7 +281,7 @@
 				TargetAttributes = {
 					EB64874D1E81E08300BD4252 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = DKCXNRA86D;
+						DevelopmentTeam = QC92DH6LC6;
 						ProvisioningStyle = Automatic;
 					};
 					EB6487611E81E08300BD4252 = {
@@ -647,12 +647,14 @@
 			baseConfigurationReference = 0212C20352D0FAE7D2C3E566 /* Pods-deKKo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = DKCXNRA86D;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QC92DH6LC6;
 				INFOPLIST_FILE = deKKo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.axer0310.deKKo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.teresa01.deKKo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -662,12 +664,14 @@
 			baseConfigurationReference = C23F5BD342AA411C51EC846A /* Pods-deKKo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = DKCXNRA86D;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QC92DH6LC6;
 				INFOPLIST_FILE = deKKo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.axer0310.deKKo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.teresa01.deKKo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
