@@ -84,6 +84,7 @@ PODS:
     - GTMSessionFetcher/Core (= 1.1.8)
   - LFLiveKit (2.6)
   - MBProgressHUD (1.0.0)
+  - TwilioVideo (1.0.0-beta12)
 
 DEPENDENCIES:
   - AFNetworking
@@ -93,6 +94,7 @@ DEPENDENCIES:
   - Google/SignIn
   - LFLiveKit
   - MBProgressHUD
+  - TwilioVideo (= 1.0.0-beta12)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -116,7 +118,8 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 6f8d8b28b7e345549ac471071608170b31cb4977
   LFLiveKit: 2219563721f8aa0f188effc3395a06e2d53b23f2
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  TwilioVideo: 666a87c224ffcfc0d31d8b603ffb02a2c7b91989
 
-PODFILE CHECKSUM: 0a363496d07eef0bbd9907106e9e1dd374dadd51
+PODFILE CHECKSUM: decf6ebd00778f49a05657890ba0ab93c5571768
 
 COCOAPODS: 1.2.0

@@ -12,7 +12,7 @@ import LFLiveKit
 
 class CameraViewController: UIViewController,LFLiveSessionDelegate {
 
-    @IBOutlet weak var cameraView: UIView!
+   
     @IBOutlet weak var stateL: UILabel!
    
     //Initalize basic camera and audio configuration
