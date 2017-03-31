@@ -12,9 +12,7 @@ import TwilioVideo
 class CameraViewController: UIViewController
 {
 
-<<<<<<< HEAD
-   
-=======
+
     // Configure access token manually for testing, if desired! Create one manually in the console
     // at https://www.twilio.com/user/account/video/dev-tools/testing-tools
     var accessToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImN0eSI6InR3aWxpby1mcGE7dj0xIn0.eyJqdGkiOiJTS2RlZGZhNGNmYzFjMGQ3YjdjODQ3N2JmZGFjMzNjOWQ2LTE0OTA5MzA1NDEiLCJpc3MiOiJTS2RlZGZhNGNmYzFjMGQ3YjdjODQ3N2JmZGFjMzNjOWQ2Iiwic3ViIjoiQUNjNGVlM2E0ZDg0NGUzM2UxMGYwOGI5MmZlYjZiY2MxMiIsImV4cCI6MTQ5MDkzNDE0MSwiZ3JhbnRzIjp7ImlkZW50aXR5IjoiYXJ0aHVyMzMwdGVzdCIsInJ0YyI6eyJjb25maWd1cmF0aW9uX3Byb2ZpbGVfc2lkIjoiVlMwNGFiZGRhYzk0YTNhNGIxNDE5NzkxYzBkMTdjMjk5OCJ9fX0.sj4cOEtd0gEmhbqZFFaK3T_Y1acLelSh4skD2O9UFFo"
@@ -34,8 +32,7 @@ class CameraViewController: UIViewController
     
     
     @IBOutlet var localCameraView: UIView!
-    
->>>>>>> master
+
     @IBOutlet weak var stateL: UILabel!
 
     
