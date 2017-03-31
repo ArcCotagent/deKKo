@@ -45,6 +45,8 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
     {
         GIDSignIn.sharedInstance().signIn()
     }
+    
+    
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!)
     {
         if error != nil

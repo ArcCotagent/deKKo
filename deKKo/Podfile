@@ -11,7 +11,7 @@ target 'deKKo' do
   pod 'Google/SignIn'
   pod 'MBProgressHUD'
 
-  pod 'LFLiveKit'
+  pod 'TwilioVideo', '1.0.0-beta12'
 
   pod 'FacebookCore'
   pod 'FacebookLogin'

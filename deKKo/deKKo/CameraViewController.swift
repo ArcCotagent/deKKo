@@ -7,40 +7,42 @@
 //
 
 import UIKit
-import AVFoundation
-import LFLiveKit
+import TwilioVideo
 
-class CameraViewController: UIViewController,LFLiveSessionDelegate {
+class CameraViewController: UIViewController
+{
 
+<<<<<<< HEAD
    
-    @IBOutlet weak var stateL: UILabel!
-   
-    //Initalize basic camera and audio configuration
-    lazy var session: LFLiveSession = {
-        
-        let audioConfiguration = LFLiveAudioConfiguration.defaultConfiguration(for: LFLiveAudioQuality.high)
-        let videoConfiguration = LFLiveVideoConfiguration.defaultConfiguration(for: LFLiveVideoQuality.high2)
-        
-        let session = LFLiveSession(audioConfiguration: audioConfiguration, videoConfiguration: videoConfiguration)
-        session?.delegate = self
-        session?.captureDevicePosition = .back
-        session?.preView = self.view
-        
-        
-        return session!
-    }()
+=======
+    // Configure access token manually for testing, if desired! Create one manually in the console
+    // at https://www.twilio.com/user/account/video/dev-tools/testing-tools
+    var accessToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImN0eSI6InR3aWxpby1mcGE7dj0xIn0.eyJqdGkiOiJTS2RlZGZhNGNmYzFjMGQ3YjdjODQ3N2JmZGFjMzNjOWQ2LTE0OTA5MzA1NDEiLCJpc3MiOiJTS2RlZGZhNGNmYzFjMGQ3YjdjODQ3N2JmZGFjMzNjOWQ2Iiwic3ViIjoiQUNjNGVlM2E0ZDg0NGUzM2UxMGYwOGI5MmZlYjZiY2MxMiIsImV4cCI6MTQ5MDkzNDE0MSwiZ3JhbnRzIjp7ImlkZW50aXR5IjoiYXJ0aHVyMzMwdGVzdCIsInJ0YyI6eyJjb25maWd1cmF0aW9uX3Byb2ZpbGVfc2lkIjoiVlMwNGFiZGRhYzk0YTNhNGIxNDE5NzkxYzBkMTdjMjk5OCJ9fX0.sj4cOEtd0gEmhbqZFFaK3T_Y1acLelSh4skD2O9UFFo"
     
-    override func viewDidLoad() {
+    // Configure remote URL to fetch token from
+    var tokenUrl = "http://localhost:8000/token.php"
+    
+    // Video SDK components
+    
+    var localMedia: TVILocalMedia?
+    var camera: TVICameraCapturer?
+    var localVideoTrack: TVILocalVideoTrack?
+    var localAudioTrack: TVILocalAudioTrack?
+    var participant: TVIParticipant?
+    var room: TVIRoom?
+
+    
+    
+    @IBOutlet var localCameraView: UIView!
+    
+>>>>>>> master
+    @IBOutlet weak var stateL: UILabel!
+
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        session.delegate = self
-        session.preView = self.view
-        
-        self.requestAccessForVideo()
-        self.requestAccessForAudio()
-        self.view.backgroundColor = UIColor.clear
-        cameraView.backgroundColor = UIColor.clear
-        cameraView.autoresizingMask = [UIViewAutoresizing.flexibleHeight,UIViewAutoresizing.flexibleHeight]
- 
+        localMedia = TVILocalMedia()
         
     }
 
@@ -51,90 +53,136 @@ class CameraViewController: UIViewController,LFLiveSessionDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        session.running = true
+       
         
     }
    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        session.running = false
+      
         
     }
     
-    //Check for authentication and ask for authentication
-    func requestAccessForVideo() -> Void {
-        
-        let status = AVCaptureDevice.authorizationStatus(forMediaType: AVMediaTypeVideo)
-        
-        switch status  {
-                //Ask for permission if not authorized
-                case AVAuthorizationStatus.notDetermined:
-                        AVCaptureDevice.requestAccess(forMediaType: AVMediaTypeVideo, completionHandler: { (granted) in
-                            if(granted){
-                                    DispatchQueue.main.async {
-                                    self.session.running = true
-                                }
-                            }
-                        })
-            break
-            
-                //Authorized start the session
-                case AVAuthorizationStatus.authorized:
-                        session.running = true
-                        break
-            
-                //When its being denied
-                case AVAuthorizationStatus.denied:
-                    break
-            
-                //When its being restricted
-                case AVAuthorizationStatus.restricted:
-                    break
-            
-                default:
-                    break
+    @IBAction func StartLive(_ sender: Any)
+    {
+        connect()
+    }
+    func connect()
+    {
+        self.prepareLocalMedia()
+        let connectOptions = TVIConnectOptions.init(token: accessToken) { (builder) in
+            builder.roomName = "room123"
+            builder.localMedia = self.localMedia
         }
+        
+        room = TVIVideoClient.connect(with: connectOptions, delegate: self)
+    }
+    
+    func prepareLocalMedia()
+    {
+        
+        if(PlatformUtils.isSimulator)
+        {
+            return
+        }
+        camera = TVICameraCapturer()
+        self.localVideoTrack = self.localMedia?.addVideoTrack(true, capturer: camera!)
+        // We will offer local audio and video when we connect to room.
+        
+        // Adding local audio track to localMedia
+        if (localAudioTrack == nil) {
+            localAudioTrack = localMedia?.addAudioTrack(true)
+        }
+        
+        localVideoTrack?.attach(self.localCameraView)
+        
+        if (localVideoTrack == nil)
+        {
+            print( "Failed to add video track")
+        }
+        // Adding local video track to localMedia and starting local preview if it is not already started.
+        
     }
 
-     func requestAccessForAudio() -> Void {
+    
+}
+extension CameraViewController : TVIRoomDelegate {
+    func didConnect(to room: TVIRoom) {
+        // The Local Participant
+        let localParticipant = room.localParticipant;
+        print("Local identity \(localParticipant!.identity)")
         
-            let status = AVCaptureDevice.authorizationStatus(forMediaType:AVMediaTypeAudio)
+        // Connected participants
+        let participants = room.participants;
+        print("Number of connected participants \(participants.count)")
+        if (room.participants.count > 0) {
+            self.participant = room.participants[0]
+            self.participant?.delegate = self
+        }
         
-            switch status  {
-                
-                    case AVAuthorizationStatus.notDetermined:
-                        AVCaptureDevice.requestAccess(forMediaType: AVMediaTypeAudio, completionHandler: { (granted) in
-                
-                        })
-            
-                    case AVAuthorizationStatus.authorized:
-                        break
-       
-                    case AVAuthorizationStatus.denied:
-                        break
-                    case AVAuthorizationStatus.restricted:
-                        break
-        default:
-            break
+    }
+    
+    func room(_ room: TVIRoom, participantDidConnect participant: TVIParticipant) {
+        print ("Participant \(participant.identity) has joined Room \(room.name)")
+        if (self.participant == nil) {
+            self.participant = participant
+            self.participant?.delegate = self
+        }
+        
+    }
+    
+    func room(_ room: TVIRoom, participantDidDisconnect participant: TVIParticipant) {
+        print ("Participant \(participant.identity) has left Room \(room.name)")
+    }
+    
+}
+
+// MARK: TVIParticipantDelegate
+
+extension CameraViewController : TVIParticipantDelegate {
+    func participant(_ participant: TVIParticipant, addedVideoTrack videoTrack: TVIVideoTrack) {
+        //logMessage(messageText: "Participant \(participant.identity) added video track")
+        
+        if (self.participant == participant) {
+            //videoTrack.attach(self.remoteView)
         }
     }
     
-    //Change the position of camera
-    @IBAction func switchCameraPosition(_ sender: Any) {
+    func participant(_ participant: TVIParticipant, removedVideoTrack videoTrack: TVIVideoTrack) {
+        // logMessage(messageText: "Participant \(participant.identity) removed video track")
         
-        //The current position of the camera
-        let devicePosition = session.captureDevicePosition
-        
-        if devicePosition == AVCaptureDevicePosition.back {
-            //Change to the front
-            session.captureDevicePosition = .front
-            
-        }else{
-            //Change to back
-            session.captureDevicePosition = .back
-            
+        if (self.participant == participant) {
+      //      videoTrack.detach(self.remoteView)
         }
     }
     
-   }
+    func participant(_ participant: TVIParticipant, addedAudioTrack audioTrack: TVIAudioTrack) {
+        //  logMessage(messageText: "Participant \(participant.identity) added audio track")
+        
+    }
+    
+    func participant(_ participant: TVIParticipant, removedAudioTrack audioTrack: TVIAudioTrack) {
+        // logMessage(messageText: "Participant \(participant.identity) removed audio track")
+    }
+    
+    func participant(_ participant: TVIParticipant, enabledTrack track: TVITrack) {
+        var type = ""
+        if (track is TVIVideoTrack) {
+            type = "video"
+        } else {
+            type = "audio"
+        }
+        // logMessage(messageText: "Participant \(participant.identity) enabled \(type) track")
+    }
+    
+    func participant(_ participant: TVIParticipant, disabledTrack track: TVITrack) {
+        var type = ""
+        if (track is TVIVideoTrack) {
+            type = "video"
+        } else {
+            type = "audio"
+        }
+        //  logMessage(messageText: "Participant \(participant.identity) disabled \(type) track")
+    }
+}
 
