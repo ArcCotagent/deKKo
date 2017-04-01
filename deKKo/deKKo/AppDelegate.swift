@@ -10,6 +10,7 @@ import UIKit
 import Google
 import GoogleSignIn
 import FBSDKCoreKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate
@@ -27,7 +28,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
         //Initial Connection
-    
+        Parse.initialize(
+            with: ParseClientConfiguration(block: { (configuration:ParseMutableClientConfiguration) -> Void in
+                configuration.applicationId = "InstaApp"
+                configuration.clientKey = "a;ldkfja;lkjdsf;aa;lsdkjf;lka"  // set to nil assuming you have not set clientKey
+                configuration.server = "https://limitless-tor-53775.herokuapp.com/parse"
+            }))
+        
+        //Persisting user session
+        //Persisting user session
+        if(PFUser.current() != nil){
+            print("Current user in session")
+            
+            let storyboard = UIStoryboard(name: "mainView", bundle: nil)
+            let viewcontroller = storyboard.instantiateViewController(withIdentifier: "mainViewNavigation")
+            
+            window?.rootViewController = viewcontroller
+        } else{
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let viewcontroller = storyboard.instantiateInitialViewController()
+            window?.rootViewController = viewcontroller
+        }
+
         return true
     }
     
