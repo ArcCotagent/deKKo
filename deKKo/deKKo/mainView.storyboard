@@ -58,48 +58,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zPE-8o-QJc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1282.4000000000001" y="246.9265367316342"/>
+            <point key="canvasLocation" x="-914" y="237"/>
         </scene>
-        <!--Blog View Controller-->
-        <scene sceneID="Ykx-iy-DKz">
+        <!--View Controller-->
+        <scene sceneID="c4w-nQ-BsV">
             <objects>
-                <viewController storyboardIdentifier="SecondVC" id="Lpl-gi-rSs" customClass="VBlogViewController" customModule="deKKo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondVC" id="1fW-rQ-U58" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="MtM-Od-Ol5"/>
-                        <viewControllerLayoutGuide type="bottom" id="fWS-98-NeT"/>
+                        <viewControllerLayoutGuide type="top" id="AY6-z3-rah"/>
+                        <viewControllerLayoutGuide type="bottom" id="ttu-qC-Bcg"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="7b3-iA-Rh5">
+                    <view key="view" contentMode="scaleToFill" id="4gA-Ew-MsK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="461" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A4D-6S-c3s">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="461" id="Zf5-6p-uK8">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="461"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zf5-6p-uK8" id="aDX-Fe-XxX">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="460"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FHW-2s-IMR">
-                                                    <rect key="frame" x="31" y="8" width="314" height="445"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="0.73807023869999999" green="0.9542786593" blue="0.90638844770000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </view>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BQe-mi-VbY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fna-fL-QhO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-586.39999999999998" y="246.9265367316342"/>
+            <point key="canvasLocation" x="-182" y="221"/>
         </scene>
     </scenes>
     <resources>
