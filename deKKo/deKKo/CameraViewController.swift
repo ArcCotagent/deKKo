@@ -18,7 +18,7 @@ class CameraViewController: UIViewController
     var accessToken = "TWILIO_ACCESS_TOKEN"
     var userName = ""
     // Configure remote URL to fetch token from
-    var tokenUrl = "http://dekkotest.000webhostapp.com/?name=arthur"
+    var tokenUrl = "http://dekkotest.000webhostapp.com/?name="
     
     
     // Video SDK components
@@ -31,6 +31,7 @@ class CameraViewController: UIViewController
     var room: TVIRoom?
     
     
+    let defaults = UserDefaults.standard
     
     
     @IBOutlet var localCameraView: UIView!
@@ -70,9 +71,22 @@ class CameraViewController: UIViewController
     {
         if (accessToken == "TWILIO_ACCESS_TOKEN") {
             do {
-                tokenUrl+=userName
-                tokenUrl =  tokenUrl.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)!
-                accessToken = try TokenUtils.fetchToken(url: tokenUrl)
+                
+                let userInfo = defaults.object(forKey: "userInfo") as? Dictionary<String, Any>
+                
+                if let userInfo = userInfo
+                {
+                    userName = userInfo["userName"] as! String
+                    
+                    tokenUrl+=userName
+                    tokenUrl =  tokenUrl.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)!
+                    accessToken = try TokenUtils.fetchToken(url: tokenUrl)
+                }
+                else
+                {
+                    print("Failed to retrive userInfo")
+                }
+                
             } catch {
                 let message = "Failed to fetch access token"
                 logMessage(messageText: message)
@@ -109,8 +123,10 @@ class CameraViewController: UIViewController
         if (localAudioTrack == nil) {
             localAudioTrack = localMedia?.addAudioTrack(true)
         }
-        
+       
         localVideoTrack?.attach(self.localCameraView)
+        
+        
         
         if (localVideoTrack == nil)
         {
