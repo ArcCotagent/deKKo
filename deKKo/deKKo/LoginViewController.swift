@@ -23,6 +23,8 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
     
     @IBOutlet weak var passWord: UITextField!
     @IBOutlet weak var userName: UITextField!
+    
+    
     var userInfo:Dictionary<String, Any> = [:]
     let defaults = UserDefaults.standard
   
