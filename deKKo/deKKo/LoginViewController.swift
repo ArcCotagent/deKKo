@@ -78,10 +78,13 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
             if user != nil{
                 print("Login")
                 MBProgressHUD.hide(for: self.view, animated: true)
+                self.userInfo["userName"] = user?.username!
+                self.defaults.set(self.userInfo, forKey: "userInfo")
                 let mainView = UIStoryboard(name: "mainView", bundle: nil)
                 let vc = mainView.instantiateViewController(withIdentifier: "mainViewNavigation")
                 self.present(vc, animated: true, completion: {})
             }else{
+                MBProgressHUD.hide(for: self.view, animated: true)
                 print("Error failed")
                 print(error?.localizedDescription ?? 0)
                 let alertc = UIAlertController(title: "Error", message: "Login error please login again", preferredStyle: .alert)
