@@ -10,21 +10,31 @@ import UIKit
 import GoogleSignIn
 import Google
 import FBSDKLoginKit
+import FacebookCore
 class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegate
 {
 
-    var userInfo = [String]()
-    
-    override func viewDidLoad() {
+    var userInfo:Dictionary<String, Any> = [:]
+    let defaults = UserDefaults.standard
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
+        /*GOOGLE Login settings*/
         var configureError: NSError?
-        
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance().clientID = "963253939831-hod6842oqnllcnvhrmn7s56q7nn2baan.apps.googleusercontent.com"
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if let userInfo = defaults.object(forKey: "userInfo") as? Dictionary<String, Any>
+        {
+            
+            let mainView = UIStoryboard(name: "mainView", bundle: nil)
+            let vc = mainView.instantiateViewController(withIdentifier: "mainViewNavigation")
+            present(vc, animated: true, completion: {})
+        }
 
-        // Do any additional setup after loading the view.
-        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
     }
 
     override func didReceiveMemoryWarning() {
@@ -63,9 +73,10 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
             
             let mainView = UIStoryboard(name: "mainView", bundle: nil)
             let vc = mainView.instantiateViewController(withIdentifier: "mainViewNavigation")
-            let cameraVC = mainView.instantiateViewController(withIdentifier: "FirstVC") as! CameraViewController
-            cameraVC.userName = user.profile.name
-
+           
+            userInfo["userName"] = user.profile.name
+            defaults.set(userInfo, forKey: "userInfo")
+            
             present(vc, animated: true, completion: {})
         }
         
@@ -89,6 +100,25 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
                 print("FB Login success")
                 let mainView = UIStoryboard(name: "mainView", bundle: nil)
                 let vc = mainView.instantiateViewController(withIdentifier: "mainViewNavigation")
+                
+                let connection = GraphRequestConnection()
+                connection.add(GraphRequest(graphPath: "/me")) { httpResponse, result in
+                    switch result {
+                    case .success(let response):
+                        print("Graph Request Succeeded: \(response)")
+                        print(response.dictionaryValue!["name"]!)
+                        self.userInfo["userName"] = response.dictionaryValue!["name"]!
+                        self.defaults.set(self.userInfo, forKey: "userInfo")
+                        
+                        
+                    case .failed(let error):
+                        print("Graph Request Failed: \(error)")
+                    }
+                }
+                connection.start()
+                
+                
+                
                 self.present(vc, animated: true, completion: {})
 
             }
