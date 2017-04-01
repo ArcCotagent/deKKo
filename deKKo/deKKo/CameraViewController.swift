@@ -123,8 +123,10 @@ class CameraViewController: UIViewController
         if (localAudioTrack == nil) {
             localAudioTrack = localMedia?.addAudioTrack(true)
         }
-        
+       
         localVideoTrack?.attach(self.localCameraView)
+        
+        
         
         if (localVideoTrack == nil)
         {
