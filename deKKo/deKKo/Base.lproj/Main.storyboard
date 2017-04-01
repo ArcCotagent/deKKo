@@ -96,11 +96,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="Forgot your Password ?"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zr4-NX-Una">
-                                <rect key="frame" x="16" y="494" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mm2-4Y-KX3" customClass="FBSDKLoginButton">
                                 <rect key="frame" x="214" y="488" width="145" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -118,7 +113,6 @@
                         <color key="backgroundColor" red="0.86247763035892278" green="0.9312936230964467" blue="0.84408475296088747" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="googleSigninBtn" destination="zr4-NX-Una" id="jDI-be-6cQ"/>
                         <outlet property="passWord" destination="J0e-tq-Mbp" id="rmE-9x-Nct"/>
                         <outlet property="userName" destination="ges-fa-wVU" id="6oz-OQ-cH3"/>
                     </connections>
