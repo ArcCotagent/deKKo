@@ -15,10 +15,11 @@ class CameraViewController: UIViewController
 
     // Configure access token manually for testing, if desired! Create one manually in the console
     // at https://www.twilio.com/user/account/video/dev-tools/testing-tools
-    var accessToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImN0eSI6InR3aWxpby1mcGE7dj0xIn0.eyJqdGkiOiJTS2RlZGZhNGNmYzFjMGQ3YjdjODQ3N2JmZGFjMzNjOWQ2LTE0OTA5MzA1NDEiLCJpc3MiOiJTS2RlZGZhNGNmYzFjMGQ3YjdjODQ3N2JmZGFjMzNjOWQ2Iiwic3ViIjoiQUNjNGVlM2E0ZDg0NGUzM2UxMGYwOGI5MmZlYjZiY2MxMiIsImV4cCI6MTQ5MDkzNDE0MSwiZ3JhbnRzIjp7ImlkZW50aXR5IjoiYXJ0aHVyMzMwdGVzdCIsInJ0YyI6eyJjb25maWd1cmF0aW9uX3Byb2ZpbGVfc2lkIjoiVlMwNGFiZGRhYzk0YTNhNGIxNDE5NzkxYzBkMTdjMjk5OCJ9fX0.sj4cOEtd0gEmhbqZFFaK3T_Y1acLelSh4skD2O9UFFo"
-    
+    var accessToken = "TWILIO_ACCESS_TOKEN"
+    var userName = ""
     // Configure remote URL to fetch token from
-    var tokenUrl = "http://localhost:8000/token.php"
+    var tokenUrl = "http://dekkotest.000webhostapp.com/?name=arthur"
+    
     
     // Video SDK components
     
@@ -28,7 +29,8 @@ class CameraViewController: UIViewController
     var localAudioTrack: TVILocalAudioTrack?
     var participant: TVIParticipant?
     var room: TVIRoom?
-
+    
+    
     
     
     @IBOutlet var localCameraView: UIView!
@@ -66,6 +68,19 @@ class CameraViewController: UIViewController
     }
     func connect()
     {
+        if (accessToken == "TWILIO_ACCESS_TOKEN") {
+            do {
+                tokenUrl+=userName
+                tokenUrl =  tokenUrl.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)!
+                accessToken = try TokenUtils.fetchToken(url: tokenUrl)
+            } catch {
+                let message = "Failed to fetch access token"
+                logMessage(messageText: message)
+                return
+            }
+        }
+
+        
         self.prepareLocalMedia()
         let connectOptions = TVIConnectOptions.init(token: accessToken) { (builder) in
             builder.roomName = "room123"
@@ -73,6 +88,10 @@ class CameraViewController: UIViewController
         }
         
         room = TVIVideoClient.connect(with: connectOptions, delegate: self)
+    }
+    func logMessage(messageText:String)
+    {
+        print(messageText)
     }
     
     func prepareLocalMedia()
