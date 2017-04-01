@@ -16,13 +16,13 @@
 		A6F6C1DC05D1AFAFDE733C36 /* Pods_deKKo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660E31CF1B134C33E98982EC /* Pods_deKKo.framework */; };
 		EB498EBA1E839EEB005E0836 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB498EB91E839EEB005E0836 /* CameraViewController.swift */; };
 		EB6487521E81E08300BD4252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6487511E81E08300BD4252 /* AppDelegate.swift */; };
-		EB6487541E81E08300BD4252 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6487531E81E08300BD4252 /* ViewController.swift */; };
 		EB6487571E81E08300BD4252 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB6487551E81E08300BD4252 /* Main.storyboard */; };
 		EB6487591E81E08300BD4252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB6487581E81E08300BD4252 /* Assets.xcassets */; };
 		EB64875C1E81E08300BD4252 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB64875A1E81E08300BD4252 /* LaunchScreen.storyboard */; };
 		EB6487671E81E08300BD4252 /* deKKoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6487661E81E08300BD4252 /* deKKoTests.swift */; };
 		EB6487721E81E08300BD4252 /* deKKoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6487711E81E08300BD4252 /* deKKoUITests.swift */; };
 		EB73DCF71E82E2370092E287 /* mainView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB73DCF61E82E2370092E287 /* mainView.storyboard */; };
+		EBCB85591E9034730086B1CD /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB85581E9034730086B1CD /* CreateUserViewController.swift */; };
 		EBF52A2F1E81F748002438A2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF52A2D1E81F748002438A2 /* LoginViewController.swift */; };
 		EBF52A301E81F748002438A2 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF52A2E1E81F748002438A2 /* PageViewController.swift */; };
 /* End PBXBuildFile section */
@@ -59,7 +59,6 @@
 		EB498EB91E839EEB005E0836 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		EB64874E1E81E08300BD4252 /* deKKo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deKKo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6487511E81E08300BD4252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EB6487531E81E08300BD4252 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB6487561E81E08300BD4252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB6487581E81E08300BD4252 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB64875B1E81E08300BD4252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,6 +70,7 @@
 		EB6487711E81E08300BD4252 /* deKKoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deKKoUITests.swift; sourceTree = "<group>"; };
 		EB6487731E81E08300BD4252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB73DCF61E82E2370092E287 /* mainView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = mainView.storyboard; sourceTree = "<group>"; };
+		EBCB85581E9034730086B1CD /* CreateUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 		EBF52A2D1E81F748002438A2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EBF52A2E1E81F748002438A2 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -195,8 +195,8 @@
 		EBF52A2C1E81F736002438A2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				EB6487531E81E08300BD4252 /* ViewController.swift */,
 				EBF52A2D1E81F748002438A2 /* LoginViewController.swift */,
+				EBCB85581E9034730086B1CD /* CreateUserViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -278,7 +278,7 @@
 				TargetAttributes = {
 					EB64874D1E81E08300BD4252 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = DKCXNRA86D;
+						DevelopmentTeam = QANYNE4FM7;
 						ProvisioningStyle = Automatic;
 					};
 					EB6487611E81E08300BD4252 = {
@@ -489,7 +489,7 @@
 			files = (
 				EBF52A2F1E81F748002438A2 /* LoginViewController.swift in Sources */,
 				EB498EBA1E839EEB005E0836 /* CameraViewController.swift in Sources */,
-				EB6487541E81E08300BD4252 /* ViewController.swift in Sources */,
+				EBCB85591E9034730086B1CD /* CreateUserViewController.swift in Sources */,
 				EB6487521E81E08300BD4252 /* AppDelegate.swift in Sources */,
 				EBF52A301E81F748002438A2 /* PageViewController.swift in Sources */,
 				8E49D23C1E8E023A00DB960B /* Utils.swift in Sources */,
@@ -644,12 +644,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = DKCXNRA86D;
+				DEVELOPMENT_TEAM = QANYNE4FM7;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = deKKo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.axer0310.deKKo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peter.deKKo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
@@ -662,12 +662,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = DKCXNRA86D;
+				DEVELOPMENT_TEAM = QANYNE4FM7;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = deKKo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.axer0310.deKKo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peter.deKKo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;

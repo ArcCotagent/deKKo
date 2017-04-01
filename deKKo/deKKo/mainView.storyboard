@@ -15,7 +15,7 @@
                 <pageViewController storyboardIdentifier="mainViewNavigation" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="eJv-10-Jam" customClass="PageViewController" customModule="deKKo" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rA8-1i-6qX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2058" y="247"/>
+            <point key="canvasLocation" x="-1638" y="236"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="DFn-wJ-YTM">
