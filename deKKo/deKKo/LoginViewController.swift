@@ -13,6 +13,8 @@ import FBSDKLoginKit
 class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegate
 {
 
+    var userInfo = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         var configureError: NSError?
