@@ -57,10 +57,20 @@ class CameraViewController: UIViewController
         
     }
    
-    override func viewWillDisappear(_ animated: Bool) {
+    override func viewDidDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-      
-        
+        self.localMedia?.removeVideoTrack(localVideoTrack!)
+        self.room?.disconnect()
+    }
+    
+    @IBAction func flipCamera(_ sender: Any)
+    {
+        if (self.camera?.source == .frontCamera) {
+            self.camera?.selectSource(.backCameraWide)
+        } else {
+            self.camera?.selectSource(.frontCamera)
+        }
+
     }
     
     @IBAction func StartLive(_ sender: Any)
@@ -135,9 +145,9 @@ class CameraViewController: UIViewController
         // Adding local video track to localMedia and starting local preview if it is not already started.
         
     }
-
     
 }
+
 extension CameraViewController : TVIRoomDelegate {
     func didConnect(to room: TVIRoom) {
         // The Local Participant
