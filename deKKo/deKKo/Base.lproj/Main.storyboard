@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -109,15 +108,30 @@
                                     <action selector="loginWithFB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YT2-qO-5ZA"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peR-nl-8Vd">
+                                <rect key="frame" x="95" y="496" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.86247763035892278" green="0.9312936230964467" blue="0.84408475296088747" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="dBi-nA-p3B" appends="YES" id="rtn-ru-XpR"/>
+                        </connections>
                     </view>
                     <connections>
+                        <outlet property="googleButton" destination="peR-nl-8Vd" id="Xi7-LO-dBt"/>
                         <outlet property="passWord" destination="J0e-tq-Mbp" id="rmE-9x-Nct"/>
                         <outlet property="userName" destination="ges-fa-wVU" id="6oz-OQ-cH3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="dBi-nA-p3B">
+                    <connections>
+                        <action selector="onTapEndEditing:" destination="BYZ-38-t0r" id="mGL-Hi-oPd"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
