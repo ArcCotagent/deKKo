@@ -45,6 +45,8 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
     {
         GIDSignIn.sharedInstance().signIn()
     }
+    
+    
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!)
     {
         if error != nil
@@ -54,11 +56,14 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
         }
         else
         {
-            print("userID: \(user.userID)")
+            print("userName: \(user.profile.name)")
             print("email: \(user.profile.email)")
             
             let mainView = UIStoryboard(name: "mainView", bundle: nil)
             let vc = mainView.instantiateViewController(withIdentifier: "mainViewNavigation")
+            let cameraVC = mainView.instantiateViewController(withIdentifier: "FirstVC") as! CameraViewController
+            cameraVC.userName = user.profile.name
+
             present(vc, animated: true, completion: {})
         }
         

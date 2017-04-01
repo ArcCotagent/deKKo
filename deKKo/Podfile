@@ -4,17 +4,20 @@
 target 'deKKo' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-
+  source 'https://github.com/CocoaPods/Specs'
+  source 'https://github.com/twilio/cocoapod-specs'
   # Pods for deKKo
   pod 'AFNetworking'
   pod 'Google/SignIn'
   pod 'MBProgressHUD'
 
-  pod 'LFLiveKit'
+  pod 'TwilioVideo', '1.0.0-beta12'
 
   pod 'FacebookCore'
   pod 'FacebookLogin'
   pod 'FacebookShare'
+  pod 'TwilioVideo', '1.0.0-beta12'
+
 
 
   target 'deKKoTests' do

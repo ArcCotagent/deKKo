@@ -11,6 +11,7 @@
 		8E03AB5B1E82E03800711F46 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E03AB5A1E82E03800711F46 /* GoogleService-Info.plist */; };
 		8E03AB5C1E82E03800711F46 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E03AB5A1E82E03800711F46 /* GoogleService-Info.plist */; };
 		8E03AB5D1E82E03800711F46 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E03AB5A1E82E03800711F46 /* GoogleService-Info.plist */; };
+		8E49D23C1E8E023A00DB960B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E49D23B1E8E023A00DB960B /* Utils.swift */; };
 		99261E826AA0CCFBFE2E9300 /* Pods_deKKoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E545AFD84920D157D6CAE0D /* Pods_deKKoTests.framework */; };
 		A6F6C1DC05D1AFAFDE733C36 /* Pods_deKKo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660E31CF1B134C33E98982EC /* Pods_deKKo.framework */; };
 		EB498EBA1E839EEB005E0836 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB498EB91E839EEB005E0836 /* CameraViewController.swift */; };
@@ -22,8 +23,6 @@
 		EB6487671E81E08300BD4252 /* deKKoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6487661E81E08300BD4252 /* deKKoTests.swift */; };
 		EB6487721E81E08300BD4252 /* deKKoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6487711E81E08300BD4252 /* deKKoUITests.swift */; };
 		EB73DCF71E82E2370092E287 /* mainView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB73DCF61E82E2370092E287 /* mainView.storyboard */; };
-		EBB1B5B41E8851F000893764 /* VBlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB1B5B31E8851F000893764 /* VBlogViewController.swift */; };
-		EBB1B5B61E88574600893764 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB1B5B51E88574600893764 /* VideoCell.swift */; };
 		EBF52A2F1E81F748002438A2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF52A2D1E81F748002438A2 /* LoginViewController.swift */; };
 		EBF52A301E81F748002438A2 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF52A2E1E81F748002438A2 /* PageViewController.swift */; };
 /* End PBXBuildFile section */
@@ -53,6 +52,7 @@
 		4E545AFD84920D157D6CAE0D /* Pods_deKKoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_deKKoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		660E31CF1B134C33E98982EC /* Pods_deKKo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_deKKo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E03AB5A1E82E03800711F46 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8E49D23B1E8E023A00DB960B /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		99E38CAC1470FAA7AF471F9F /* Pods_deKKoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_deKKoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23F5BD342AA411C51EC846A /* Pods-deKKo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deKKo.release.xcconfig"; path = "Pods/Target Support Files/Pods-deKKo/Pods-deKKo.release.xcconfig"; sourceTree = "<group>"; };
 		E2B61EA3A5F638ACB5C556EE /* Pods-deKKoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deKKoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-deKKoTests/Pods-deKKoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,8 +71,6 @@
 		EB6487711E81E08300BD4252 /* deKKoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deKKoUITests.swift; sourceTree = "<group>"; };
 		EB6487731E81E08300BD4252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB73DCF61E82E2370092E287 /* mainView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = mainView.storyboard; sourceTree = "<group>"; };
-		EBB1B5B31E8851F000893764 /* VBlogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VBlogViewController.swift; sourceTree = "<group>"; };
-		EBB1B5B51E88574600893764 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		EBF52A2D1E81F748002438A2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EBF52A2E1E81F748002438A2 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,8 +131,7 @@
 			children = (
 				EBF52A2E1E81F748002438A2 /* PageViewController.swift */,
 				EB498EB91E839EEB005E0836 /* CameraViewController.swift */,
-				EBB1B5B31E8851F000893764 /* VBlogViewController.swift */,
-				EBB1B5B51E88574600893764 /* VideoCell.swift */,
+				8E49D23B1E8E023A00DB960B /* Utils.swift */,
 			);
 			name = Pages;
 			sourceTree = "<group>";
@@ -281,7 +278,7 @@
 				TargetAttributes = {
 					EB64874D1E81E08300BD4252 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = QC92DH6LC6;
+						DevelopmentTeam = DKCXNRA86D;
 						ProvisioningStyle = Automatic;
 					};
 					EB6487611E81E08300BD4252 = {
@@ -491,12 +488,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBF52A2F1E81F748002438A2 /* LoginViewController.swift in Sources */,
-				EBB1B5B61E88574600893764 /* VideoCell.swift in Sources */,
 				EB498EBA1E839EEB005E0836 /* CameraViewController.swift in Sources */,
 				EB6487541E81E08300BD4252 /* ViewController.swift in Sources */,
-				EBB1B5B41E8851F000893764 /* VBlogViewController.swift in Sources */,
 				EB6487521E81E08300BD4252 /* AppDelegate.swift in Sources */,
 				EBF52A301E81F748002438A2 /* PageViewController.swift in Sources */,
+				8E49D23C1E8E023A00DB960B /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,11 +644,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = QC92DH6LC6;
+				DEVELOPMENT_TEAM = DKCXNRA86D;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = deKKo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.teresa01.deKKo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.axer0310.deKKo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
@@ -665,11 +662,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = QC92DH6LC6;
+				DEVELOPMENT_TEAM = DKCXNRA86D;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = deKKo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.teresa01.deKKo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.axer0310.deKKo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
