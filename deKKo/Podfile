@@ -10,7 +10,7 @@ target 'deKKo' do
   pod 'AFNetworking'
   pod 'Google/SignIn'
   pod 'MBProgressHUD'
-
+  pod 'Parse'
   pod 'TwilioVideo', '1.0.0-beta12'
 
   pod 'FacebookCore'

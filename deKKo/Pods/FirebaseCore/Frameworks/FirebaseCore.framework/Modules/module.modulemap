@@ -3,6 +3,7 @@ framework module FirebaseCore {
   export *
   module * { export *}
   link "z"
+  link framework "CoreGraphics"
   link framework "Foundation"
   link framework "UIKit"
 }

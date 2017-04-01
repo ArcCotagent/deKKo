@@ -22,9 +22,6 @@ typedef void (^FIRAppVoidBoolCallback)(BOOL success);
  * argument in the application's Xcode scheme. When debug mode is enabled via -FIRDebugEnabled,
  * further executions of the application will also be in debug mode. In order to return to default
  * mode, you must explicitly disable the debug mode with the application argument -FIRDebugDisabled.
- *
- * It is also possible to change the default logging level in code by calling setLoggerLevel: on
- * the FIRConfiguration interface.
  */
 @interface FIRApp : NSObject
 
