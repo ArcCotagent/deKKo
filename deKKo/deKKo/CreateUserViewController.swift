@@ -12,8 +12,13 @@ import MBProgressHUD
 
 class CreateUserViewController: UIViewController {
 
+    
+    var userInfo:Dictionary<String, Any> = [:]
+    let defaults = UserDefaults.standard
+    
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var userName: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         userName.becomeFirstResponder()
@@ -45,10 +50,13 @@ class CreateUserViewController: UIViewController {
             if success {
                 print("New User Created")
                 MBProgressHUD.hide(for: self.view, animated: true)
+                self.userInfo["userName"] = self.userName.text
+                self.defaults.set(self.userInfo, forKey: "userInfo")
                 let mainView = UIStoryboard(name: "mainView", bundle: nil)
                 let vc = mainView.instantiateViewController(withIdentifier: "mainViewNavigation")
                 self.present(vc, animated: true, completion: {})
             }else{
+                MBProgressHUD.hide(for: self.view, animated: true)
                 let code = (error as! NSError).code
                 print(error?.localizedDescription ?? 0)
                 if code == 202{
