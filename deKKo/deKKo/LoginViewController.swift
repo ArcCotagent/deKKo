@@ -17,13 +17,11 @@ import FacebookCore
 
 class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegate,UITextFieldDelegate
 {
-   
-    
-    @IBOutlet weak var googleSigninBtn: GIDSignInButton!
     
     @IBOutlet weak var passWord: UITextField!
     @IBOutlet weak var userName: UITextField!
     
+    @IBOutlet weak var googleButton: GIDSignInButton!
     
     var userInfo:Dictionary<String, Any> = [:]
     let defaults = UserDefaults.standard
@@ -38,7 +36,9 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance().clientID = "963253939831-hod6842oqnllcnvhrmn7s56q7nn2baan.apps.googleusercontent.com"
 
-        
+        //googleButton = GIDSignInButton(frame: CGRect(x: 0, y: 0, width: 230, height: 48))
+    
+    googleButton.addTarget(self, action: #selector(googleB(sender:)), for: .touchUpInside)
         self.passWord.delegate = self
         
        // googleSigninBtn.style = GIDSignInButtonStyle.standard
@@ -60,7 +60,7 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
     }
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
+        
         if (userName.text == "" || passWord.text == ""){
             let alertA = UIAlertController(title: "Error", message: "Username and Password cannot be empty", preferredStyle: .alert)
             let okC = UIAlertAction(title: "Error", style: .default, handler: nil)
@@ -68,6 +68,7 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
             alertA.addAction(okC)
             self.present(alertA, animated: true, completion: nil)
         }
+        
         performLogin()
         return true
     }
@@ -188,6 +189,33 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
     
     @IBAction func onTapCreateNewUser(_ sender: Any) {
     
+    }
+    @IBAction func onTapEndEditing(_ sender: Any) {
+        view.endEditing(true)
+        PFUser.logInWithUsername(inBackground: userName.text!, password: passWord.text!) { (user: PFUser?, error: Error?) in
+            MBProgressHUD.showAdded(to: self.view, animated: true)
+            if user != nil{
+                print("Login")
+                MBProgressHUD.hide(for: self.view, animated: true)
+                self.userInfo["userName"] = user?.username!
+                self.defaults.set(self.userInfo, forKey: "userInfo")
+                let mainView = UIStoryboard(name: "mainView", bundle: nil)
+                let vc = mainView.instantiateViewController(withIdentifier: "mainViewNavigation")
+                self.present(vc, animated: true, completion: {})
+            }else{
+                MBProgressHUD.hide(for: self.view, animated: true)
+                print("Error failed")
+                print(error?.localizedDescription ?? 0)
+                let alertc = UIAlertController(title: "Error", message: "Login error please login again", preferredStyle: .alert)
+                let okC = UIAlertAction(title: "Error", style: .default, handler: nil)
+                alertc.addAction(okC)
+                self.present(alertc, animated: true, completion: nil)
+            }
+        }
+    }
+    
+    func googleB(sender: GIDSignInButton!){
+        print("It works")
     }
     
     /*
