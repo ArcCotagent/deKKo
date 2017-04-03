@@ -56,6 +56,7 @@
 		99E38CAC1470FAA7AF471F9F /* Pods_deKKoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_deKKoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23F5BD342AA411C51EC846A /* Pods-deKKo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deKKo.release.xcconfig"; path = "Pods/Target Support Files/Pods-deKKo/Pods-deKKo.release.xcconfig"; sourceTree = "<group>"; };
 		E2B61EA3A5F638ACB5C556EE /* Pods-deKKoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deKKoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-deKKoTests/Pods-deKKoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB1C65531E920308003F5A8E /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleToolboxForMac.framework; path = "../../../Library/Developer/Xcode/DerivedData/deKKo-eyfkyiuuszuwxlbpuyzeuzjqdkgq/Build/Products/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework"; sourceTree = "<group>"; };
 		EB498EB91E839EEB005E0836 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		EB64874E1E81E08300BD4252 /* deKKo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deKKo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6487511E81E08300BD4252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +107,7 @@
 		205C87F67BAF1B6CC64EE74E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EB1C65531E920308003F5A8E /* GoogleToolboxForMac.framework */,
 				660E31CF1B134C33E98982EC /* Pods_deKKo.framework */,
 				4E545AFD84920D157D6CAE0D /* Pods_deKKoTests.framework */,
 				99E38CAC1470FAA7AF471F9F /* Pods_deKKoUITests.framework */,
@@ -278,7 +280,7 @@
 				TargetAttributes = {
 					EB64874D1E81E08300BD4252 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = DKCXNRA86D;
+						DevelopmentTeam = QANYNE4FM7;
 						ProvisioningStyle = Automatic;
 					};
 					EB6487611E81E08300BD4252 = {
@@ -644,12 +646,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = DKCXNRA86D;
+				DEVELOPMENT_TEAM = QANYNE4FM7;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = deKKo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.axer0310.deKKo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peter.deKKo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
@@ -662,12 +664,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = DKCXNRA86D;
+				DEVELOPMENT_TEAM = QANYNE4FM7;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = deKKo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.axer0310.deKKo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peter.deKKo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;

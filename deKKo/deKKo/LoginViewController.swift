@@ -17,34 +17,56 @@ import FacebookCore
 
 class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegate,UITextFieldDelegate
 {
-    
+    @IBOutlet weak var newUser: UIButton!
+    @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var passWord: UITextField!
     @IBOutlet weak var userName: UITextField!
+    @IBOutlet var gButton: UIButton!
     
-    @IBOutlet weak var googleButton: GIDSignInButton!
-    
+    @IBOutlet var fbBtn: FBSDKLoginButton!
     var userInfo:Dictionary<String, Any> = [:]
     let defaults = UserDefaults.standard
   
-    override func viewDidLoad()
-  {
-
+    override func viewDidLoad(){
         super.viewDidLoad()
+        //Add our icon to the backgorund and create a dark blur effect
+        let darkBlur = UIBlurEffect(style: UIBlurEffectStyle.dark)
+        let blurView = UIVisualEffectView(effect: darkBlur)
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "eye")
+        blurView.frame = backgroundImage.bounds
+        backgroundImage.addSubview(blurView)
+        self.view.insertSubview(backgroundImage, at: 0)
+
         /*GOOGLE Login settings*/
-        var configureError: NSError?
+        var _: NSError?
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance().clientID = "963253939831-hod6842oqnllcnvhrmn7s56q7nn2baan.apps.googleusercontent.com"
-
-        //googleButton = GIDSignInButton(frame: CGRect(x: 0, y: 0, width: 230, height: 48))
-    
-    googleButton.addTarget(self, action: #selector(googleB(sender:)), for: .touchUpInside)
+        
+        //Implment return function
         self.passWord.delegate = self
         
-       // googleSigninBtn.style = GIDSignInButtonStyle.standard
+        gButton.backgroundColor = .clear
+        gButton.layer.cornerRadius = 10.0
+        gButton.layer.shadowOpacity = 0.7
+        gButton.layer.shadowRadius = 5.0
+        gButton.layer.shadowOffset = CGSize(width: 4.0, height: 4.0)
         
-              //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
- }
+        fbBtn.layer.cornerRadius = 10.0
+        fbBtn.layer.shadowOpacity = 0.7
+        fbBtn.layer.shadowRadius = 5.0
+        fbBtn.layer.shadowOffset = CGSize(width: 4.0, height: 4.0)
+        
+        let greenColor = UIColor(hue: 120/360, saturation: 61/100, brightness: 70/100, alpha: 1.0)
+        loginBtn.backgroundColor = greenColor
+        loginBtn.layer.cornerRadius = 15.0
+        loginBtn.layer.borderWidth = 0.3
+        loginBtn.layer.borderColor = UIColor.black.cgColor
+        
+        newUser.backgroundColor = .clear
+        
+    }
     
     override func viewDidAppear(_ animated: Bool)
   {
@@ -55,10 +77,8 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
             let vc = mainView.instantiateViewController(withIdentifier: "mainViewNavigation")
             present(vc, animated: true, completion: {})
         }
-
-
     }
-
+  
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         if (userName.text == "" || passWord.text == ""){
@@ -192,13 +212,47 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
     }
     @IBAction func onTapEndEditing(_ sender: Any) {
         view.endEditing(true)
+        if (userName.text != "" || passWord.text != ""){
+            PFUser.logInWithUsername(inBackground: userName.text!, password: passWord.text!) { (user: PFUser?, error: Error?) in
+                MBProgressHUD.showAdded(to: self.view, animated: true)
+                if user != nil{
+                    print("Login")
+                    MBProgressHUD.hide(for: self.view, animated: true)
+                    self.userInfo["userName"] = user?.username!
+                    self.defaults.set(self.userInfo, forKey: "userInfo")
+                    let mainView = UIStoryboard(name: "mainView", bundle: nil)
+                    let vc = mainView.instantiateViewController(withIdentifier: "mainViewNavigation")
+                    self.present(vc, animated: true, completion: {})
+                }else{
+                    MBProgressHUD.hide(for: self.view, animated: true)
+                    print("Error failed")
+                    print(error?.localizedDescription ?? 0)
+                    let alertc = UIAlertController(title: "Error", message: "Login error please login again", preferredStyle: .alert)
+                    let okC = UIAlertAction(title: "Error", style: .default, handler: nil)
+                    alertc.addAction(okC)
+                    self.present(alertc, animated: true, completion: nil)
+                }
+            }
+
+        }
+           }
+    
+    func googleB(sender: GIDSignInButton!){
+        GIDSignIn.sharedInstance().signIn()
+    }
+    
+    //Custom TextField
+    override func viewDidLayoutSubviews() {
+        let lineColor = UIColor(red: 0.12, green: 0.23, blue: 0.35, alpha: 1.0)
+        self.userName.setBottomLine(borderColor: lineColor)
+        self.passWord.setBottomLine(borderColor: lineColor)
+    }
+    
+    @IBAction func onTapLoginDekko(_ sender: Any) {
         PFUser.logInWithUsername(inBackground: userName.text!, password: passWord.text!) { (user: PFUser?, error: Error?) in
             MBProgressHUD.showAdded(to: self.view, animated: true)
-            if user != nil{
-                print("Login")
+            if user != nil {
                 MBProgressHUD.hide(for: self.view, animated: true)
-                self.userInfo["userName"] = user?.username!
-                self.defaults.set(self.userInfo, forKey: "userInfo")
                 let mainView = UIStoryboard(name: "mainView", bundle: nil)
                 let vc = mainView.instantiateViewController(withIdentifier: "mainViewNavigation")
                 self.present(vc, animated: true, completion: {})
@@ -214,18 +268,23 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
         }
     }
     
-    func googleB(sender: GIDSignInButton!){
-        print("It works")
+}
+
+extension UITextField {
+    
+    func setBottomLine(borderColor: UIColor) {
+        //Clear the textbox backgound and border style. Make it to transparent
+        self.borderStyle = UITextBorderStyle.none
+        self.backgroundColor = UIColor.clear
+        /*After we set transparent background and disable borders for the textfield, UIView is created.
+         Then we set its frame to the line of height equal to 1.0 and place it at the bottom of textfield by the following y calculation*/
+        let borderLine = UIView()
+        let height = 1.0
+        borderLine.frame = CGRect(x: 0, y: Double(self.frame.height) - height, width: Double(self.frame.width), height: height)
+        
+        borderLine.backgroundColor = borderColor
+        self.addSubview(borderLine)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
