@@ -14,6 +14,7 @@
 		8E49D23C1E8E023A00DB960B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E49D23B1E8E023A00DB960B /* Utils.swift */; };
 		99261E826AA0CCFBFE2E9300 /* Pods_deKKoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E545AFD84920D157D6CAE0D /* Pods_deKKoTests.framework */; };
 		A6F6C1DC05D1AFAFDE733C36 /* Pods_deKKo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660E31CF1B134C33E98982EC /* Pods_deKKo.framework */; };
+		EB1C65571E9228F2003F5A8E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF52A2D1E81F748002438A2 /* LoginViewController.swift */; };
 		EB498EBA1E839EEB005E0836 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB498EB91E839EEB005E0836 /* CameraViewController.swift */; };
 		EB6487521E81E08300BD4252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6487511E81E08300BD4252 /* AppDelegate.swift */; };
 		EB6487571E81E08300BD4252 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB6487551E81E08300BD4252 /* Main.storyboard */; };
@@ -23,7 +24,6 @@
 		EB6487721E81E08300BD4252 /* deKKoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6487711E81E08300BD4252 /* deKKoUITests.swift */; };
 		EB73DCF71E82E2370092E287 /* mainView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB73DCF61E82E2370092E287 /* mainView.storyboard */; };
 		EBCB85591E9034730086B1CD /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB85581E9034730086B1CD /* CreateUserViewController.swift */; };
-		EBF52A2F1E81F748002438A2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF52A2D1E81F748002438A2 /* LoginViewController.swift */; };
 		EBF52A301E81F748002438A2 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF52A2E1E81F748002438A2 /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -489,7 +489,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBF52A2F1E81F748002438A2 /* LoginViewController.swift in Sources */,
+				EB1C65571E9228F2003F5A8E /* LoginViewController.swift in Sources */,
 				EB498EBA1E839EEB005E0836 /* CameraViewController.swift in Sources */,
 				EBCB85591E9034730086B1CD /* CreateUserViewController.swift in Sources */,
 				EB6487521E81E08300BD4252 /* AppDelegate.swift in Sources */,

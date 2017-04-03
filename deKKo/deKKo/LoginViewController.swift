@@ -58,11 +58,11 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
         fbBtn.layer.shadowRadius = 5.0
         fbBtn.layer.shadowOffset = CGSize(width: 4.0, height: 4.0)
         
-        let greenColor = UIColor(hue: 120/360, saturation: 61/100, brightness: 70/100, alpha: 1.0)
-        loginBtn.backgroundColor = greenColor
+        //let greenColor = UIColor(hue: 120/360, saturation: 61/100, brightness: 70/100, alpha: 1.0)
+        loginBtn.backgroundColor = .clear
         loginBtn.layer.cornerRadius = 15.0
-        loginBtn.layer.borderWidth = 0.3
-        loginBtn.layer.borderColor = UIColor.black.cgColor
+        //loginBtn.layer.borderWidth = 0.3
+        //loginBtn.layer.borderColor = UIColor.black.cgColor
         
         newUser.backgroundColor = .clear
         
@@ -83,10 +83,14 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
         
         if (userName.text == "" || passWord.text == ""){
             let alertA = UIAlertController(title: "Error", message: "Username and Password cannot be empty", preferredStyle: .alert)
-            let okC = UIAlertAction(title: "Error", style: .default, handler: nil)
+            let okC = UIAlertAction(title: "OK", style: .default, handler: nil)
             userName.becomeFirstResponder()
             alertA.addAction(okC)
+            self.userName.text = ""
+            self.passWord.text = ""
+            self.userName.becomeFirstResponder()
             self.present(alertA, animated: true, completion: nil)
+            
         }
         
         performLogin()
@@ -109,8 +113,11 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
                 print("Error failed")
                 print(error?.localizedDescription ?? 0)
                 let alertc = UIAlertController(title: "Error", message: "Login error please login again", preferredStyle: .alert)
-                let okC = UIAlertAction(title: "Error", style: .default, handler: nil)
+                let okC = UIAlertAction(title: "OK", style: .default, handler: nil)
                 alertc.addAction(okC)
+                self.userName.text = ""
+                self.passWord.text = ""
+                self.userName.becomeFirstResponder()
                 self.present(alertc, animated: true, completion: nil)
             }
         }
@@ -228,9 +235,13 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
                     print("Error failed")
                     print(error?.localizedDescription ?? 0)
                     let alertc = UIAlertController(title: "Error", message: "Login error please login again", preferredStyle: .alert)
-                    let okC = UIAlertAction(title: "Error", style: .default, handler: nil)
+                    let okC = UIAlertAction(title: "OK", style: .default, handler: nil)
+                    self.userName.text = ""
+                    self.passWord.text = ""
+                    self.userName.becomeFirstResponder()
                     alertc.addAction(okC)
                     self.present(alertc, animated: true, completion: nil)
+                    
                 }
             }
 
@@ -261,9 +272,12 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
                 print("Error failed")
                 print(error?.localizedDescription ?? 0)
                 let alertc = UIAlertController(title: "Error", message: "Login error please login again", preferredStyle: .alert)
-                let okC = UIAlertAction(title: "Error", style: .default, handler: nil)
+                let okC = UIAlertAction(title: "OK", style: .default, handler: nil)
                 alertc.addAction(okC)
                 self.present(alertc, animated: true, completion: nil)
+                self.userName.text = ""
+                self.passWord.text = ""
+                self.userName.becomeFirstResponder()
             }
         }
     }
