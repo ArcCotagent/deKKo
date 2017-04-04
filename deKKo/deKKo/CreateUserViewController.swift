@@ -64,10 +64,11 @@ class CreateUserViewController: UIViewController {
                     let okA = UIAlertAction(title: "OK", style: .default, handler: nil)
                     
                     alertU.addAction(okA)
-                    self.present(alertU, animated: true, completion: nil)
                     self.userName.text = ""
                     self.password.text = ""
                     self.userName.becomeFirstResponder()
+                    self.present(alertU, animated: true, completion: nil)
+                    
                 }
             }
         }
