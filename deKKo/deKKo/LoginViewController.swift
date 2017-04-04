@@ -225,8 +225,7 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
                 if user != nil{
                     print("Login")
                     MBProgressHUD.hide(for: self.view, animated: true)
-                    self.userInfo["userName"] = user?.username!
-                    self.defaults.set(self.userInfo, forKey: "userInfo")
+                    
                     let mainView = UIStoryboard(name: "mainView", bundle: nil)
                     let vc = mainView.instantiateViewController(withIdentifier: "mainViewNavigation")
                     self.present(vc, animated: true, completion: {})
@@ -264,6 +263,8 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
             MBProgressHUD.showAdded(to: self.view, animated: true)
             if user != nil {
                 MBProgressHUD.hide(for: self.view, animated: true)
+                self.userInfo["userName"] = user?.username!
+                self.defaults.set(self.userInfo, forKey: "userInfo")
                 let mainView = UIStoryboard(name: "mainView", bundle: nil)
                 let vc = mainView.instantiateViewController(withIdentifier: "mainViewNavigation")
                 self.present(vc, animated: true, completion: {})

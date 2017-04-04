@@ -8,6 +8,7 @@
 
 import UIKit
 import TwilioVideo
+import Parse
 
 class CameraViewController: UIViewController
 {
@@ -59,8 +60,13 @@ class CameraViewController: UIViewController
    
     override func viewDidDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        self.localMedia?.removeVideoTrack(localVideoTrack!)
-        self.room?.disconnect()
+        
+        if let localVideoTrack = localVideoTrack
+        {
+            self.localMedia?.removeVideoTrack(localVideoTrack)
+            self.room?.disconnect()
+        }
+        
     }
     
     @IBAction func flipCamera(_ sender: Any)
@@ -145,6 +151,23 @@ class CameraViewController: UIViewController
         // Adding local video track to localMedia and starting local preview if it is not already started.
         
     }
+    
+    @IBAction func logout(_ sender: Any)
+    {
+        if(PFUser.current() != nil)
+        {
+            PFUser.logOut()
+        }
+        defaults.set(nil, forKey: "userInfo")
+        
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        let vc = main.instantiateViewController(withIdentifier: "loginVIew")
+        present(vc, animated: true, completion: {})
+
+    }
+    
+    
+    
     
 }
 
