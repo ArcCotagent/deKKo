@@ -70,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="-914.39999999999998" y="236.13193403298354"/>
         </scene>
-        <!--View Controller-->
+        <!--Camera List View Controller-->
         <scene sceneID="c4w-nQ-BsV">
             <objects>
-                <viewController storyboardIdentifier="SecondVC" id="1fW-rQ-U58" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondVC" id="1fW-rQ-U58" customClass="CameraListViewController" customModule="deKKo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AY6-z3-rah"/>
                         <viewControllerLayoutGuide type="bottom" id="ttu-qC-Bcg"/>
