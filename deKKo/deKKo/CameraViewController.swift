@@ -19,7 +19,7 @@ class CameraViewController: UIViewController
     var accessToken = "TWILIO_ACCESS_TOKEN"
     var userName = ""
     // Configure remote URL to fetch token from
-    var tokenUrl = "http://dekkotest.000webhostapp.com/?name="
+    var tokenUrl = "http://dekkotest.x10host.com/?name="
     
     
     // Video SDK components
@@ -30,7 +30,7 @@ class CameraViewController: UIViewController
     var localAudioTrack: TVILocalAudioTrack?
     var participant: TVIParticipant?
     var room: TVIRoom?
-    
+    var flag = 0
     
     let defaults = UserDefaults.standard
     
@@ -39,6 +39,7 @@ class CameraViewController: UIViewController
 
     @IBOutlet weak var stateL: UILabel!
 
+    @IBOutlet weak var buttonRecord: UIButton!
     
     override func viewDidLoad()
     {
@@ -71,6 +72,17 @@ class CameraViewController: UIViewController
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
        
+        camera = TVICameraCapturer()
+        localVideoTrack = localMedia?.addVideoTrack(true, capturer: camera!)
+        localVideoTrack?.attach(self.localCameraView)
+        
+        //Making it to full screen
+        let renderer = TVIVideoViewRenderer.init()
+        localVideoTrack?.addRenderer(renderer)
+        renderer.view.frame = localCameraView.bounds
+        renderer.view.contentMode = .scaleAspectFill
+        localCameraView.addSubview(renderer.view)
+
         
     }
    
@@ -98,6 +110,21 @@ class CameraViewController: UIViewController
     @IBAction func StartLive(_ sender: Any)
     {
         connect()
+        flag = 1
+        if (flag == 1 ){
+            let onR = UIImage(named: "onRecord")
+            self.buttonRecord.setImage(onR , for: .normal)
+            flag = 0
+        }
+        if (flag == 0 ){
+            
+            if let localVideoTrack = localVideoTrack
+            {
+                self.localMedia?.removeVideoTrack(localVideoTrack)
+                self.room?.disconnect()
+            }
+        }
+        
     }
     
     func connect()
