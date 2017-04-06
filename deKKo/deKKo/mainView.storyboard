@@ -28,6 +28,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yHh-o9-gfq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADv-4H-hAf">
                                 <rect key="frame" x="137" y="559" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -38,11 +43,6 @@
                                     <action selector="StartLive:" destination="tKS-25-xK8" eventType="touchUpInside" id="CN3-a7-hm6"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yHh-o9-gfq">
-                                <rect key="frame" x="0.0" y="61" width="375" height="501"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5y-kB-1Rd">
                                 <rect key="frame" x="325" y="28" width="34" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -70,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="-914.39999999999998" y="236.13193403298354"/>
         </scene>
-        <!--View Controller-->
+        <!--Camera List View Controller-->
         <scene sceneID="c4w-nQ-BsV">
             <objects>
-                <viewController storyboardIdentifier="SecondVC" id="1fW-rQ-U58" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondVC" id="1fW-rQ-U58" customClass="CameraListViewController" customModule="deKKo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AY6-z3-rah"/>
                         <viewControllerLayoutGuide type="bottom" id="ttu-qC-Bcg"/>
