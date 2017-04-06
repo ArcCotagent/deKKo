@@ -43,8 +43,24 @@ class CameraViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        // LocalMedia represents the collection of tracks that we are sending to other Participants from our VideoClient.
         localMedia = TVILocalMedia()
         
+        camera = TVICameraCapturer()
+        localVideoTrack = localMedia?.addVideoTrack(true, capturer: camera!)
+        localVideoTrack?.attach(self.localCameraView)
+        
+        //Making it to full screen
+        let renderer = TVIVideoViewRenderer.init()
+        localVideoTrack?.addRenderer(renderer)
+        renderer.view.frame = localCameraView.bounds
+        renderer.view.contentMode = .scaleAspectFill
+        localCameraView.addSubview(renderer.view)
+        
+        //With one tap change camera view
+        let tapToSwitch = UITapGestureRecognizer(target: self, action: #selector(self.flipCamera(_:)))
+        self.localCameraView.addGestureRecognizer(tapToSwitch)
     }
 
     override func didReceiveMemoryWarning() {
@@ -83,6 +99,7 @@ class CameraViewController: UIViewController
     {
         connect()
     }
+    
     func connect()
     {
         if (accessToken == "TWILIO_ACCESS_TOKEN") {
