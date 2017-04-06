@@ -140,7 +140,15 @@ class CameraViewController: UIViewController
             localAudioTrack = localMedia?.addAudioTrack(true)
         }
        
-        localVideoTrack?.attach(self.localCameraView)
+        let renderer = TVIVideoViewRenderer.init()
+        localVideoTrack?.addRenderer(renderer)
+        renderer.view.frame = localCameraView.bounds
+        renderer.view.contentMode = .scaleAspectFill
+        localCameraView.addSubview(renderer.view)
+
+        
+        
+        //localVideoTrack?.attach(self.localCameraView)
         
         
         
