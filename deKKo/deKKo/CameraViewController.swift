@@ -19,7 +19,7 @@ class CameraViewController: UIViewController
     var accessToken = "TWILIO_ACCESS_TOKEN"
     var userName = ""
     // Configure remote URL to fetch token from
-    var tokenUrl = "http://dekkotest.000webhostapp.com/?name="
+    var tokenUrl = "http://dekkotest.x10host.com/?name="
     
     
     // Video SDK components
