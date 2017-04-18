@@ -39,18 +39,22 @@ class CameraListViewController: UIViewController,UITableViewDataSource,UITableVi
         // Dispose of any resources that can be recreated.
     }
     
+    //Get the RoomInfo from Parse
     func getRoomInfos()
     {
+        //Query the table ROOMINFO
         let query = PFQuery(className: "ROOMINFO")
+        //Sort the table by roomName
         query.order(byDescending: "roomName")
         
-        
+        //Grab only 20 Orders
         query.limit = 20
         
-        
+        //Start Grabing
         query.findObjectsInBackground { (roomInfos: [PFObject]?, error: Error?) -> Void in
             if let roomInfos = roomInfos
             {
+                //Save it to roomInfos[]
                 self.roomInfos = roomInfos
                 
                 print(roomInfos)
@@ -60,7 +64,7 @@ class CameraListViewController: UIViewController,UITableViewDataSource,UITableVi
                 
                 for index in 0 ..< roomInfos.count
                 {
-                    
+                    //Get only roomName
                     if let roomName = roomInfos[index]["roomName"] as? String
                     {
                         self.roomNameArray.append(roomName)
@@ -105,11 +109,11 @@ class CameraListViewController: UIViewController,UITableViewDataSource,UITableVi
         self.cell = tableView.dequeueReusableCell(withIdentifier: "CameraListCell", for: indexPath) as! CameraListTableViewCell;
         
         let connectOptions = TVIConnectOptions.init(token: (cell?.accessToken)!) { (builder) in
-            
+            //Show at the index of roomNameArray
             builder.roomName = self.roomNameArray[indexPath.row]
             
         }
-        
+        //Start connection
         cell?.room = TVIVideoClient.connect(with: connectOptions, delegate: self)
         
         
