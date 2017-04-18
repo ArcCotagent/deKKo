@@ -13,6 +13,7 @@
 		8E03AB5D1E82E03800711F46 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E03AB5A1E82E03800711F46 /* GoogleService-Info.plist */; };
 		8E1F6F0E1E94637F0035F2FF /* CameraListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1F6F0D1E94637F0035F2FF /* CameraListViewController.swift */; };
 		8E49D23C1E8E023A00DB960B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E49D23B1E8E023A00DB960B /* Utils.swift */; };
+		8EFD24CE1EA042CC00481061 /* CameraListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFD24CD1EA042CC00481061 /* CameraListTableViewCell.swift */; };
 		99261E826AA0CCFBFE2E9300 /* Pods_deKKoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E545AFD84920D157D6CAE0D /* Pods_deKKoTests.framework */; };
 		A6F6C1DC05D1AFAFDE733C36 /* Pods_deKKo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660E31CF1B134C33E98982EC /* Pods_deKKo.framework */; };
 		EB1C65571E9228F2003F5A8E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF52A2D1E81F748002438A2 /* LoginViewController.swift */; };
@@ -55,6 +56,7 @@
 		8E03AB5A1E82E03800711F46 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8E1F6F0D1E94637F0035F2FF /* CameraListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraListViewController.swift; sourceTree = "<group>"; };
 		8E49D23B1E8E023A00DB960B /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		8EFD24CD1EA042CC00481061 /* CameraListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraListTableViewCell.swift; sourceTree = "<group>"; };
 		99E38CAC1470FAA7AF471F9F /* Pods_deKKoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_deKKoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23F5BD342AA411C51EC846A /* Pods-deKKo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deKKo.release.xcconfig"; path = "Pods/Target Support Files/Pods-deKKo/Pods-deKKo.release.xcconfig"; sourceTree = "<group>"; };
 		E2B61EA3A5F638ACB5C556EE /* Pods-deKKoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deKKoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-deKKoTests/Pods-deKKoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				EBF52A2E1E81F748002438A2 /* PageViewController.swift */,
 				EB498EB91E839EEB005E0836 /* CameraViewController.swift */,
 				8E1F6F0D1E94637F0035F2FF /* CameraListViewController.swift */,
+				8EFD24CD1EA042CC00481061 /* CameraListTableViewCell.swift */,
 				8E49D23B1E8E023A00DB960B /* Utils.swift */,
 			);
 			name = Pages;
@@ -492,6 +495,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EFD24CE1EA042CC00481061 /* CameraListTableViewCell.swift in Sources */,
 				EB1C65571E9228F2003F5A8E /* LoginViewController.swift in Sources */,
 				EB498EBA1E839EEB005E0836 /* CameraViewController.swift in Sources */,
 				EBCB85591E9034730086B1CD /* CreateUserViewController.swift in Sources */,

@@ -30,8 +30,14 @@ class CameraViewController: UIViewController
     var localAudioTrack: TVILocalAudioTrack?
     var participant: TVIParticipant?
     var room: TVIRoom?
+
     var flag = 0
     
+
+    
+    var roomInfos: [PFObject] = []
+
+
     let defaults = UserDefaults.standard
     
     
@@ -110,19 +116,19 @@ class CameraViewController: UIViewController
     @IBAction func StartLive(_ sender: Any)
     {
         connect()
-        flag = 1
-        if (flag == 1 ){
+        if (flag == 0 ){
             let onR = UIImage(named: "onRecord")
             self.buttonRecord.setImage(onR , for: .normal)
-            flag = 0
-        }
-        if (flag == 0 ){
+            flag = 1
+        } else if (flag == 1 ){
             
             if let localVideoTrack = localVideoTrack
             {
                 self.localMedia?.removeVideoTrack(localVideoTrack)
                 self.room?.disconnect()
             }
+            let offR = UIImage(named: "110911-200")
+            self.buttonRecord.setImage(offR , for: .normal)
         }
         
     }
@@ -157,7 +163,7 @@ class CameraViewController: UIViewController
         
         self.prepareLocalMedia()
         let connectOptions = TVIConnectOptions.init(token: accessToken) { (builder) in
-            builder.roomName = "room123"
+            builder.roomName = String.random()
             builder.localMedia = self.localMedia
         }
         
@@ -206,6 +212,8 @@ class CameraViewController: UIViewController
     
     @IBAction func logout(_ sender: Any)
     {
+         clearRoomNameInTheServer()
+        
         if(PFUser.current() != nil)
         {
             PFUser.logOut()
@@ -217,17 +225,75 @@ class CameraViewController: UIViewController
         present(vc, animated: true, completion: {})
 
     }
-    
+    func clearRoomNameInTheServer()
+    {
+        let query = PFQuery(className: "ROOMINFO")
+        query.order(byDescending: "roomName")
+        query.includeKey("roomName")
+        query.whereKey("roomName", equalTo: room?.name)
+        
+        query.limit = 20
+        
+        
+        query.findObjectsInBackground { (roomInfos: [PFObject]?, error: Error?) -> Void in
+            if let roomInfos = roomInfos
+            {
+                if(roomInfos.count > 1)
+                {
+                    print("*=*=*=There exists same room Name=*=*=*")
+                }
+                else if(roomInfos.count == 1)
+                {
+                    if let participants = roomInfos[0]["participants"] as? Int
+                    {
+                        if participants == 0
+                        {
+                            roomInfos[0].deleteInBackground()
+                        }
+                        
+                    }
+                    
+                }
+                //self.roomInfos = roomInfos
+                
+            }
+            else
+            {
+                // handle error
+            }
+        }
+        
+    }
     
     
     
 }
+extension String {
+    
+    static func random(length: Int = 20) -> String {
+        let base = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        var randomString: String = ""
+        
+        for _ in 0..<length {
+            let randomValue = arc4random_uniform(UInt32(base.characters.count))
+            randomString += "\(base[base.index(base.startIndex, offsetBy: Int(randomValue))])"
+        }
+        return randomString
+    }
+}
+
 
 extension CameraViewController : TVIRoomDelegate {
     func didConnect(to room: TVIRoom) {
         // The Local Participant
         let localParticipant = room.localParticipant;
         print("Local identity \(localParticipant!.identity)")
+        
+        var roomInfo = PFObject(className: "ROOMINFO")
+        roomInfo["roomName"] = room.name
+        roomInfo["participants"] = room.participants.count;
+        roomInfo.saveInBackground()
+        
         
         // Connected participants
         let participants = room.participants;
