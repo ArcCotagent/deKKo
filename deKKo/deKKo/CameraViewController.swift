@@ -30,8 +30,13 @@ class CameraViewController: UIViewController
     var localAudioTrack: TVILocalAudioTrack?
     var participant: TVIParticipant?
     var room: TVIRoom?
+
+    var flag = 0
+    
+
     
     var roomInfos: [PFObject] = []
+
 
     let defaults = UserDefaults.standard
     
@@ -40,12 +45,29 @@ class CameraViewController: UIViewController
 
     @IBOutlet weak var stateL: UILabel!
 
+    @IBOutlet weak var buttonRecord: UIButton!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        // LocalMedia represents the collection of tracks that we are sending to other Participants from our VideoClient.
         localMedia = TVILocalMedia()
         
+        camera = TVICameraCapturer()
+        localVideoTrack = localMedia?.addVideoTrack(true, capturer: camera!)
+        localVideoTrack?.attach(self.localCameraView)
+        
+        //Making it to full screen
+        let renderer = TVIVideoViewRenderer.init()
+        localVideoTrack?.addRenderer(renderer)
+        renderer.view.frame = localCameraView.bounds
+        renderer.view.contentMode = .scaleAspectFill
+        localCameraView.addSubview(renderer.view)
+        
+        //With one tap change camera view
+        let tapToSwitch = UITapGestureRecognizer(target: self, action: #selector(self.flipCamera(_:)))
+        self.localCameraView.addGestureRecognizer(tapToSwitch)
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,6 +78,17 @@ class CameraViewController: UIViewController
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
        
+        camera = TVICameraCapturer()
+        localVideoTrack = localMedia?.addVideoTrack(true, capturer: camera!)
+        localVideoTrack?.attach(self.localCameraView)
+        
+        //Making it to full screen
+        let renderer = TVIVideoViewRenderer.init()
+        localVideoTrack?.addRenderer(renderer)
+        renderer.view.frame = localCameraView.bounds
+        renderer.view.contentMode = .scaleAspectFill
+        localCameraView.addSubview(renderer.view)
+
         
     }
    
@@ -83,7 +116,23 @@ class CameraViewController: UIViewController
     @IBAction func StartLive(_ sender: Any)
     {
         connect()
+        if (flag == 0 ){
+            let onR = UIImage(named: "onRecord")
+            self.buttonRecord.setImage(onR , for: .normal)
+            flag = 1
+        } else if (flag == 1 ){
+            
+            if let localVideoTrack = localVideoTrack
+            {
+                self.localMedia?.removeVideoTrack(localVideoTrack)
+                self.room?.disconnect()
+            }
+            let offR = UIImage(named: "110911-200")
+            self.buttonRecord.setImage(offR , for: .normal)
+        }
+        
     }
+    
     func connect()
     {
         if (accessToken == "TWILIO_ACCESS_TOKEN") {
