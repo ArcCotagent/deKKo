@@ -21,6 +21,7 @@ class CameraListViewController: UIViewController,UITableViewDataSource,UITableVi
     
     
     @IBOutlet var tableView: UITableView!
+    var refreshControl: UIRefreshControl!
     
     
     override func viewDidLoad() {
@@ -29,7 +30,16 @@ class CameraListViewController: UIViewController,UITableViewDataSource,UITableVi
         tableView.delegate = self
         tableView.dataSource = self
         
+        
         getRoomInfos()
+        
+        //Creeate a UIRefreshControl
+        refreshControl = UIRefreshControl()
+        //Connect the refresh to pullReload
+        refreshControl.addTarget(self, action: #selector(pullReload), for: .valueChanged)
+        
+        //Add it to the tableView
+        tableView.insertSubview(refreshControl, at: 0)
         
         // Do any additional setup after loading the view.
     }
@@ -71,6 +81,10 @@ class CameraListViewController: UIViewController,UITableViewDataSource,UITableVi
                     }
                     
                 }
+                //Once retrieve reload it
+                self.tableView.reloadData()
+                //Stop the spinning
+                self.refreshControl.endRefreshing()
                 
                 print("Available rooms:\n \(self.roomNameArray)")
                 //let post = self.posts[indexPath.row]
@@ -86,13 +100,12 @@ class CameraListViewController: UIViewController,UITableViewDataSource,UITableVi
         
     }
     
-
-    @IBAction func reload(_ sender: Any)
-    {
+    func pullReload() {
+        //Start Spinning
+        refreshControl.beginRefreshing()
         getRoomInfos()
-        tableView.reloadData()
-
     }
+
   
     
     func tableView(_ tableView: UITableView,
