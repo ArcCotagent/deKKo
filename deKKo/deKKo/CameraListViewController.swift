@@ -15,9 +15,10 @@ class CameraListViewController: UIViewController,UITableViewDataSource,UITableVi
     var roomNameNum:Int = 0;
     var roomNum = 0;
     var roomNameArray:[String] = []
+    var cellArray:[CameraListTableViewCell] = []
     var roomInfos: [PFObject] = []
-    
-    var cell:CameraListTableViewCell?
+    var tableIndex = 0;
+    //var cell:CameraListTableViewCell?
     
     
     @IBOutlet var tableView: UITableView!
@@ -89,6 +90,8 @@ class CameraListViewController: UIViewController,UITableViewDataSource,UITableVi
 
     @IBAction func reload(_ sender: Any)
     {
+        cellArray = []
+        tableIndex = 0;
         getRoomInfos()
         tableView.reloadData()
 
@@ -99,6 +102,7 @@ class CameraListViewController: UIViewController,UITableViewDataSource,UITableVi
                    numberOfRowsInSection section: Int) -> Int
     {
         return roomNameArray.count
+        
     }
     
     func tableView(_ tableView: UITableView,
@@ -106,20 +110,20 @@ class CameraListViewController: UIViewController,UITableViewDataSource,UITableVi
         -> UITableViewCell
     {
         
-        self.cell = tableView.dequeueReusableCell(withIdentifier: "CameraListCell", for: indexPath) as! CameraListTableViewCell;
-        
-        let connectOptions = TVIConnectOptions.init(token: (cell?.accessToken)!) { (builder) in
-            //Show at the index of roomNameArray
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CameraListCell", for: indexPath) as! CameraListTableViewCell
+        let connectOptions = TVIConnectOptions.init(token: cell.accessToken) { (builder) in
             builder.roomName = self.roomNameArray[indexPath.row]
-            
         }
         //Start connection
-        cell?.room = TVIVideoClient.connect(with: connectOptions, delegate: self)
+       
+        cell.room = TVIVideoClient.connect(with: connectOptions, delegate: self)
+        
+        cellArray.append(cell)
         
         
         
         
-        return cell!;
+        return cell
     }
     
     func logMessage(messageText:String)
@@ -148,9 +152,10 @@ extension CameraListViewController : TVIRoomDelegate {
         
         logMessage(messageText: "Connected to room \(room.name) as \(room.localParticipant?.identity)")
         
-        if (room.participants.count > 0) {
-            cell?.participant = room.participants[0]
-            cell?.participant?.delegate = self
+        if (room.participants.count > 0)
+        {
+            cellArray[tableIndex].participant = room.participants[0]
+            cellArray[tableIndex].participant?.delegate = self
         }
     }
     
@@ -184,9 +189,9 @@ extension CameraListViewController : TVIRoomDelegate {
     }
     
     func room(_ room: TVIRoom, participantDidDisconnect participant: TVIParticipant) {
-        if (cell?.participant == participant) {
-            //cleanupRemoteParticipant()
-        }
+//        if (cell?.participant == participant) {
+//            //cleanupRemoteParticipant()
+//        }
         logMessage(messageText: "Room \(room.name), Participant \(participant.identity) disconnected")
     }
 }
@@ -196,19 +201,43 @@ extension CameraListViewController : TVIParticipantDelegate {
     func participant(_ participant: TVIParticipant, addedVideoTrack videoTrack: TVIVideoTrack) {
         logMessage(messageText: "Participant \(participant.identity) added video track")
         
-        if let cell = self.cell
+//        if let cell = self.cell
+//        {
+//        let indexpath = IndexPath(row: tableIndexPath, section: 0)
+//        let cell = tableView.cellForRow(at: indexpath) as? CameraListTableViewCell
+//        
+        
+        for index in 0 ..< cellArray.count
         {
-            if (cell.participant == participant) {
-                
+            if (cellArray[index].participant == participant)
+            {
+                let cell = cellArray[index]
                 let renderer = TVIVideoViewRenderer.init()
                 videoTrack.addRenderer(renderer)
                 renderer.view.frame = cell.cameraView.bounds
                 renderer.view.contentMode = .scaleAspectFill
                 cell.cameraView.addSubview(renderer.view)
-
+                tableIndex += 1;
                 
             }
         }
+        
+        
+        
+        
+        
+//        if (.participant == participant)
+//            {
+//                let renderer = TVIVideoViewRenderer.init()
+//                
+//                videoTrack.addRenderer(renderer)
+//                renderer.view.frame = cell.cameraView.bounds
+//                renderer.view.contentMode = .scaleAspectFill
+//                cell.cameraView.addSubview(renderer.view)
+//
+//                
+//            }
+//        }
         
         
     }
@@ -216,8 +245,8 @@ extension CameraListViewController : TVIParticipantDelegate {
     func participant(_ participant: TVIParticipant, removedVideoTrack videoTrack: TVIVideoTrack) {
         logMessage(messageText: "Participant \(participant.identity) removed video track")
         
-        if (cell?.participant == participant) {
-            videoTrack.detach((cell?.cameraView)!)
+        if (cellArray[tableIndex].participant == participant) {
+            videoTrack.detach((cellArray[tableIndex].cameraView)!)
         }
     }
     
