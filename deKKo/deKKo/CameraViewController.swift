@@ -121,8 +121,10 @@ class CameraViewController: UIViewController
             let onR = UIImage(named: "onRecord")
             self.buttonRecord.setImage(onR , for: .normal)
             flag = 1
-        } else if (flag == 1 ){
-            
+        }
+        else if (flag == 1 )
+        {
+            clearRoomNameInTheServer()
             if let localVideoTrack = localVideoTrack
             {
                 self.localMedia?.removeVideoTrack(localVideoTrack)
@@ -130,6 +132,7 @@ class CameraViewController: UIViewController
             }
             let offR = UIImage(named: "110911-200")
             self.buttonRecord.setImage(offR , for: .normal)
+            flag = 0;
         }
         
     }
@@ -231,35 +234,46 @@ class CameraViewController: UIViewController
         let query = PFQuery(className: "ROOMINFO")
         query.order(byDescending: "roomName")
         query.includeKey("roomName")
-        query.whereKey("roomName", equalTo: room?.name)
+        //query.whereKey("roomName", equalTo: room?.name as! String)
         
         query.limit = 20
-        
+        print(room?.name)
         
         query.findObjectsInBackground { (roomInfos: [PFObject]?, error: Error?) -> Void in
+            
+            print(roomInfos)
+            
             if let roomInfos = roomInfos
             {
-                if(roomInfos.count > 1)
+                for index  in 0 ..< roomInfos.count
                 {
-                    print("*=*=*=There exists same room Name=*=*=*")
-                }
-                else if(roomInfos.count == 1)
-                {
-                    if let participants = roomInfos[0]["participants"] as? Int
+                    if let roomName = roomInfos[index]["roomName"] as? String
                     {
-                        if participants == 0
+                        print(roomName)
+                        if(roomName == self.room!.name)
                         {
-                            roomInfos[0].deleteInBackground()
+                            if let participants = roomInfos[0]["participants"] as? Int
+                            {
+                                if participants == 0
+                                {
+                                    roomInfos[0].deleteInBackground()
+                                }
+                                
+                            }
+                            
                         }
-                        
                     }
                     
                 }
+                
+                
+                
                 //self.roomInfos = roomInfos
                 
             }
             else
             {
+                print(error?.localizedDescription)
                 // handle error
             }
         }

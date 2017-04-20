@@ -32,6 +32,8 @@ class CameraListTableViewCell: UITableViewCell
     var room: TVIRoom?
     
     
+    var connectOptions: TVIConnectOptions?
+    
     
     
     @IBOutlet var cameraView: UIView!
@@ -75,4 +77,102 @@ class CameraListTableViewCell: UITableViewCell
     {
         print(messageText)
     }
+    func connect()
+    {
+        self.room = TVIVideoClient.connect(with: self.connectOptions!, delegate: self)
+    }
 }
+extension CameraListTableViewCell : TVIRoomDelegate {
+    func didConnect(to room: TVIRoom) {
+        
+        // At the moment, this example only supports rendering one Participant at a time.
+        
+        logMessage(messageText: "Connected to room \(room.name) as \(room.localParticipant?.identity)")
+        
+        if (room.participants.count > 0) {
+            self.participant = room.participants[0]
+            self.participant?.delegate = self
+        }
+    }
+    
+    func room(_ room: TVIRoom, didDisconnectWithError error: Error?) {
+        logMessage(messageText: "Disconncted from room \(room.name), error = \(error)")
+        
+        //self.cleanupRemoteParticipant()
+        self.room = nil
+        
+        //self.showRoomUI(inRoom: false)
+    }
+    
+    func room(_ room: TVIRoom, didFailToConnectWithError error: Error) {
+        logMessage(messageText: "Failed to connect to room with error")
+        self.room = nil
+        
+        //self.showRoomUI(inRoom: false)
+    }
+    
+    func room(_ room: TVIRoom, participantDidConnect participant: TVIParticipant) {
+        if (self.participant == nil) {
+            self.participant = participant
+            self.participant?.delegate = self
+        }
+        logMessage(messageText: "Room \(room.name), Participant \(participant.identity) connected")
+    }
+    
+    func room(_ room: TVIRoom, participantDidDisconnect participant: TVIParticipant) {
+        if (self.participant == participant) {
+            //cleanupRemoteParticipant()
+        }
+        logMessage(messageText: "Room \(room.name), Participant \(participant.identity) disconnected")
+    }
+}
+
+// MARK: TVIParticipantDelegate
+extension CameraListTableViewCell : TVIParticipantDelegate {
+    func participant(_ participant: TVIParticipant, addedVideoTrack videoTrack: TVIVideoTrack) {
+        logMessage(messageText: "Participant \(participant.identity) added video track")
+        
+        if (self.participant == participant)
+        {
+            videoTrack.attach(self.cameraView)
+        }
+    }
+    
+    func participant(_ participant: TVIParticipant, removedVideoTrack videoTrack: TVIVideoTrack) {
+        logMessage(messageText: "Participant \(participant.identity) removed video track")
+        
+        if (self.participant == participant) {
+            videoTrack.detach(self.cameraView)
+        }
+    }
+    
+    func participant(_ participant: TVIParticipant, addedAudioTrack audioTrack: TVIAudioTrack) {
+        logMessage(messageText: "Participant \(participant.identity) added audio track")
+        
+    }
+    
+    func participant(_ participant: TVIParticipant, removedAudioTrack audioTrack: TVIAudioTrack) {
+        logMessage(messageText: "Participant \(participant.identity) removed audio track")
+    }
+    
+    func participant(_ participant: TVIParticipant, enabledTrack track: TVITrack) {
+        var type = ""
+        if (track is TVIVideoTrack) {
+            type = "video"
+        } else {
+            type = "audio"
+        }
+        logMessage(messageText: "Participant \(participant.identity) enabled \(type) track")
+    }
+    
+    func participant(_ participant: TVIParticipant, disabledTrack track: TVITrack) {
+        var type = ""
+        if (track is TVIVideoTrack) {
+            type = "video"
+        } else {
+            type = "audio"
+        }
+        logMessage(messageText: "Participant \(participant.identity) disabled \(type) track")
+    }
+}
+

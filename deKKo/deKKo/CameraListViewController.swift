@@ -15,10 +15,11 @@ class CameraListViewController: UIViewController,UITableViewDataSource,UITableVi
     var roomNameNum:Int = 0;
     var roomNum = 0;
     var roomNameArray:[String] = []
-    var cellArray:[CameraListTableViewCell] = []
+    //var cellArray:[CameraListTableViewCell] = []
     var roomInfos: [PFObject] = []
-    var tableIndex = 0;
+    //var tableIndex = 0;
     //var cell:CameraListTableViewCell?
+    var refreshControl: UIRefreshControl!
     
     
     @IBOutlet var tableView: UITableView!
@@ -31,7 +32,9 @@ class CameraListViewController: UIViewController,UITableViewDataSource,UITableVi
         tableView.dataSource = self
         
         getRoomInfos()
-        
+        refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(reload(_:)), for: .valueChanged)
+        tableView.insertSubview(refreshControl, at: 0)
         // Do any additional setup after loading the view.
     }
 
@@ -72,7 +75,8 @@ class CameraListViewController: UIViewController,UITableViewDataSource,UITableVi
                     }
                     
                 }
-                
+                self.tableView.reloadData()
+                self.refreshControl.endRefreshing()
                 print("Available rooms:\n \(self.roomNameArray)")
                 //let post = self.posts[indexPath.row]
                 // self.tableView.reloadData()
@@ -88,10 +92,10 @@ class CameraListViewController: UIViewController,UITableViewDataSource,UITableVi
     }
     
 
-    @IBAction func reload(_ sender: Any)
+    func reload(_ sender: Any)
     {
-        cellArray = []
-        tableIndex = 0;
+        //cellArray = []
+        //tableIndex = 0;
         getRoomInfos()
         tableView.reloadData()
 
@@ -111,14 +115,18 @@ class CameraListViewController: UIViewController,UITableViewDataSource,UITableVi
     {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CameraListCell", for: indexPath) as! CameraListTableViewCell
+        
+        
+        
         let connectOptions = TVIConnectOptions.init(token: cell.accessToken) { (builder) in
             builder.roomName = self.roomNameArray[indexPath.row]
         }
         //Start connection
-       
-        cell.room = TVIVideoClient.connect(with: connectOptions, delegate: self)
+        cell.connectOptions = connectOptions
         
-        cellArray.append(cell)
+        cell.connect()
+        
+        //cellArray.append(cell)
         
         
         
@@ -145,6 +153,8 @@ class CameraListViewController: UIViewController,UITableViewDataSource,UITableVi
 
 }
 // MARK: TVIRoomDelegate
+
+/*
 extension CameraListViewController : TVIRoomDelegate {
     func didConnect(to room: TVIRoom) {
         
@@ -154,6 +164,7 @@ extension CameraListViewController : TVIRoomDelegate {
         
         if (room.participants.count > 0)
         {
+            print(tableIndex)
             cellArray[tableIndex].participant = room.participants[0]
             cellArray[tableIndex].participant?.delegate = self
         }
@@ -207,6 +218,7 @@ extension CameraListViewController : TVIParticipantDelegate {
 //        let cell = tableView.cellForRow(at: indexpath) as? CameraListTableViewCell
 //        
         
+        print(cellArray)
         for index in 0 ..< cellArray.count
         {
             if (cellArray[index].participant == participant)
@@ -218,7 +230,7 @@ extension CameraListViewController : TVIParticipantDelegate {
                 renderer.view.contentMode = .scaleAspectFill
                 cell.cameraView.addSubview(renderer.view)
                 tableIndex += 1;
-                
+                break;
             }
         }
         
@@ -279,4 +291,4 @@ extension CameraListViewController : TVIParticipantDelegate {
         logMessage(messageText: "Participant \(participant.identity) disabled \(type) track")
     }
 }
-
+*/
