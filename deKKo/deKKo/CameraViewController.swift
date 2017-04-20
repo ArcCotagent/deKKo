@@ -116,8 +116,9 @@ class CameraViewController: UIViewController
     
     @IBAction func StartLive(_ sender: Any)
     {
-        connect()
+        
         if (flag == 0 ){
+            connect()
             let onR = UIImage(named: "onRecord")
             self.buttonRecord.setImage(onR , for: .normal)
             flag = 1
@@ -237,7 +238,7 @@ class CameraViewController: UIViewController
         //query.whereKey("roomName", equalTo: room?.name as! String)
         
         query.limit = 20
-        print(room?.name)
+        
         
         query.findObjectsInBackground { (roomInfos: [PFObject]?, error: Error?) -> Void in
             
@@ -249,9 +250,9 @@ class CameraViewController: UIViewController
                 {
                     if let roomName = roomInfos[index]["roomName"] as? String
                     {
-                        print(roomName)
                         if(roomName == self.room!.name)
                         {
+                            
                             if let participants = roomInfos[0]["participants"] as? Int
                             {
                                 if participants == 0
@@ -305,6 +306,8 @@ extension CameraViewController : TVIRoomDelegate {
         print("Local identity \(localParticipant!.identity)")
         
         var roomInfo = PFObject(className: "ROOMINFO")
+        
+    
         roomInfo["roomName"] = room.name
         roomInfo["participants"] = room.participants.count;
         roomInfo.saveInBackground()
