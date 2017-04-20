@@ -30,7 +30,7 @@ class CameraViewController: UIViewController
     var localAudioTrack: TVILocalAudioTrack?
     var participant: TVIParticipant?
     var room: TVIRoom?
-
+    var type: TVIVideoCaptureSource!
     var flag = 0
     
 
@@ -118,7 +118,16 @@ class CameraViewController: UIViewController
     {
         
         if (flag == 0 ){
+           type  = (self.camera?.source)!
+            
+            
             connect()
+            
+            if(type == .backCameraWide)
+            {
+                self.camera?.selectSource(.backCameraWide)
+            }
+            
             let onR = UIImage(named: "onRecord")
             self.buttonRecord.setImage(onR , for: .normal)
             flag = 1
@@ -131,9 +140,25 @@ class CameraViewController: UIViewController
                 self.localMedia?.removeVideoTrack(localVideoTrack)
                 self.room?.disconnect()
             }
+            
             let offR = UIImage(named: "110911-200")
             self.buttonRecord.setImage(offR , for: .normal)
             flag = 0;
+            
+            
+            
+            
+            camera = TVICameraCapturer()
+            localVideoTrack = localMedia?.addVideoTrack(true, capturer: camera!)
+            localVideoTrack?.attach(self.localCameraView)
+            
+            //Making it to full screen
+            let renderer = TVIVideoViewRenderer.init()
+            localVideoTrack?.addRenderer(renderer)
+            renderer.view.frame = localCameraView.bounds
+            renderer.view.contentMode = .scaleAspectFill
+            localCameraView.addSubview(renderer.view)
+            self.camera?.selectSource(type)
         }
         
     }
