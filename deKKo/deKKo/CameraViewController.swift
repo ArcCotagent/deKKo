@@ -348,12 +348,48 @@ extension CameraViewController : TVIRoomDelegate {
         
     }
     
-    func room(_ room: TVIRoom, participantDidConnect participant: TVIParticipant) {
+    func room(_ room: TVIRoom, participantDidConnect participant: TVIParticipant)
+    {
         print ("Participant \(participant.identity) has joined Room \(room.name)")
-        if (self.participant == nil) {
+        if (self.participant == nil)
+        {
             self.participant = participant
             self.participant?.delegate = self
         }
+        
+        
+        //Query the table ROOMINFO
+        let query = PFQuery(className: "ROOMINFO")
+        //Sort the table by roomName
+        query.order(byDescending: "roomName")
+        query.whereKey("roomName", contains: room.name)
+        //Grab only 20 Orders
+        query.limit = 20
+        
+        //Start Grabing
+        query.findObjectsInBackground { (roomInfos: [PFObject]?, error: Error?) -> Void in
+            if let roomInfos = roomInfos
+            {
+                //Save it to roomInfos[]
+                print(roomInfos)
+                
+                if let participants = roomInfos[0]["participants"] as? Int
+                {
+                   roomInfos[0]["participants"] = room.participants.count
+                    roomInfos[0].saveInBackground()
+                }
+            
+            }
+            else
+            {
+                print(error?.localizedDescription)
+                // handle error
+            }
+            
+            
+        }
+        
+
         
     }
     
