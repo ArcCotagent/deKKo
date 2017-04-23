@@ -4,7 +4,7 @@
 
 Dekko is the next generation of online selling platform.
 
-Unlike the boring text-based Q&A on Amazon,Ebay...etc, Dekko provides a instinctive way to sell your product.
+Unlike the boring text-based Q&A on Amazon,Ebay...etc, Dekko provides an instinctive way to sell your product.
 With Dekko, anyone can sell anything online with live demonstrations, and just using one finger, you can sell products to your customers face to face imediately, just like selling in the retail store.
 
 As a customer, one can browse through the whole selling list, just like window-shooping in the mall.
