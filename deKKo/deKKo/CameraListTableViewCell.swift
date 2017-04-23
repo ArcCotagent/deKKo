@@ -8,7 +8,7 @@
 
 import UIKit
 import TwilioVideo
-
+import Parse
 class CameraListTableViewCell: UITableViewCell
 {
     
@@ -37,9 +37,7 @@ class CameraListTableViewCell: UITableViewCell
     
     
     @IBOutlet var cameraView: UIView!
-
-    
-    
+    @IBOutlet var viewsCount: UILabel!
     
     
     override func awakeFromNib()
@@ -67,7 +65,8 @@ class CameraListTableViewCell: UITableViewCell
         
     }
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool)
+    {
         super.setSelected(selected, animated: animated)
         
         // Configure the view for the selected state
@@ -80,7 +79,43 @@ class CameraListTableViewCell: UITableViewCell
     func connect()
     {
         self.room = TVIVideoClient.connect(with: self.connectOptions!, delegate: self)
+        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(CameraListTableViewCell.onTimer), userInfo: nil, repeats: true)
     }
+    func disconnect()
+    {
+        self.room?.disconnect()
+    }
+    func onTimer()
+    {
+        //Query the table ROOMINFO
+        let query = PFQuery(className: "ROOMINFO")
+        //Sort the table by roomName
+        query.order(byDescending: "roomName")
+        query.whereKey("roomName", contains: room?.name)
+        //Grab only 20 Orders
+        query.limit = 20
+        
+        //Start Grabing
+        query.findObjectsInBackground { (roomInfos: [PFObject]?, error: Error?) -> Void in
+            if let roomInfos = roomInfos
+            {
+                //Save it to roomInfos[]
+                print(roomInfos)
+                
+                if let participants = roomInfos[0]["participants"] as? Int
+                {
+                    self.viewsCount.text = "\(participants) views"
+                }
+            }
+            else
+            {
+                print(error?.localizedDescription)
+                // handle error
+            }
+        }
+
+    }
+        
 }
 extension CameraListTableViewCell : TVIRoomDelegate {
     func didConnect(to room: TVIRoom) {
@@ -122,6 +157,7 @@ extension CameraListTableViewCell : TVIRoomDelegate {
     func room(_ room: TVIRoom, participantDidDisconnect participant: TVIParticipant) {
         if (self.participant == participant) {
             //cleanupRemoteParticipant()
+            self.viewsCount.text = ""
         }
         logMessage(messageText: "Room \(room.name), Participant \(participant.identity) disconnected")
     }
@@ -134,7 +170,18 @@ extension CameraListTableViewCell : TVIParticipantDelegate {
         
         if (self.participant == participant)
         {
-            videoTrack.attach(self.cameraView)
+            
+            
+            
+            let renderer = TVIVideoViewRenderer.init()
+            videoTrack.addRenderer(renderer)
+            renderer.view.frame = self.cameraView.bounds
+            renderer.view.contentMode = .scaleAspectFill
+            self.cameraView.addSubview(renderer.view)
+
+          //  videoTrack.attach(self.cameraView)
+            
+            self.cameraView.bringSubview(toFront: self.viewsCount);
         }
     }
     
@@ -143,6 +190,7 @@ extension CameraListTableViewCell : TVIParticipantDelegate {
         
         if (self.participant == participant) {
             videoTrack.detach(self.cameraView)
+            
         }
     }
     

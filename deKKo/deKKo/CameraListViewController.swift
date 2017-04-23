@@ -15,6 +15,7 @@ class CameraListViewController: UIViewController,UITableViewDataSource,UITableVi
     var roomNameNum:Int = 0;
     var roomNum = 0;
     var roomNameArray:[String] = []
+    var roomViewsArray:[Int] = []
     //var cellArray:[CameraListTableViewCell] = []
     var roomInfos: [PFObject] = []
     //var tableIndex = 0;
@@ -65,6 +66,7 @@ class CameraListViewController: UIViewController,UITableViewDataSource,UITableVi
                 
                 
                 self.roomNameArray = []
+                self.roomViewsArray = []
                 
                 for index in 0 ..< roomInfos.count
                 {
@@ -74,10 +76,16 @@ class CameraListViewController: UIViewController,UITableViewDataSource,UITableVi
                         self.roomNameArray.append(roomName)
                     }
                     
+                    if let roomViews = roomInfos[index]["participants"] as? Int
+                    {
+                        self.roomViewsArray.append(roomViews)
+                    }
+                    
                 }
                 self.tableView.reloadData()
                 self.refreshControl.endRefreshing()
                 print("Available rooms:\n \(self.roomNameArray)")
+                print("Views in rooms:\n \(self.roomViewsArray)")
                 //let post = self.posts[indexPath.row]
                 // self.tableView.reloadData()
                 
@@ -105,6 +113,9 @@ class CameraListViewController: UIViewController,UITableViewDataSource,UITableVi
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int
     {
+        if(roomNameArray.count == 0){
+            return 1
+        }
         return roomNameArray.count
         
     }
@@ -113,35 +124,48 @@ class CameraListViewController: UIViewController,UITableViewDataSource,UITableVi
                    cellForRowAt indexPath: IndexPath)
         -> UITableViewCell
     {
-        
+       
         let cell = tableView.dequeueReusableCell(withIdentifier: "CameraListCell", for: indexPath) as! CameraListTableViewCell
         
         
-        
-        let connectOptions = TVIConnectOptions.init(token: cell.accessToken) { (builder) in
-            builder.roomName = self.roomNameArray[indexPath.row]
+       
+        if (self.roomNameArray == [])
+        {
+            cell.cameraView.backgroundColor = UIColor(patternImage: UIImage(named: "sorry")!)
+            cell.viewsCount.text = ""
+            
+            
         }
-        //Start connection
-        cell.connectOptions = connectOptions
-        
-        cell.connect()
-        
-        //cellArray.append(cell)
+        else
+        {
+            cell.cameraView.backgroundColor = nil
+            let connectOptions = TVIConnectOptions.init(token: cell.accessToken) { (builder) in
+                builder.roomName = self.roomNameArray[indexPath.row]
+            }
+            //Start connection
+            cell.connectOptions = connectOptions
+            cell.viewsCount.text = "\(roomViewsArray[indexPath.row]) views"
+            cell.connect()
+            
+        }
         
         
         
         
         return cell
     }
-    
+    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath)
+    {
+        let cellBuffer = cell as? CameraListTableViewCell
+        
+        cellBuffer?.disconnect()
+    }
     func logMessage(messageText:String)
     {
         print(messageText)
     }
     
-
-
-    /*
+       /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
