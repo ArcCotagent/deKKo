@@ -12,7 +12,9 @@ Simply choose the product you are interested, ask the seller any question you wa
 
 
 ## User Stories
-
+- [X] User can login with Facebook account
+- [X] User can login with Google account
+- [X] User can create new account
 - [X] User can record LIVE video
 - [X] User can select LIVE video
 - [X] User can form LIVE chat room
