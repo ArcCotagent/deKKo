@@ -14,11 +14,8 @@ Simply choose the product you are interested, ask the seller any question you wa
 ## User Stories
 
 - [X] User can record LIVE video
-- [ ] User can select tags for thier LIVE video (e.g. #location #sports #fashion)
-- [ ] User can select LIVE video from categories
-- [ ] User can LIKE/DISLIKE/FAVOURITE LIVE video
+- [X] User can select LIVE video
 - [X] User can form LIVE chat room
-- [ ] Broadcaster can kick user out of chat room
 
 
 ## Wireframe
