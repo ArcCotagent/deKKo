@@ -18,6 +18,7 @@ Simply choose the product you are interested, ask the seller any question you wa
 - [X] User can record LIVE video
 - [X] User can select LIVE video
 - [X] User can form LIVE chat room
+- [X] User can message seller
 
 
 ## Wireframe
