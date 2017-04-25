@@ -9,6 +9,7 @@
 import UIKit
 import TwilioVideo
 import Parse
+import Notie
 class CameraListTableViewCell: UITableViewCell
 {
     
@@ -62,13 +63,15 @@ class CameraListTableViewCell: UITableViewCell
                 
             }
         }
-        
+//        let tapToMessage = UITapGestureRecognizer(target: self, action: #selector(self.showNotie(sender:)))
+//        tapToMessage.numberOfTapsRequired=2
+//        self.cameraView.addGestureRecognizer(tapToMessage)
     }
     
     override func setSelected(_ selected: Bool, animated: Bool)
     {
         super.setSelected(selected, animated: animated)
-        
+        self.showNotie(sender: AnyObject.self as AnyObject)
         // Configure the view for the selected state
     }
     
@@ -115,6 +118,45 @@ class CameraListTableViewCell: UITableViewCell
         }
 
     }
+    
+    
+    func showNotie(sender: AnyObject)
+    {
+        let notie = Notie(view: self.cameraView, message: "Do you want to purchase this object?", style: .Confirm)
+        //notie.leftButtonBackgroundColor = UIColor(hue: 0.2694, saturation: 1, brightness: 0.79, alpha: 1.0)
+        
+        
+        
+        notie.leftButtonAction = {
+            notie.dismiss()
+        }
+      //  notie.leftButtonBackgroundColor
+        
+        notie.rightButtonAction = {
+            
+            notie.dismiss()
+        }
+        
+        notie.show()
+    }
+    
+    func showInputNotie(sender: AnyObject)
+    {
+        let notie = Notie(view: self.cameraView, message: "Please enter your email address", style: .Input)
+        notie.placeholder = "email@example.com"
+        notie.buttonCount = Notie.buttons.standard
+        notie.leftButtonAction = {
+            print(notie.getText())
+            notie.dismiss()
+        }
+        
+        notie.rightButtonAction = {
+            notie.dismiss()
+        }
+        
+        notie.show()
+    }
+
         
 }
 extension CameraListTableViewCell : TVIRoomDelegate {
@@ -222,5 +264,6 @@ extension CameraListTableViewCell : TVIParticipantDelegate {
         }
         logMessage(messageText: "Participant \(participant.identity) disabled \(type) track")
     }
-}
+    
+   }
 

@@ -108,9 +108,11 @@
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.86247763040000003" green="0.93129362309999997" blue="0.84408475299999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <gestureRecognizers/>
                                                 </view>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <gestureRecognizers/>
                                         <connections>
                                             <outlet property="cameraView" destination="SMx-d6-Dxe" id="3B7-x6-vOm"/>
                                             <outlet property="viewsCount" destination="12n-yu-CPg" id="LNT-kZ-OLb"/>
