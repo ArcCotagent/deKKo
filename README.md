@@ -2,21 +2,24 @@
 
 ## Description
 
-Dekko is an app that allows user to chat with live streaming videos without any history.
+Dekko is the next generation of online selling platform.
+
+Unlike the boring text-based Q&A on Amazon,Ebay...etc, Dekko provides an instinctive way to sell your product.
+With Dekko, anyone can sell anything online with live demonstrations, and just using one finger, you can sell products to your customers face to face imediately, just like selling in the retail store.
+
+As a customer, one can browse through the whole selling list, just like window-shooping in the mall.
+Simply choose the product you are interested, ask the seller any question you want, check out, and delivered right to you.
+
 
 ## User Stories
+- [X] User can login with Facebook account
+- [X] User can login with Google account
+- [X] User can create new account
+- [X] User can record LIVE video
+- [X] User can select LIVE video
+- [X] User can form LIVE chat room
+- [X] User can message seller
 
-- [ ] User can record LIVE video
-- [ ] User can select tags for thier LIVE video (e.g. #location #sports #fashion)
-- [ ] User can select LIVE video from categories
-- [ ] User can LIKE/DISLIKE/FAVOURITE LIVE video
-- [ ] User can form LIVE chat room
-- [ ] Broadcaster can kick user out of chat room
-#Note merge from master
-git checkout master
-git pull
-git checkout ownbranch
-git merge master ownbranch
 
 ## Wireframe
 

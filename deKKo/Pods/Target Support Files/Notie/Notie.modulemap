@@ -1,0 +1,6 @@
+framework module Notie {
+  umbrella header "Notie-umbrella.h"
+
+  export *
+  module * { export * }
+}

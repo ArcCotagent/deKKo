@@ -30,8 +30,13 @@ class CameraViewController: UIViewController
     var localAudioTrack: TVILocalAudioTrack?
     var participant: TVIParticipant?
     var room: TVIRoom?
+    var type: TVIVideoCaptureSource!
+    var flag = 0
+    
+
     
     var roomInfos: [PFObject] = []
+
 
     let defaults = UserDefaults.standard
     
@@ -40,12 +45,30 @@ class CameraViewController: UIViewController
 
     @IBOutlet weak var stateL: UILabel!
 
+    @IBOutlet weak var buttonRecord: UIButton!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        localMedia = TVILocalMedia()
         
+        // LocalMedia represents the collection of tracks that we are sending to other Participants from our VideoClient.
+        if !PlatformUtils.isSimulator
+        {
+            localMedia = TVILocalMedia()
+
+            //Making it to full screen
+            let renderer = TVIVideoViewRenderer.init()
+            localVideoTrack?.addRenderer(renderer)
+            renderer.view.frame = localCameraView.bounds
+            renderer.view.contentMode = .scaleAspectFill
+            localCameraView.addSubview(renderer.view)
+            
+            //With one tap change camera view
+            let tapToSwitch = UITapGestureRecognizer(target: self, action: #selector(self.flipCamera(_:)))
+            self.localCameraView.addGestureRecognizer(tapToSwitch)
+
+        }
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,6 +79,17 @@ class CameraViewController: UIViewController
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
        
+        camera = TVICameraCapturer()
+        localVideoTrack = localMedia?.addVideoTrack(true, capturer: camera!)
+        localVideoTrack?.attach(self.localCameraView)
+        
+        //Making it to full screen
+        let renderer = TVIVideoViewRenderer.init()
+        localVideoTrack?.addRenderer(renderer)
+        renderer.view.frame = localCameraView.bounds
+        renderer.view.contentMode = .scaleAspectFill
+        localCameraView.addSubview(renderer.view)
+
         
     }
    
@@ -82,8 +116,53 @@ class CameraViewController: UIViewController
     
     @IBAction func StartLive(_ sender: Any)
     {
-        connect()
+        
+        if (flag == 0 ){
+           type  = (self.camera?.source)!
+            
+            
+            connect()
+            
+            if(type == .backCameraWide)
+            {
+                self.camera?.selectSource(.backCameraWide)
+            }
+            
+            let onR = UIImage(named: "onRecord")
+            self.buttonRecord.setImage(onR , for: .normal)
+            flag = 1
+        }
+        else if (flag == 1 )
+        {
+            clearRoomNameInTheServer()
+            if let localVideoTrack = localVideoTrack
+            {
+                self.localMedia?.removeVideoTrack(localVideoTrack)
+                self.room?.disconnect()
+            }
+            
+            let offR = UIImage(named: "110911-200")
+            self.buttonRecord.setImage(offR , for: .normal)
+            flag = 0;
+            
+            
+            
+            
+            camera = TVICameraCapturer()
+            localVideoTrack = localMedia?.addVideoTrack(true, capturer: camera!)
+            localVideoTrack?.attach(self.localCameraView)
+            
+            //Making it to full screen
+            let renderer = TVIVideoViewRenderer.init()
+            localVideoTrack?.addRenderer(renderer)
+            renderer.view.frame = localCameraView.bounds
+            renderer.view.contentMode = .scaleAspectFill
+            localCameraView.addSubview(renderer.view)
+            self.camera?.selectSource(type)
+        }
+        
     }
+    
     func connect()
     {
         if (accessToken == "TWILIO_ACCESS_TOKEN") {
@@ -181,35 +260,46 @@ class CameraViewController: UIViewController
         let query = PFQuery(className: "ROOMINFO")
         query.order(byDescending: "roomName")
         query.includeKey("roomName")
-        query.whereKey("roomName", equalTo: room?.name)
+        //query.whereKey("roomName", equalTo: room?.name as! String)
         
         query.limit = 20
         
         
         query.findObjectsInBackground { (roomInfos: [PFObject]?, error: Error?) -> Void in
+            
+            print(roomInfos)
+            
             if let roomInfos = roomInfos
             {
-                if(roomInfos.count > 1)
+                for index  in 0 ..< roomInfos.count
                 {
-                    print("*=*=*=There exists same room Name=*=*=*")
-                }
-                else if(roomInfos.count == 1)
-                {
-                    if let participants = roomInfos[0]["participants"] as? Int
+                    if let roomName = roomInfos[index]["roomName"] as? String
                     {
-                        if participants == 0
+                        if(roomName == self.room!.name)
                         {
-                            roomInfos[0].deleteInBackground()
+                            
+                            if let participants = roomInfos[0]["participants"] as? Int
+                            {
+                                if participants == 0
+                                {
+                                    roomInfos[0].deleteInBackground()
+                                }
+                                
+                            }
+                            
                         }
-                        
                     }
                     
                 }
+                
+                
+                
                 //self.roomInfos = roomInfos
                 
             }
             else
             {
+                print(error?.localizedDescription)
                 // handle error
             }
         }
@@ -241,6 +331,8 @@ extension CameraViewController : TVIRoomDelegate {
         print("Local identity \(localParticipant!.identity)")
         
         var roomInfo = PFObject(className: "ROOMINFO")
+        
+    
         roomInfo["roomName"] = room.name
         roomInfo["participants"] = room.participants.count;
         roomInfo.saveInBackground()
@@ -256,12 +348,48 @@ extension CameraViewController : TVIRoomDelegate {
         
     }
     
-    func room(_ room: TVIRoom, participantDidConnect participant: TVIParticipant) {
+    func room(_ room: TVIRoom, participantDidConnect participant: TVIParticipant)
+    {
         print ("Participant \(participant.identity) has joined Room \(room.name)")
-        if (self.participant == nil) {
+        if (self.participant == nil)
+        {
             self.participant = participant
             self.participant?.delegate = self
         }
+        
+        
+        //Query the table ROOMINFO
+        let query = PFQuery(className: "ROOMINFO")
+        //Sort the table by roomName
+        query.order(byDescending: "roomName")
+        query.whereKey("roomName", contains: room.name)
+        //Grab only 20 Orders
+        query.limit = 20
+        
+        //Start Grabing
+        query.findObjectsInBackground { (roomInfos: [PFObject]?, error: Error?) -> Void in
+            if let roomInfos = roomInfos
+            {
+                //Save it to roomInfos[]
+                print(roomInfos)
+                
+                if let participants = roomInfos[0]["participants"] as? Int
+                {
+                   roomInfos[0]["participants"] = room.participants.count
+                    roomInfos[0].saveInBackground()
+                }
+            
+            }
+            else
+            {
+                print(error?.localizedDescription)
+                // handle error
+            }
+            
+            
+        }
+        
+
         
     }
     

@@ -83,6 +83,7 @@ PODS:
   - GTMSessionFetcher/Full (1.1.8):
     - GTMSessionFetcher/Core (= 1.1.8)
   - MBProgressHUD (1.0.0)
+  - Notie (1.0.4)
   - Parse (1.14.2):
     - Bolts/Tasks (~> 1.8)
   - TwilioVideo (1.0.0-beta12)
@@ -94,6 +95,7 @@ DEPENDENCIES:
   - FacebookShare
   - Google/SignIn
   - MBProgressHUD
+  - Notie
   - Parse
   - TwilioVideo (= 1.0.0-beta12)
 
@@ -118,9 +120,10 @@ SPEC CHECKSUMS:
   GTMOAuth2: 7fc9c10f5c745f4d9850419ea88889fe3baa6b7d
   GTMSessionFetcher: 6f8d8b28b7e345549ac471071608170b31cb4977
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  Notie: 1acc7a2dd65b7ddbecd0d7bff0f71ef83df11caf
   Parse: 4335d65f40cb3d43190d723144bbe1afb9c38230
   TwilioVideo: 666a87c224ffcfc0d31d8b603ffb02a2c7b91989
 
-PODFILE CHECKSUM: 2827d972083c013b664f612b6d2bbd33068e8e36
+PODFILE CHECKSUM: c64f5bbc420e8a6679ab4206d8f46a8f985a57dd
 
 COCOAPODS: 1.2.0
